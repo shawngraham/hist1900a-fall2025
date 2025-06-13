@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup on HIST3000|CLCV3000</title>
+    <link>/tags/setup/</link>
+    <description>Recent content in Setup on HIST3000|CLCV3000</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 04 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 1: Making Notes</title>
+      <link>/docs/materials/wk1-making-notes/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk1-making-notes/</guid>
+      <description>I am asking you to make notes about your process, not take notes. There&amp;rsquo;s a difference.&#xA;When we make notes, we are mindfully building a foundation through a process of linking. Jupyterlite is an environment where we can write analytical code and do statistical analysis, as well as make notes. The idea is that you make your observations there in text files (that use the markdown conventions for styling the text) that link to your analysis.</description>
+    </item>
+    <item>
+      <title>Week 1: Jupyter Desktop Lab Bench</title>
+      <link>/docs/materials/wk1-jupyterdesktop/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk1-jupyterdesktop/</guid>
+      <description>👋🏻 Hi!&#xA;Let&amp;rsquo;s do some coding. The interface below accepts python code (it might take a moment to load up; if you can see a &amp;lsquo;play&amp;rsquo; etc it&amp;rsquo;s loaded). Try copying and pasting this:&#xA;text = &amp;#34;Oh yeah, digital archaeology!&amp;#34; print(text) into the gray box at the bottom of the interface below. Then, hit shift+enter while your cursor is in the box:&#xA;Now try this:&#xA;one = 1 two = 2 print(one + two) See how easy that was?</description>
+    </item>
+    <item>
+      <title>Week 3: Adding the R language to Jupyter Desktop</title>
+      <link>/docs/materials/wk3-jupyter-r/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk3-jupyter-r/</guid>
+      <description>Student Instructions: Adding R to JupyterLab You can copy and paste this guide into your course materials.&#xA;This guide will walk you through adding the R programming language as an option in your JupyterLab Desktop application.&#xA;Part A: Install the R Language First, you need to install R itself. This is a separate application from JupyterLab.&#xA;Go to the official R download site for your operating system:&#xA;Windows: https://cran.r-project.org/bin/windows/base/ Click the large &amp;ldquo;Download R-X.</description>
+    </item>
+    <item>
+      <title>Week 1: Hypothesis</title>
+      <link>/docs/materials/wk1-hypothesis/</link>
+      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk1-hypothesis/</guid>
+      <description>While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST3000|CLCV3000 reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation! Sometimes, the person to whom you&amp;rsquo;re replying might be a previous year&amp;rsquo;s student, but that&amp;rsquo;s ok; they might enter into conversation with you.</description>
+    </item>
+    <item>
+      <title>Week 1: Github</title>
+      <link>/docs/materials/wk1-github/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk1-github/</guid>
+      <description>If any of the instructions below are unclear, annotate this page with hypothesis while being logged into our course reading group. If you spot someone asking for help and you can offer advice, respond to the annotation.&#xA;The sequence of steps below might be a bit different by the time you read this; Github often mucks about with its look and feel. Examine the steps first, and if what you encounter is a bit different than this, you should be able to work out the basic actions to take from this walk-through.</description>
+    </item>
+  </channel>
+</rss>

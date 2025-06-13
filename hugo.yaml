@@ -1,0 +1,83 @@
+theme: docura
+
+enableGitInfo: true
+
+defaultContentLanguage: en
+
+languages:
+  en:
+    weight: 1
+    languageName: English
+    languageCode: en-US
+    contentDir: content/en
+    title: HIST3000|CLCV3000
+    params:
+      description: An Introduction to Digital Archaeology with Professor S.M. Graham
+
+services:
+  googleAnalytics:
+    ID: 
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+
+  author:
+    name: Shawn Graham
+    url: https://github.com/shawngraham/digiarch
+
+  themeColors:
+    light: '#fffff5'
+    dark: '#121212'
+
+  years:
+    start: 2019
+    present: 2025
+
+  social:
+    github: shawngraham
+    youtube: ''
+    facebook: ''
+    x: ''
+
+  ads:
+    googleAdSense: ''
+
+  donate:
+    buyMeACoffee: 
+    githubSponsor: 
+
+  algolia:
+    en:
+      container: '#site-header-search'
+      appId: 'docura'
+      indexName: 'docura'
+      apiKey: ''
+
+  home:
+    repository: shawngraham/digiarch
+
+menu:
+  main:
+
+    - url: /
+      name: Home
+      identifier: home
+      pre: "<i class='icon icon-home'></i>"
+      weight: 1
+
+    - url: /docs
+      name: Documentation
+      identifier: docs
+      pre: "<i class='icon icon-book'></i>"
+      weight: 2
+    - url: https://shawngraham.github.io
+      name: Professor Graham
+      identifier: smg
+      pre: "<i class='icon icon-circle'></i>"
+      weight: 2

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HIST3000|CLCV3000</title>
+    <link>/</link>
+    <description>Recent content on HIST3000|CLCV3000</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 04 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exit Ticket</title>
+      <link>/docs/exit-ticket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/exit-ticket/</guid>
+      <description>December 1 - December 5&#xA;Week 12: Dec 1 - Dec 5 Submit Exit Ticket You will produce an &amp;rsquo;exit ticket&amp;rsquo; for me at the end of the course (open format) reflecting on where you started and where you&amp;rsquo;ve gotten to, and you will indicate how you feel you&amp;rsquo;ve done against the learning outcomes. You are required to explicitly tie your exit ticket to evidence collected in your weekly work. The exit ticket is a summary assessment exercise that will pull all the different strings together into a strong cord.</description>
+    </item>
+    <item>
+      <title>Week 1: Making Notes</title>
+      <link>/docs/materials/wk1-making-notes/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk1-making-notes/</guid>
+      <description>I am asking you to make notes about your process, not take notes. There&amp;rsquo;s a difference.&#xA;When we make notes, we are mindfully building a foundation through a process of linking. Jupyterlite is an environment where we can write analytical code and do statistical analysis, as well as make notes. The idea is that you make your observations there in text files (that use the markdown conventions for styling the text) that link to your analysis.</description>
+    </item>
+    <item>
+      <title>Week 1: Jupyter Desktop Lab Bench</title>
+      <link>/docs/materials/wk1-jupyterdesktop/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk1-jupyterdesktop/</guid>
+      <description>👋🏻 Hi!&#xA;Let&amp;rsquo;s do some coding. The interface below accepts python code (it might take a moment to load up; if you can see a &amp;lsquo;play&amp;rsquo; etc it&amp;rsquo;s loaded). Try copying and pasting this:&#xA;text = &amp;#34;Oh yeah, digital archaeology!&amp;#34; print(text) into the gray box at the bottom of the interface below. Then, hit shift+enter while your cursor is in the box:&#xA;Now try this:&#xA;one = 1 two = 2 print(one + two) See how easy that was?</description>
+    </item>
+    <item>
+      <title>Week 3: Adding the R language to Jupyter Desktop</title>
+      <link>/docs/materials/wk3-jupyter-r/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk3-jupyter-r/</guid>
+      <description>Student Instructions: Adding R to JupyterLab You can copy and paste this guide into your course materials.&#xA;This guide will walk you through adding the R programming language as an option in your JupyterLab Desktop application.&#xA;Part A: Install the R Language First, you need to install R itself. This is a separate application from JupyterLab.&#xA;Go to the official R download site for your operating system:&#xA;Windows: https://cran.r-project.org/bin/windows/base/ Click the large &amp;ldquo;Download R-X.</description>
+    </item>
+    <item>
+      <title>Week 1: Hypothesis</title>
+      <link>/docs/materials/wk1-hypothesis/</link>
+      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk1-hypothesis/</guid>
+      <description>While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST3000|CLCV3000 reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation! Sometimes, the person to whom you&amp;rsquo;re replying might be a previous year&amp;rsquo;s student, but that&amp;rsquo;s ok; they might enter into conversation with you.</description>
+    </item>
+    <item>
+      <title>Week 1: Github</title>
+      <link>/docs/materials/wk1-github/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/materials/wk1-github/</guid>
+      <description>If any of the instructions below are unclear, annotate this page with hypothesis while being logged into our course reading group. If you spot someone asking for help and you can offer advice, respond to the annotation.&#xA;The sequence of steps below might be a bit different by the time you read this; Github often mucks about with its look and feel. Examine the steps first, and if what you encounter is a bit different than this, you should be able to work out the basic actions to take from this walk-through.</description>
+    </item>
+    <item>
+      <title>Assessment</title>
+      <link>/docs/assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/assessment/</guid>
+      <description>Nota bene: There is no midterm. There is no final exam. Each week, there are tasks for you to attempt. Sometimes there is a choice of which tasks to do; in those cases, I&amp;rsquo;m not looking for the number of these that you complete, but that you push yourself out of your comfort level. What&amp;rsquo;s more, it&amp;rsquo;s OK if something doesn&amp;rsquo;t work &amp;lsquo;perfectly.&amp;rsquo; The reflection on the process, both your fails and your successes, is the important thing.</description>
+    </item>
+    <item>
+      <title>Excavation is only the beginning</title>
+      <link>/docs/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/overview/</guid>
+      <description>Once the excavation is over, what happens to the information created through archaeological research? What about archaeology that does not involve digging? How do archaeologists use digital technologies on site, in the lab, or on the web? This course explores the intersection of digital technologies and computing with archaeology. We will explore the ways theory gets embedded into computation; perhaps there is even a theory of digital archaeology? We will explore how digital technologies allow us to ask questions that would otherwise be impossible to ask.</description>
+    </item>
+    <item>
+      <title>General Philosophy</title>
+      <link>/docs/general-philosophy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/general-philosophy/</guid>
+      <description>The Most Important Idea Archaeology isn&amp;rsquo;t necessarily about the past. It&amp;rsquo;s about the materiality of the past and present and in many ways, the future. We try to understand what it is to be human through the extended abilities that tool use, that objects and their agencies, give to us. The digital tools we use are entangled with and extend humanity in powerful ways - and in 2025, it&amp;rsquo;s easy to see how digital technologies have extended humanity&amp;rsquo;s worst impulses.</description>
+    </item>
+    <item>
+      <title>Learning Outcomes</title>
+      <link>/docs/learning-outcomes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/learning-outcomes/</guid>
+      <description>Questions I developed this course with a couple of questions in mind, things I wanted to know the answers to. Digital archaeology - what the hell is it, anyway? What is it for? Is it just a &amp;lsquo;follower&amp;rsquo;, repurposing other tools &amp;amp; techniques, a supporting skill for &amp;lsquo;real&amp;rsquo; archaeology? Let&amp;rsquo;s set ourselves a grand challenges: what can digital archaeology be?&#xA;This course is a formalized exploration of these questions; I do not know the answers!</description>
+    </item>
+    <item>
+      <title>Module 1</title>
+      <link>/docs/module-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/module-1/</guid>
+      <description>How does the human past become data? What does it mean to turn the different kinds of traces we have into something that becomes&amp;hellip; counted? And how does the act of counting change what gets valued? In this module, aside from setting up your digital work bench, you&amp;rsquo;ll get some experience of turning the world into data, and you will think deeply about what that means.&#xA;Each week, you have tasks, readings, and or things to listen to/watch that I would like you to complete.</description>
+    </item>
+    <item>
+      <title>Module 2 Considering|Calculating Data</title>
+      <link>/docs/module-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/module-2/</guid>
+      <description>In this module, we explore various transformations we can do to the digitized materials created in module 1, why we might do them, and the different ways these transformations are ethically, theoretically laden. Your choices matter, so that&amp;rsquo;s why you document the process.&#xA;Each week, you have tasks, readings, and or things to listen to/watch that I would like you to complete. These should be done -or at least attempted- before moving onto the next week.</description>
+    </item>
+    <item>
+      <title>Module 3 Communicating</title>
+      <link>/docs/module-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/module-3/</guid>
+      <description>In this final module, you will try to find the compelling story and to communicate it, in various ways, to your intended public. To whom does archaeology belong? Does it matter how we tell the story?&#xA;Each week, you have tasks, readings, and or things to listen to/watch that I would like you to complete. These should be done -or at least attempted- before moving onto the next week.</description>
+    </item>
+    <item>
+      <title>The Syllabus</title>
+      <link>/docs/first-things-first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/first-things-first/</guid>
+      <description>The syllabus is not a contract, but rather a guide to what and how I teach.&#xA;Read the damned thing The most successful students are the ones who have actually read the syllabus, and who have asked questions about it. After you read this page, move onto the general philosophical underpinnings of this course.&#xA;The complete syllabus is made up of these pages:&#xA;General Philosophy : why this course looks the way it does Learning Outcomes &amp;amp; My Policies : what you&amp;rsquo;ll learn and how I handle that Official Carleton Policies : general policies germane to every course Assessment Pieces : what actually gets assessed You Don&amp;rsquo;t Have To Be Techy!</description>
+    </item>
+    <item>
+      <title>Week 1 Getting Set Up</title>
+      <link>/docs/module-1/wk1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/module-1/wk1/</guid>
+      <description>Goals Listen Read Do Reflect Report Back Goals for this week Our overarching goal starting up is to set up your digital archaeology workflow, and to map out some of the broad contours of &amp;lsquo;digital archaeology&amp;rsquo;.&#xA;Getting the workflow set up involves creating a place to lodge your materials (a data repository via Github), a place to make notes and explore code (we&amp;rsquo;re going to use a thing called JupyterLite), and a way of being social with your community of nascent digital archaeologists (a social annotation layer for the web called Hypothes.</description>
+    </item>
+    <item>
+      <title>Week 2 Field work and ethical data collection</title>
+      <link>/docs/module-1/wk2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/module-1/wk2/</guid>
+      <description>Goals Listen Read Do Reflect Report Back Goals for this week Listen DO Readings to set the scene Record and Reflect Log Your Work You can log the link to your repository in this form.</description>
+    </item>
+    <item>
+      <title>Week 3 Field work and ethical data collection II</title>
+      <link>/docs/module-1/wk3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/module-1/wk3/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
