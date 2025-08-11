@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Setup on HIST1900A</title>
-    <link>//localhost:1313/tags/setup/</link>
+    <link>/tags/setup/</link>
     <description>Recent content in Setup on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 13 Jun 2025 14:12:01 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Aug 2025 12:27:21 -0400</lastBuildDate>
+    <atom:link href="/tags/setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Setting up the Hypothesis Collaborative Reading Environment</title>
-      <link>//localhost:1313/docs/materials/hypothesis/</link>
+      <title>Hypothes.is</title>
+      <link>/docs/hypothes.is</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/materials/hypothesis/</guid>
-      <description>While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST1900a reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation! Be respectful!&#xA;There is a student guide to Hypothes.is behind this link.</description>
+      <guid>/docs/hypothes.is</guid>
+      <description>Hypothes.is: A Tool for Collaborative Reading &amp;amp; Annotation The first thing I want you to do is to set up an account with the Hypothes.is tool.&#xA;While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST1900a reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation!</description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>//localhost:1313/docs/faq/</link>
+      <link>/docs/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/faq/</guid>
+      <guid>/docs/faq/</guid>
       <description>FAQ &amp;amp; Helpful Hints Workbench? Content? JupyterLab? What? There are two interconnected components to this course.&#xA;This website: it is the overarching context for what I am trying to teach you re digital archaeology. It specifies what to read and listen and do each week. Most of the time, when I want you to do something, it will be at your workbench. The workbench. The workbench is made of two things: a.</description>
     </item>
     <item>
       <title>Week 1 Getting Set Up</title>
-      <link>//localhost:1313/docs/module-1/wk1/</link>
+      <link>/docs/module-1/wk1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-1/wk1/</guid>
+      <guid>/docs/module-1/wk1/</guid>
       <description>Goals Listen Read Do Reflect Report Back Goals for this week Our overarching goal starting up is to set up your digital archaeology workflow, and to map out some of the broad contours of &amp;lsquo;digital archaeology&amp;rsquo;.&#xA;Getting the workflow set up involves creating a place to lodge your materials (a data repository via Github), a place to make notes and explore code (we&amp;rsquo;re going to use a thing called JupyterLite), and a way of being social with your community of nascent digital archaeologists (a social annotation layer for the web called Hypothes.</description>
     </item>
   </channel>

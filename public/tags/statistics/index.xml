@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics on HIST1900A</title>
-    <link>//localhost:1313/tags/statistics/</link>
+    <link>/tags/statistics/</link>
     <description>Recent content in Statistics on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 5 What Gets Counted, Counts!</title>
-      <link>//localhost:1313/docs/module-2/wk5/</link>
+      <link>/docs/module-2/wk5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-2/wk5/</guid>
+      <guid>/docs/module-2/wk5/</guid>
       <description>Goals Listen Read Do Reflect Report Back Goals for this week uncover the ways in which &amp;lsquo;counting&amp;rsquo; hides or highlights the past encounter CSVs, SQL, and R and how to do some basic statistics on archaeological information Listen Your browser does not support the audio element. Right-click and save-as this link to download the audio file&#xA;Read D&amp;rsquo;Ignazio, Catherine and Klein, L. 2020. ‘What gets counted, counts’. From Data Feminism link Labrador, Angela.</description>
     </item>
   </channel>

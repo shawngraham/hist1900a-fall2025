@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Audience on HIST1900A</title>
-    <link>//localhost:1313/tags/audience/</link>
+    <link>/tags/audience/</link>
     <description>Recent content in Audience on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/audience/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/audience/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Module 3 Communicating</title>
-      <link>//localhost:1313/docs/module-3/</link>
+      <title>Module 3 The Dawn of the Information Age</title>
+      <link>/docs/module-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-3/</guid>
-      <description>In this final module, you will try to find the compelling story and to communicate it, in various ways, to your intended public. To whom does archaeology belong? Does it matter how we tell the story?&#xA;Each week, you have tasks, readings, and or things to listen to/watch that I would like you to complete. These should be done -or at least attempted- before moving onto the next week.</description>
+      <guid>/docs/module-3/</guid>
+      <description>When Computers Were Women&#xA;This module considers how the idea of &amp;lsquo;information&amp;rsquo; as a thing distinct from the message emerged, how information became a measure of entropy and thus something that could be computed. This means we&amp;rsquo;ll have to think about the telephone network(s), business tabulation machines, World War II research into ballistics, codes, and cypers.&#xA;Turing, Shannon, the early digital computers IBM, business machines Tabulating the Census Module 3 November 10 - December 5</description>
     </item>
     <item>
-      <title>Module 4 The Victorian Internet</title>
-      <link>//localhost:1313/docs/module-4/</link>
+      <title>Module 4 The Victorian Internet; Some Deeper History</title>
+      <link>/docs/module-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-4/</guid>
-      <description> Telegraphy, Telephony Babbage, Lovelace, Jacquard Semaphores Codes, Ciphers and whatever other early things seem relevant </description>
+      <guid>/docs/module-4/</guid>
+      <description>Watson come here, I need you&#xA;This final module teases apart the strands of the foundational technologies that underpin the 20th century revolution in digital communication: the 19th century Victorian internet. We&amp;rsquo;ll look at the emergence of telegraphy and the first realization that electricity could represent sound and messages. To understand all that, we have to go further back and consider sempahore and other kinds of signalling technologies. We&amp;rsquo;ll need to consider things like the Jacquard loom and other ways of extending our cognition into physical media&amp;hellip; all the way back to cuneiform and the emergence of writing.</description>
     </item>
   </channel>
 </rss>

@@ -1,7 +1,7 @@
 ---
-title: "Essays?"
+title: "On Essays"
 date: 2025-05-01
-url: "docs/essays"
+url: "docs/on-essays"
 description: "How to write from atomic notes"
 keywords: ["reading", "annotation", "notetaking", "bibliography", "writing"]
 draft: false

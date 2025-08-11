@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General-Regulations on HIST1900A</title>
-    <link>//localhost:1313/tags/general-regulations/</link>
+    <link>/tags/general-regulations/</link>
     <description>Recent content in General-Regulations on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/general-regulations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/general-regulations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>General Carleton Regulations</title>
-      <link>//localhost:1313/docs/general-regulations/</link>
+      <link>/docs/general-regulations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/general-regulations/</guid>
+      <guid>/docs/general-regulations/</guid>
       <description>The following are the University regulations common to all History courses, that I am obligated to share with you. COPIES OF WRITTEN WORK SUBMITTED Always retain for yourself a copy of all essays, term papers, written assignments or take-home tests submitted in your courses.&#xA;PLAGIARISM The University Senate defines plagiarism as “presenting, whether intentionally or not, the ideas, expression of ideas or work of others as one’s own.” This can include:</description>
     </item>
   </channel>

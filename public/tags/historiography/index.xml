@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Historiography on HIST1900A</title>
-    <link>//localhost:1313/tags/historiography/</link>
+    <link>/tags/historiography/</link>
     <description>Recent content in Historiography on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/historiography/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/historiography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 9 The Contexts of Archaeology</title>
-      <link>//localhost:1313/docs/module-3/wk9/</link>
+      <link>/docs/module-3/wk9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-3/wk9/</guid>
+      <guid>/docs/module-3/wk9/</guid>
       <description>Goals Listen Read Do Reflect Report Back This week represents a kind of pivot point in the course. So far, we&amp;rsquo;ve largely been focused on the moment when observations in the field become data, and then on the kinds of manipulations of those data we might do. This week, we&amp;rsquo;re going to zoom out a bit and consider how we get from that level of detail to larger scale macroscopic stories about the past.</description>
     </item>
   </channel>

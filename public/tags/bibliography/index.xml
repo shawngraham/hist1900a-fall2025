@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bibliography on HIST1900A</title>
-    <link>//localhost:1313/tags/bibliography/</link>
+    <link>/tags/bibliography/</link>
     <description>Recent content in Bibliography on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/bibliography/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Aug 2025 12:27:21 -0400</lastBuildDate>
+    <atom:link href="/tags/bibliography/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Essays</title>
+      <link>/docs/on-essays/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>/docs/on-essays/</guid>
+      <description>If you&amp;rsquo;ve been practicing taking research memos, if you&amp;rsquo;ve been looking at our feedback and thinking about what I or the TAs have said, you are already 9/10s of the way to writing an essay that can critically examine some issue, backed up with meaningful scholarly insight.&#xA;Yes! It&amp;rsquo;s true!&#xA;Note Making IS Writing The secret to academic writing is that your notes have already done a lot of the thinking for you.</description>
+    </item>
     <item>
       <title>Zotero</title>
-      <link>//localhost:1313/docs/zotero/</link>
+      <link>/docs/zotero/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/zotero/</guid>
+      <guid>/docs/zotero/</guid>
       <description>Zotero instructions go here.</description>
     </item>
   </channel>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week 1 on HIST1900A</title>
-    <link>//localhost:1313/tags/week-1/</link>
+    <link>/tags/week-1/</link>
     <description>Recent content in Week 1 on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/week-1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/week-1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 1 Getting Set Up</title>
-      <link>//localhost:1313/docs/module-1/wk1/</link>
+      <link>/docs/module-1/wk1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-1/wk1/</guid>
+      <guid>/docs/module-1/wk1/</guid>
       <description>Goals Listen Read Do Reflect Report Back Goals for this week Our overarching goal starting up is to set up your digital archaeology workflow, and to map out some of the broad contours of &amp;lsquo;digital archaeology&amp;rsquo;.&#xA;Getting the workflow set up involves creating a place to lodge your materials (a data repository via Github), a place to make notes and explore code (we&amp;rsquo;re going to use a thing called JupyterLite), and a way of being social with your community of nascent digital archaeologists (a social annotation layer for the web called Hypothes.</description>
     </item>
   </channel>

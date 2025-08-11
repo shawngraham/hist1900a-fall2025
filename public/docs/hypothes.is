@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Instructions for getting Hypothesis set up.">
@@ -8,7 +8,7 @@
 
 <title>Hypothes.is · HIST1900A</title>
 
-<link rel="canonical" href="//localhost:1313/docs/hypothes.is">
+<link rel="canonical" href="/docs/hypothes.is">
 
 
 
@@ -208,9 +208,9 @@
 
         
           
-          <a class="sidebar-link " href="/docs/essays/">
+          <a class="sidebar-link " href="/docs/on-essays/">
             
-              Essays?
+              On Essays
             
           </a>
 
@@ -503,7 +503,7 @@
 
 
 <footer id="article-footer">
-  <time id="article-last-updated" datetime="2025-05-02"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-05-02</time>
+  <time id="article-last-updated" datetime="2025-08-11"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-08-11</time>
 
   
 
@@ -593,7 +593,7 @@
 
 <script type="application/javascript">
     if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js?2025-08-01')
+        navigator.serviceWorker.register('/sw.js?2025-08-11')
             .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
     }
 </script>

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syllabus on HIST1900A</title>
-    <link>//localhost:1313/tags/syllabus/</link>
+    <link>/tags/syllabus/</link>
     <description>Recent content in Syllabus on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/syllabus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/syllabus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>General Philosophy</title>
-      <link>//localhost:1313/docs/general-philosophy/</link>
+      <link>/docs/general-philosophy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/general-philosophy/</guid>
+      <guid>/docs/general-philosophy/</guid>
       <description>The Most Important Idea The internet is an emergent thing at the intersection of power, energy, information, materials, and humans. Always: humans. An archaeological perspective on this pays attention to entanglements and flows. And if we apply the appropriate lenses to how we look, we might begin to understand why and how.&#xA;Spend some time with Kate Crawford&amp;rsquo;s Calculating Empires to see what I mean (you&amp;rsquo;ll want to open this in a new browser window; try taking the audio tour, too).</description>
     </item>
     <item>
       <title>The Syllabus</title>
-      <link>//localhost:1313/docs/first-things-first/</link>
+      <link>/docs/first-things-first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/first-things-first/</guid>
+      <guid>/docs/first-things-first/</guid>
       <description>According to section 2 of FASS Undergraduate Teaching Regulations and Procedures, this course outline constitutes a contract between you the student, and me, the professor. However, the word ‘syllabus’ (aka, the course outline), it seems is based on a misreading of a misprint of the Greek word ‘sittybis’, meaning a table of contents. A table of contents is not a contract. Nevertheless, let us have a contract thus:&#xA;I, Professor Graham, agree to undertake to the best of my abilities, the task of challenging, guiding, and fostering in you, a deeper appreciation, awareness, and understanding for the ideas discussed in this class.</description>
     </item>
   </channel>

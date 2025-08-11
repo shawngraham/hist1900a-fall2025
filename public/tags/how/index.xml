@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How on HIST1900A</title>
-    <link>//localhost:1313/tags/how/</link>
+    <link>/tags/how/</link>
     <description>Recent content in How on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/how/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/how/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FAQ</title>
-      <link>//localhost:1313/docs/faq/</link>
+      <link>/docs/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/faq/</guid>
+      <guid>/docs/faq/</guid>
       <description>FAQ &amp;amp; Helpful Hints Workbench? Content? JupyterLab? What? There are two interconnected components to this course.&#xA;This website: it is the overarching context for what I am trying to teach you re digital archaeology. It specifies what to read and listen and do each week. Most of the time, when I want you to do something, it will be at your workbench. The workbench. The workbench is made of two things: a.</description>
     </item>
   </channel>
