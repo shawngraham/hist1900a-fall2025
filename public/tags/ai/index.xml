@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on HIST1900A</title>
+    <link>//localhost:1313/tags/ai/</link>
+    <description>Recent content in Ai on HIST1900A</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="//localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General Philosophy</title>
+      <link>//localhost:1313/docs/general-philosophy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/general-philosophy/</guid>
+      <description>The Most Important Idea The internet is an emergent thing at the intersection of power, energy, information, materials, and humans. Always: humans. An archaeological perspective on this pays attention to entanglements and flows. And if we apply the appropriate lenses to how we look, we might begin to understand why and how.&#xA;Spend some time with Kate Crawford&amp;rsquo;s Calculating Empires to see what I mean (you&amp;rsquo;ll want to open this in a new browser window; try taking the audio tour, too).</description>
+    </item>
+    <item>
+      <title>Week 7 Machine Learning (or &#39;AI&#39;, if we must)</title>
+      <link>//localhost:1313/docs/module-2/wk7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/module-2/wk7/</guid>
+      <description>Goals Listen Read Do Reflect Report Back Goals for this week Carrying on from our theme last week, we&amp;rsquo;ll explore two more methods that are predicated on using networks as a tool for computation. These kinds of neural network approaches can lead to what I think constitutes &amp;lsquo;an enchantment of digital archaeology&amp;rsquo;, but there is disquiet out there too&amp;hellip; then in the main reading we take digital archaeology into outer space.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Due Dates on HIST1900A</title>
+    <link>//localhost:1313/tags/due-dates/</link>
+    <description>Recent content in Due Dates on HIST1900A</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="//localhost:1313/tags/due-dates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAQ</title>
+      <link>//localhost:1313/docs/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/faq/</guid>
+      <description>FAQ &amp;amp; Helpful Hints Workbench? Content? JupyterLab? What? There are two interconnected components to this course.&#xA;This website: it is the overarching context for what I am trying to teach you re digital archaeology. It specifies what to read and listen and do each week. Most of the time, when I want you to do something, it will be at your workbench. The workbench. The workbench is made of two things: a.</description>
+    </item>
+    <item>
+      <title>Module 1 Our Present Enshittified Moment</title>
+      <link>//localhost:1313/docs/module-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/module-1/</guid>
+      <description> Everything sucks&#xA;The 1990s - 2025:&#xA;The Era of Enshittification Web 2.0 Web 1.0 Module 1 September 8 - October 3&#xA;Week 1: Sept 8 - Sept 12 Getting Your Digital Workspace Set Up Week 2: Sept 15 - Sept 19 Field Work: The Graveyard Project Week 3: Sept 22 - Sept 26 Field Work: Data Collection Issues and Representations Week 4: Sept 29 - Oct 3. Consolidation Week </description>
+    </item>
+    <item>
+      <title>Module 2 The Internet Before the Web</title>
+      <link>//localhost:1313/docs/module-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/module-2/</guid>
+      <description>So roughly, the 1960s to 1980s&#xA;Module 2 October 6 - November 7&#xA;Week 5: Oct 6 - Oct 10 What Gets Counted, Counts! Week 6: Oct 14 - Oct 17 Networks and Simulations READING WEEK Oct 20 - 24 Week 7: Oct 27 - Oct 31 Machine Learning (or &amp;lsquo;AI&amp;rsquo;, if we must) Week 8: Nov 3 - Nov 7 Consolidation Week </description>
+    </item>
+    <item>
+      <title>Module 3 Communicating</title>
+      <link>//localhost:1313/docs/module-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/module-3/</guid>
+      <description>In this final module, you will try to find the compelling story and to communicate it, in various ways, to your intended public. To whom does archaeology belong? Does it matter how we tell the story?&#xA;Each week, you have tasks, readings, and or things to listen to/watch that I would like you to complete. These should be done -or at least attempted- before moving onto the next week.</description>
+    </item>
+    <item>
+      <title>Module 4 The Victorian Internet</title>
+      <link>//localhost:1313/docs/module-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/module-4/</guid>
+      <description> Telegraphy, Telephony Babbage, Lovelace, Jacquard Semaphores Codes, Ciphers and whatever other early things seem relevant </description>
+    </item>
+  </channel>
+</rss>

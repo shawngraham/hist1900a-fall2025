@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Annotation on HIST1900A</title>
+    <link>//localhost:1313/tags/annotation/</link>
+    <description>Recent content in Annotation on HIST1900A</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/annotation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Read Like An Academic</title>
+      <link>//localhost:1313/docs/read-like-an-academic/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/read-like-an-academic/</guid>
+      <description>Reading an academic article is not like &amp;lsquo;regular&amp;rsquo; reading. You don&amp;rsquo;t start at the beginning and wait for the big reveal at the end. (You don&amp;rsquo;t write like that either.)&#xA;Read Like A Predator Read like a predator. You&amp;rsquo;re after something. Each time your read the paper, you&amp;rsquo;re after something different.&#xA;First time: just the abstract, maybe the intro Second time: intro, conclusion Third time: discussion, conclusion Fourth time: methods What you&amp;rsquo;re doing is a kind of triage.</description>
+    </item>
+    <item>
+      <title>THOMAS</title>
+      <link>//localhost:1313/THOMAS/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/THOMAS/</guid>
+      <description>Reading Historical Scholarship¶ Reading historical scholarship is not just about understanding the content, but also figuring out how the thing you&amp;rsquo;re reading is part of a broader dialogue. Allow me to introduce a useful approach to reading such material by Danna Agmon called &amp;lsquo;THOMAS&amp;rsquo;. I quote Agmon directly below:&#xA;THOMAS: A Useful Mnemonic for Reading Historical Scholarship&#xA;When reading works of historical scholarship, the following mnemonic is a helpful tool to keep in mind as you prepare for class.</description>
+    </item>
+    <item>
+      <title>Zotero</title>
+      <link>//localhost:1313/docs/zotero/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/zotero/</guid>
+      <description>Zotero instructions go here.</description>
+    </item>
+  </channel>
+</rss>

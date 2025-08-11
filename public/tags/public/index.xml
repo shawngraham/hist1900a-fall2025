@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Public on HIST1900A</title>
+    <link>//localhost:1313/tags/public/</link>
+    <description>Recent content in Public on HIST1900A</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="//localhost:1313/tags/public/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 10 Digital Public Archaeology</title>
+      <link>//localhost:1313/docs/module-3/wk10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/module-3/wk10/</guid>
+      <description>Goals Listen Read Do Reflect Report Back Goals for this week This week is about finding the compelling story, the enchanting story, the heart-centered work of archaeology.&#xA;Listen Your browser does not support the audio element. Right-click and save-as this link to download the audio file&#xA;Read Tringham, Ruth. 2020. Closely Observed Layers: Storytelling and the Heart in Kisha Supernant, Jane Eva Baxter, Natasha Lyons, Sonya Atalay (eds). Archaeologies of the Heart, Springer, Cham, 2020.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-	<meta name="generator" content="Hugo 0.128.2">
+	<meta name="generator" content="Hugo 0.128.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An Introduction to Digital Archaeology with Professor S.M. Graham">
+  <meta name="description" content="The History of the Internet with Professor S.M. Graham">
 <meta name="author" content="Shawn Graham">
 
-<title>HIST3000|CLCV3000 · An Introduction to Digital Archaeology with Professor S.M. Graham</title>
+<title>HIST1900A · The History of the Internet with Professor S.M. Graham</title>
 
-<link rel="canonical" href="/">
-
-
-
-
-  <link rel="stylesheet" href="/assets/css/home.min.28da544e1c2a7298fb816d8e07d81789b112e796e28d284ab248b105095f8278.css" integrity="">
+<link rel="canonical" href="//localhost:1313/">
 
 
 
 
-  <link rel="preconnect" href="https://docura-dsn.algolia.net" crossorigin />
+  <link rel="stylesheet" href="/assets/css/home.min.114634b783e4baf93fc35206bbd98458afb1bf68cabd9d61e75644522d1d9fe7.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
   
   <link rel="stylesheet" href="/css/component/docsearch.min.614fea5cfa814740238ac556e7a0d336d660b5bd2d325ce2c695ad8ba1ee3020.css" integrity=""/>
 
@@ -38,9 +38,8 @@
     <header id="site-header">
   
   <div id="site-header-brand">
-    <a href="/">HIST3000|CLCV3000</a>
+    <a href="/">HIST1900A</a>
   </div>
-
   
   <div id="site-header-controls">
     
@@ -57,17 +56,7 @@
     </div>
 
     
-    <div class="dropdown">
-      <button class="dropdown-btn" aria-haspopup="menu" aria-label="language selector">
-        <i class="icon icon-translate"></i>
-        <i class="icon icon-select"></i>
-      </button>
-      <ul role="menu" class="dropdown-menu">
-        
-          <li role="menuitem"><a href="#">English</a></li>
-        
-      </ul>
-    </div>
+ 
   </div>
 
   
@@ -84,7 +73,7 @@
           <li><a href="/docs" ><i class='icon icon-book'></i>Documentation</a></li>
         
           
-          <li><a href="https://shawngraham.github.io" ><i class='icon icon-circle'></i>Professor Graham</a></li>
+          <li><a href="https://shawngraham.github.io" ><i class='icon icon-head'></i>Professor Graham</a></li>
         
       </ul>
     </nav>
@@ -92,18 +81,19 @@
 
   
   <div id="site-header-search"></div>
+
 </header>
     
 <div id="site-main-content-wrapper">
   <main>
     <section class="cover">
-      <h1>HIST3000|CLCV3000</h1>
-      <h2>An Introduction to Digital Archaeology with Professor S.M. Graham</h2>
+      <h1>HIST1900A</h1>
+      <h2>The History of the Internet with Professor S.M. Graham</h2>
 
       
         <div class="github-buttons">
-  <a href="https://github.com/shawngraham/digiarch" class="github-button"  data-icon="octicon-star" data-show-count="true" aria-label="Star shawngraham/digiarch on GitHub">Star</a>
-  <a href="https://github.com/shawngraham/digiarch/fork" class="github-button"  data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork shawngraham/digiarch on GitHub">Fork</a>
+  <a href="https://github.com/shawngraham/hist1900a" class="github-button"  data-icon="octicon-star" data-show-count="true" aria-label="Star shawngraham/hist1900a on GitHub">Star</a>
+  <a href="https://github.com/shawngraham/hist1900a/fork" class="github-button"  data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork shawngraham/hist1900a on GitHub">Fork</a>
 
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 </div>
@@ -117,9 +107,10 @@
     <footer id="site-footer">
   
   <div id="site-footer-copyright">
-    <a href="https://github.com/shawngraham/digiarch" target="_blank">
-      <i class="icon icon-copyright"></i> 2019-2025 Shawn Graham
-    </a>
+<a href="https://github.com/shawngraham/digiarch" target="_blank">
+  <img src="/docs/support/cc.png" alt="Creative Commons License">
+  2025 Shawn Graham
+</a>
   </div>
 
   
@@ -139,18 +130,13 @@
 
   </div>
 
-  
-  <div id="site-footer-fund">
-
-    
-
-    
 
   </div>
 
   
+
   <div id="site-footer-love">
-    Made with <i class="icon icon-love icon-colored"></i> &nbsp;from&nbsp;<a href="https://docura.github.io/" target="_blank">Docura</a>
+    Made using &nbsp;<a href="https://docura.github.io/" target="_blank">Docura Theme for Hugo</a>
   </div>
 </footer>
     
@@ -164,21 +150,28 @@
 
 
 
+
   
-  <script src="/js/component/docsearch.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  
+  
+  
+  <script src="/js/component/local-search.js"></script>
+  
   <script type="application/javascript">
-      docsearch({
+      
+      new LocalSearch({
           container: '#site-header-search',
-          appId: 'docura',
-          indexName: 'docura',
-          apiKey: '',
+          indexUrl: '/index.json',
+          placeholder: 'Search docs...'
       });
   </script>
 
 
+
 <script type="application/javascript">
     if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js?2025-06-13')
+        navigator.serviceWorker.register('/sw.js?2025-08-05')
             .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
     }
 </script>

@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reading on HIST3000|CLCV3000</title>
-    <link>/tags/reading/</link>
-    <description>Recent content in Reading on HIST3000|CLCV3000</description>
+    <title>Reading on HIST1900A</title>
+    <link>//localhost:1313/tags/reading/</link>
+    <description>Recent content in Reading on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 04 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Week 1: Making Notes</title>
-      <link>/docs/materials/wk1-making-notes/</link>
-      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/materials/wk1-making-notes/</guid>
-      <description>I am asking you to make notes about your process, not take notes. There&amp;rsquo;s a difference.&#xA;When we make notes, we are mindfully building a foundation through a process of linking. Jupyterlite is an environment where we can write analytical code and do statistical analysis, as well as make notes. The idea is that you make your observations there in text files (that use the markdown conventions for styling the text) that link to your analysis.</description>
+      <title>Read Like An Academic</title>
+      <link>//localhost:1313/docs/read-like-an-academic/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/read-like-an-academic/</guid>
+      <description>Reading an academic article is not like &amp;lsquo;regular&amp;rsquo; reading. You don&amp;rsquo;t start at the beginning and wait for the big reveal at the end. (You don&amp;rsquo;t write like that either.)&#xA;Read Like A Predator Read like a predator. You&amp;rsquo;re after something. Each time your read the paper, you&amp;rsquo;re after something different.&#xA;First time: just the abstract, maybe the intro Second time: intro, conclusion Third time: discussion, conclusion Fourth time: methods What you&amp;rsquo;re doing is a kind of triage.</description>
+    </item>
+    <item>
+      <title>THOMAS</title>
+      <link>//localhost:1313/THOMAS/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/THOMAS/</guid>
+      <description>Reading Historical Scholarship¶ Reading historical scholarship is not just about understanding the content, but also figuring out how the thing you&amp;rsquo;re reading is part of a broader dialogue. Allow me to introduce a useful approach to reading such material by Danna Agmon called &amp;lsquo;THOMAS&amp;rsquo;. I quote Agmon directly below:&#xA;THOMAS: A Useful Mnemonic for Reading Historical Scholarship&#xA;When reading works of historical scholarship, the following mnemonic is a helpful tool to keep in mind as you prepare for class.</description>
+    </item>
+    <item>
+      <title>Zotero</title>
+      <link>//localhost:1313/docs/zotero/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/zotero/</guid>
+      <description>Zotero instructions go here.</description>
     </item>
   </channel>
 </rss>

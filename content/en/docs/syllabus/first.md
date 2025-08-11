@@ -2,9 +2,12 @@
 title: The Syllabus
 url: "docs/first-things-first"
 description: An introduction to digital archaeology.
+tags: ["grading","syllabus","submit"]
 ---
 
-The syllabus is not a contract, but rather a guide to what and how I teach.
+According to section 2 of FASS Undergraduate Teaching Regulations and Procedures, this course outline constitutes a contract between you the student, and me, the professor. However, the word ‘syllabus’ (aka, the course outline), it seems is based on a misreading of a misprint of the Greek word ‘sittybis’, meaning a table of contents. A table of contents is not a contract. Nevertheless, let us have a contract thus:
+
+> I, Professor Graham, agree to undertake to the best of my abilities, the task of challenging, guiding, and fostering in you, a deeper appreciation, awareness, and understanding for the ideas discussed in this class. You, for your part, agree to undertake the necessary intellectual work to meet me halfway, bringing your best abilities to bear, endeavouring to be receptive and prepared for all course-related activities. Together, we agree to create a community of learning and practice, such that true learning may occur.
 
 {{% admonition type=success title="Read the damned thing" %}}
 The most successful students are the ones who have actually _read_ the syllabus, and who have asked questions about it.
@@ -19,13 +22,6 @@ The complete syllabus is made up of these pages:
 + [Official Carleton Policies](syllabus-4) : general policies germane to every course
 + [Assessment Pieces](assessment) : what actually gets assessed
 
-## You Don't Have To Be Techy!
-
-I don't even know what 'techy' means. You just have to be curious. If you're curious, you'll be ok. The poet Allison Parrish once wrote,
-
-> [I] think a fundamental problem is that computers (especially tablets/phones) nowadays are designed to “de-skill,” because it’s much more difficult to monetize users who, like, actually know how their computers work and have the expectation that they should be able to independently control a computer’s function. the culture surrounding computation compounds the problem—I have students who don’t believe they CAN learn how computers work, because they’re not ‘that kind of person.’ (via aparrish@friend.camp 21 December 2024).
-
-Just breathe, take it one step at a time, and you'll be **amazed** at what you can do.
 
 ## Contacting Dr. Graham
 
@@ -42,3 +38,7 @@ If you wish to email me, be warned that I get *a lot* of email, and have several
 	- also, **if something code related doesn't work within 30 minutes, it doesn't matter how long you fight with it**. I don't want to hear that you struggled with something for 3 hours. The best thing you can do, after 30 minutes, is close the computer, walk away, come back later fresh. **Then** if it doesn't come together, write to me, write to a friend, show the problem to someone on the street, whatever. 
 
 It's ok to ask for help. I'm just asking you to help me help you more easily.
+
+Right? I'm an actual human trained to help other humans who wants to help. Amazing!
+
+![](https://imgs.xkcd.com/comics/first_internet_interaction.png)

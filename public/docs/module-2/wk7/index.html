@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="On Machine Learning">
+<meta name="author" content="Shawn Graham">
+
+<title>Week 7 Machine Learning (or &lsquo;AI&rsquo;, if we must) · HIST1900A</title>
+
+<link rel="canonical" href="//localhost:1313/docs/module-2/wk7/">
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/docs.min.e5a6caa64c807c770bf5861155fa3016f8f6682cbff1149186c251672f7a1205.css" integrity="">
+
+
+
+
+  <link rel="preconnect" href="https://-dsn.algolia.net" crossorigin />
+  
+  <link rel="stylesheet" href="/css/component/docsearch.min.614fea5cfa814740238ac556e7a0d336d660b5bd2d325ce2c695ad8ba1ee3020.css" integrity=""/>
+
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/img/icon/favicon.ico">
+<link rel="icon" href="/img/icon/icon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/img/icon/icon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/img/icon/icon-180.png" sizes="180x180">
+<meta name="theme-color" content="#fffff5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+
+
+  
+
+  </head>
+  <body>
+    <header id="site-header">
+  
+  <div id="site-header-brand">
+    <a href="/">HIST1900A</a>
+  </div>
+  
+  <div id="site-header-controls">
+    
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-haspopup="menu" aria-label="theme selector">
+        <i class="icon icon-brightness"></i>
+        <i class="icon icon-select"></i>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li role="menuitem"><button class="color-scheme" data-value="light"><i class="icon icon-light-mode"></i> Light</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="dark"><i class="icon icon-dark-mode"></i> Dark &nbsp;</button></li>
+        <li role="menuitem"><button class="color-scheme" data-value="night"><i class="icon icon-night-mode"></i> Night</button></li>
+      </ul>
+    </div>
+
+    
+ 
+  </div>
+
+  
+  <div id="site-header-menu">
+    <nav>
+      <ul>
+        
+        
+        
+          
+          <li><a href="/" ><i class='icon icon-home'></i>Home</a></li>
+        
+          
+          <li><a href="/docs"  class="active"><i class='icon icon-book'></i>Documentation</a></li>
+        
+          
+          <li><a href="https://shawngraham.github.io" ><i class='icon icon-head'></i>Professor Graham</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <div id="site-header-search"></div>
+
+</header>
+    
+<div id="site-main-content-wrapper">
+  
+  
+    
+
+
+<aside id="sidebar">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+
+  <div class="sticky"><strong class="sidebar-section">📖 Syllabus</strong>
+          
+          <a class="sidebar-link " href="/docs/first-things-first/">
+            
+              First Things First
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/general-philosophy/">
+            
+              General Philosophy
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/learning-outcomes/">
+            
+              Learning Outcomes
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/assessment/">
+            
+              Assessment
+            
+          </a>
+
+        <strong class="sidebar-section">⛏️ Course Work Overview</strong>
+          
+          <a class="sidebar-link " href="/docs/module-1/">
+            
+              Module 1
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/module-2/">
+            
+              Module 2
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/module-3/">
+            
+              Module 3
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/module-4/">
+            
+              Module 4
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/exit-ticket/">
+            
+              Exit Ticket
+            
+          </a>
+
+        <strong class="sidebar-section">🏺 Support</strong>
+          
+          <a class="sidebar-link " href="/docs/read-like-an-academic/">
+            
+              Read Like An Academic
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/a-research-memo-pr%C3%A9cis/">
+            
+              A Research Memo &amp; Précis
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/thomas/">
+            
+              THOMAS
+            
+          </a>
+
+        
+          
+          <a class="sidebar-link " href="/docs/zotero/">
+            
+              Zotero
+            
+          </a>
+
+        
+  </div>
+</aside>
+
+  
+  <main>
+    <article id="article">
+      <nav id="article-nav">
+  <button id="article-nav-menu-btn"><i class="icon icon-menu"></i> Course TOC</button>
+  <button id="article-nav-toc-btn"><i class="icon icon-toc"></i> On this page</button>
+</nav>
+      <header id="article-header">
+  <h1>Week 7 Machine Learning (or &lsquo;AI&rsquo;, if we must)</h1>
+</header>
+      <div id="article-content">
+        
+        
+        <ul>
+<li><a href="/docs/module-2/wk7/#goals">Goals</a></li>
+<li><a href="/docs/module-2/wk7/#listen">Listen</a></li>
+<li><a href="/docs/module-2/wk7/#read">Read</a></li>
+<li><a href="/docs/module-2/wk7/#do">Do</a></li>
+<li><a href="/docs/module-2/wk7/#reflect">Reflect</a></li>
+<li><a href="/docs/module-2/wk7/#report">Report Back</a></li>
+</ul>
+<h3 id="goals-for-this-week">Goals for this week</h3>
+<p><a name="goals"></a></p>
+<p>Carrying on from our theme last week, we&rsquo;ll explore two more methods that are predicated on using networks as a tool for computation. These kinds of neural network approaches can lead to what I think constitutes &lsquo;an enchantment of digital archaeology&rsquo;, but there is disquiet out there too&hellip; then in the main reading we take digital archaeology into outer space.</p>
+<h3 id="listen">Listen</h3>
+<p><a name="listen"></a></p>
+<p>Let&rsquo;s change things up with a video this week; this is me talking about the history of generative ai and some of the things I&rsquo;m thinking about.</p>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/1035806713?h=03d580fcf2" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+<p>That&rsquo;s a longish video (about 40 minutes); play it at double-speed if you want.</p>
+<h3 id="read">Read</h3>
+<p><a name="read"></a></p>
+<ul>
+<li>Perry S. The Enchantment of the Archaeological Record. European Journal of Archaeology. 2019;22(3):354-371. doi:10.1017/eaa.2019.24 <a href="https://www-cambridge-org.proxy.library.carleton.ca/core/journals/european-journal-of-archaeology/article/enchantment-of-the-archaeological-record/6B71DCDB28D3FABE22660EEA860ED7FE" target="_blank">link</a></li>
+<li>Walsh, Justin, Shawn Graham, Alice C. Gorman, Chantal Brousseau, Salma Abdullah. 2024. Archaeology in space: The Sampling Quadrangle Assemblages Research Experiment (SQuARE) on the International Space Station. Report 1: Squares 03 and 05. <em>PLOS One</em>
+<a href="https://doi.org/10.1371/journal.pone.0304229">https://doi.org/10.1371/journal.pone.0304229</a> <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0304229" target="_blank">link</a>.</li>
+</ul>
+<p>Then select ONE of:</p>
+<ul>
+<li>Morgan, Colleen. 2019. &lsquo;Avatars, Monsters, and Machines: A Cyborg Archaeology&rsquo;. <em>European Journal of Archaeology</em> 22.3, 324-337 <a href="https://www.cambridge.org/core/journals/european-journal-of-archaeology/article/avatars-monsters-and-machines-a-cyborg-archaeology/CD467A5E5232B50D6CAA4D72091FCFA9/core-reader" target="_blank">link</a></li>
+<li>Kersel, Morag. 2016. ‘Living a Semi-digital Kinda Life’ in Erin Walcek Averett, Jody Michael Gordon, and Derek B. Counts (eds) <em>Mobilizing the Past for a Digital Future: The Potential of Digital Archaeology</em>. Grand Forks: The Digital Press at the University of North Dakota. pp. 475-492. <a href="https://digitalpressatund.files.wordpress.com/2016/09/5_1_kersel.pdf" target="_blank">link</a></li>
+<li>Huggett, J. (2022). &lsquo;Is Less More? Slow Data and Datafication in Archaeology&rsquo;. In K. Garstki (Ed.), <em>Critical Archaeology in the Digital Age</em>. UCLA Cotsen Institute of Archaeology Press. pp. 97–110. <a href="https://escholarship.org/uc/item/0vh9t9jq#page=112" target="_blank">https://escholarship.org/uc/item/0vh9t9jq#page=112</a> (scroll to chapter 6 if that link doesn&rsquo;t quite take you there)</li>
+</ul>
+<h3 id="do">Do</h3>
+<p><a name="do"></a></p>
+<ul>
+<li>Build an <a href="../../materials/wk7-images">image classifier </a></li>
+<li>Resurrect the <a href="../../materials/wk7-generative-ai">ghost of Flinders&rsquo; Petrie&hellip;. kinda</a></li>
+<li>Talk with <a href="../../materials/wk7-rag">your Harris Matrix Data</a></li>
+</ul>
+<h3 id="record-and-reflect">Record and Reflect</h3>
+<p><a name="reflect"></a></p>
+<p>Your github repository is where you will deposit all of the artefacts you make for this course, including your reflections. Depositing everything you make gives me a vision of your process and learning, so I encourage you to be expansive.</p>
+<p><strong>Make sure to &lsquo;invite user shawngraham&rsquo;</strong> to your repository so that I may view it.</p>
+<ol>
+<li>
+<p>As you did for week one, make another notes.md entry and put it in your github repository for week 7.</p>
+</li>
+<li>
+<p>In your reflective journal, drawing on your annotations of what you&rsquo;ve read, your notes from what you&rsquo;ve listened to, and the work you&rsquo;ve done (both the successes and the not-quite-successes) discuss these applications of neural networks. Think about the ethical issues that these approaches might raise, the questions of labour. Think about the friction you encounter using these. Begin the reflection by quoting (w/ citation) one sentence from the readings that resonates with you. You might select something that is personally meaningful, or leaves you confused, or makes you happy, or intrigues you to know more&hellip; explain. Point to evidence in your log that underpins your reflection. Put your journal entry in your repo.</p>
+</li>
+</ol>
+<h3 id="log-your-work">Log Your Work</h3>
+<p><a name="report"></a></p>
+<p>You can log the link to your repository <a href="https://forms.gle/XLpFTRXxknJ4RSbS7" target="_blank">in this form</a></p>
+
+      </div>
+      
+
+
+
+
+
+
+
+
+  
+  
+  
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+        
+
+        
+          
+        
+
+      
+    
+
+
+<footer id="article-footer">
+  <time id="article-last-updated" datetime="0001-01-01"><i class="icon icon-calendar"></i>&nbsp;Last updated: 0001-01-01</time>
+
+  
+    <a id="article-prev-link" href="/docs/zotero/"><i class="icon icon-prev icon-colored"></i> Prev</a>
+  
+
+  
+</footer>
+    </article>
+    <aside id="toc">
+  <span class="btn-close"><i class="icon icon-close"></i></span>
+  <div class="sticky">
+    <strong><i class="icon icon-toc"></i> On this page</strong>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#goals-for-this-week">Goals for this week</a></li>
+        <li><a href="#listen">Listen</a></li>
+        <li><a href="#read">Read</a></li>
+        <li><a href="#do">Do</a></li>
+        <li><a href="#record-and-reflect">Record and Reflect</a></li>
+        <li><a href="#log-your-work">Log Your Work</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</aside>
+  </main>
+</div>
+
+    <footer id="site-footer">
+  
+  <div id="site-footer-copyright">
+<a href="https://github.com/shawngraham/digiarch" target="_blank">
+  <img src="/docs/support/cc.png" alt="Creative Commons License">
+  2025 Shawn Graham
+</a>
+  </div>
+
+  
+  <div id="site-footer-social">
+
+    
+
+    
+
+    
+    <a href="https://github.com/shawngraham" target="_blank" aria-label="github url">
+      <i class="icon icon-github icon-colored"></i>
+    </a>
+    
+
+    
+
+  </div>
+
+
+  </div>
+
+  
+
+  <div id="site-footer-love">
+    Made using &nbsp;<a href="https://docura.github.io/" target="_blank">Docura Theme for Hugo</a>
+  </div>
+</footer>
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/base.min.js"></script>
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  
+  
+  
+  <script src="/js/component/local-search.js"></script>
+  
+  <script type="application/javascript">
+      
+      new LocalSearch({
+          container: '#site-header-search',
+          indexUrl: '/index.json',
+          placeholder: 'Search docs...'
+      });
+  </script>
+
+
+
+<script type="application/javascript">
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js?2025-08-01')
+            .catch(function(err) {console.error('ServiceWorker registration failed: ', err);});
+    }
+</script>
+  </body>
+</html>

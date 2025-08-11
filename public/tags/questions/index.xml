@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Questions on HIST1900A</title>
+    <link>//localhost:1313/tags/questions/</link>
+    <description>Recent content in Questions on HIST1900A</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="//localhost:1313/tags/questions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Outcomes</title>
+      <link>//localhost:1313/docs/learning-outcomes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docs/learning-outcomes/</guid>
+      <description>Questions Here are some theses.&#xA;Meaning depends on context. Nothing exists on its own. In the process of becoming, we respond to the materials we work with, and they respond to us. Therefore, networks (of all kinds) are fundamental to how we live in the world. A network is present whenever there is a relationship between two entities along which information flows. Network shapes and flow give rise to emergent structures.</description>
+    </item>
+  </channel>
+</rss>

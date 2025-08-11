@@ -4,15 +4,18 @@ enableGitInfo: true
 
 defaultContentLanguage: en
 
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
 languages:
   en:
     weight: 1
     languageName: English
     languageCode: en-US
     contentDir: content/en
-    title: HIST3000|CLCV3000
+    title: HIST1900A
     params:
-      description: An Introduction to Digital Archaeology with Professor S.M. Graham
+      description: The History of the Internet with Professor S.M. Graham
 
 services:
   googleAnalytics:
@@ -36,7 +39,7 @@ params:
     dark: '#121212'
 
   years:
-    start: 2019
+    start: 
     present: 2025
 
   social:
@@ -55,12 +58,13 @@ params:
   algolia:
     en:
       container: '#site-header-search'
-      appId: 'docura'
-      indexName: 'docura'
+      appId: ''
+      indexName: ''
       apiKey: ''
 
+
   home:
-    repository: shawngraham/digiarch
+    repository: shawngraham/hist1900a
 
 menu:
   main:
@@ -79,5 +83,5 @@ menu:
     - url: https://shawngraham.github.io
       name: Professor Graham
       identifier: smg
-      pre: "<i class='icon icon-circle'></i>"
+      pre: "<i class='icon icon-head'></i>"
       weight: 2

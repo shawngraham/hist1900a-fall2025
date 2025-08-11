@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hypothesis on HIST3000|CLCV3000</title>
-    <link>/tags/hypothesis/</link>
-    <description>Recent content in Hypothesis on HIST3000|CLCV3000</description>
+    <title>Hypothesis on HIST1900A</title>
+    <link>//localhost:1313/tags/hypothesis/</link>
+    <description>Recent content in Hypothesis on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/hypothesis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/hypothesis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Week 1: Hypothesis</title>
-      <link>/docs/materials/wk1-hypothesis/</link>
+      <title>Setting up the Hypothesis Collaborative Reading Environment</title>
+      <link>//localhost:1313/docs/materials/hypothesis/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/materials/wk1-hypothesis/</guid>
-      <description>While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST3000|CLCV3000 reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation! Sometimes, the person to whom you&amp;rsquo;re replying might be a previous year&amp;rsquo;s student, but that&amp;rsquo;s ok; they might enter into conversation with you.</description>
+      <guid>//localhost:1313/docs/materials/hypothesis/</guid>
+      <description>While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST1900a reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation! Be respectful!&#xA;There is a student guide to Hypothes.is behind this link.</description>
     </item>
   </channel>
 </rss>
