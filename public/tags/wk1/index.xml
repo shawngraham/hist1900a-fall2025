@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wk1 on HIST1900A</title>
-    <link>/tags/wk1/</link>
+    <link>//localhost:1313/tags/wk1/</link>
     <description>Recent content in Wk1 on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 19 Aug 2025 15:10:44 -0400</lastBuildDate>
-    <atom:link href="/tags/wk1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/wk1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hypothesis</title>
-      <link>/docs/hypothesis/</link>
+      <link>//localhost:1313/docs/hypothesis/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/hypothesis/</guid>
+      <guid>//localhost:1313/docs/hypothesis/</guid>
       <description>Hypothes.is: A Tool for Collaborative Reading &amp;amp; Annotation The first thing I want you to do is to set up an account with the Hypothes.is tool.&#xA;While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST1900a reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation!</description>
     </item>
   </channel>

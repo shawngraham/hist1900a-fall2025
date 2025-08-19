@@ -2,136 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HIST1900A</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 19 Aug 2025 15:28:20 -0400</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Aug 2025 15:31:06 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exit Ticket</title>
-      <link>/docs/exit-ticket/</link>
+      <link>//localhost:1313/docs/exit-ticket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/exit-ticket/</guid>
+      <guid>//localhost:1313/docs/exit-ticket/</guid>
       <description>At the end of the course, as a final exam, you will write an &amp;rsquo;exit ticket&amp;rsquo;. The Exit Ticket will consist of a single question that you respond to; you will make explicit reference to the various readings (which you have already created précis notes for) in order to craft your response. I will release that question to you by week 12.&#xA;The second part of the Exit Ticket is where you evaluate your development as a student in this course according to the explicit learning outcomes.</description>
     </item>
     <item>
       <title>Hypothesis</title>
-      <link>/docs/hypothesis/</link>
+      <link>//localhost:1313/docs/hypothesis/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/hypothesis/</guid>
+      <guid>//localhost:1313/docs/hypothesis/</guid>
       <description>Hypothes.is: A Tool for Collaborative Reading &amp;amp; Annotation The first thing I want you to do is to set up an account with the Hypothes.is tool.&#xA;While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST1900a reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation!</description>
     </item>
     <item>
       <title>A Research Memo &amp; Précis</title>
-      <link>/docs/a-research-memo-pr%C3%A9cis/</link>
+      <link>//localhost:1313/docs/a-research-memo-pr%C3%A9cis/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/a-research-memo-pr%C3%A9cis/</guid>
+      <guid>//localhost:1313/docs/a-research-memo-pr%C3%A9cis/</guid>
       <description>Some of our in-class work will be devoted to crafting research memos that use the rhetorical précis as formulated by the historian Chad Black.&#xA;courtesy of Chad Black, quoted in full below with a few small friendly amendments&#xA;The Rhetorical Précis is a formula designed to help you move beyond simple summary to a more analytical synopsis of a work. As such, the précis, in a compact form, forces you to think about both the content and method of a piece of scholarship.</description>
     </item>
     <item>
       <title>On Essays</title>
-      <link>/docs/on-essays/</link>
+      <link>//localhost:1313/docs/on-essays/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/on-essays/</guid>
+      <guid>//localhost:1313/docs/on-essays/</guid>
       <description>If you&amp;rsquo;ve been practicing taking research memos, if you&amp;rsquo;ve been looking at our feedback and thinking about what I or the TAs have said, you are already 9/10s of the way to writing an essay that can critically examine some issue, backed up with meaningful scholarly insight.&#xA;Yes! It&amp;rsquo;s true!&#xA;Note Making IS Writing The secret to academic writing is that your notes have already done a lot of the thinking for you.</description>
     </item>
     <item>
       <title>Read Like An Academic</title>
-      <link>/docs/read-like-an-academic/</link>
+      <link>//localhost:1313/docs/read-like-an-academic/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/read-like-an-academic/</guid>
+      <guid>//localhost:1313/docs/read-like-an-academic/</guid>
       <description>Reading an academic article is not like &amp;lsquo;regular&amp;rsquo; reading. You don&amp;rsquo;t start at the beginning and wait for the big reveal at the end. (You don&amp;rsquo;t write like that either.)&#xA;Read Like A Predator Read like a predator. You&amp;rsquo;re after something. Each time your read the paper, you&amp;rsquo;re after something different.&#xA;First time: just the abstract, maybe the intro Second time: intro, conclusion Third time: discussion, conclusion Fourth time: methods What you&amp;rsquo;re doing is a kind of triage.</description>
     </item>
     <item>
       <title>THOMAS</title>
-      <link>/docs/thomas/</link>
+      <link>//localhost:1313/docs/thomas/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/thomas/</guid>
+      <guid>//localhost:1313/docs/thomas/</guid>
       <description>Reading Historical Scholarship¶ Reading historical scholarship is not just about understanding the content, but also figuring out how the thing you&amp;rsquo;re reading is part of a broader dialogue. Allow me to introduce a useful approach to reading such material by Danna Agmon called &amp;lsquo;THOMAS&amp;rsquo;. I quote Agmon directly below:&#xA;THOMAS: A Useful Mnemonic for Reading Historical Scholarship&#xA;When reading works of historical scholarship, the following mnemonic is a helpful tool to keep in mind as you prepare for class.</description>
     </item>
     <item>
       <title>Zotero</title>
-      <link>/docs/zotero/</link>
+      <link>//localhost:1313/docs/zotero/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/zotero/</guid>
+      <guid>//localhost:1313/docs/zotero/</guid>
       <description>Zotero instructions go here.</description>
     </item>
     <item>
       <title>Assessment</title>
-      <link>/docs/assessment/</link>
+      <link>//localhost:1313/docs/assessment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/assessment/</guid>
+      <guid>//localhost:1313/docs/assessment/</guid>
       <description>Entrance Tickets These are ungraded responses to prompts that I will use to kick-off discussions. On days with an &amp;rsquo;entrance ticket&amp;rsquo;, you will have jotted a quick response on a notecard before class (and you&amp;rsquo;ll have printed your name on it too). I will collect these at the start of class. Their completion however will count towards your &amp;lsquo;academic presence&amp;rsquo;.&#xA;Hypothes.is Hypothesis is a tool to hone your academic reading skills.</description>
     </item>
     <item>
-      <title>FAQ</title>
-      <link>/docs/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/faq/</guid>
-      <description>FAQ &amp;amp; Helpful Hints Workbench? Content? JupyterLab? What? There are two interconnected components to this course.&#xA;This website: it is the overarching context for what I am trying to teach you re digital archaeology. It specifies what to read and listen and do each week. Most of the time, when I want you to do something, it will be at your workbench. The workbench. The workbench is made of two things: a.</description>
-    </item>
-    <item>
       <title>General Carleton Regulations</title>
-      <link>/docs/general-regulations/</link>
+      <link>//localhost:1313/docs/general-regulations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/general-regulations/</guid>
+      <guid>//localhost:1313/docs/general-regulations/</guid>
       <description>The following are the University regulations common to all History courses, that I am obligated to share with you. COPIES OF WRITTEN WORK SUBMITTED Always retain for yourself a copy of all essays, term papers, written assignments or take-home tests submitted in your courses.&#xA;PLAGIARISM The University Senate defines plagiarism as “presenting, whether intentionally or not, the ideas, expression of ideas or work of others as one’s own.” This can include:</description>
     </item>
     <item>
       <title>General Philosophy</title>
-      <link>/docs/general-philosophy/</link>
+      <link>//localhost:1313/docs/general-philosophy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/general-philosophy/</guid>
+      <guid>//localhost:1313/docs/general-philosophy/</guid>
       <description>The Most Important Idea The internet is an emergent thing at the intersection of power, energy, information, materials, and humans. Always: humans. An archaeological perspective on this pays attention to entanglements and flows. And if we apply the appropriate lenses to how we look, we might begin to understand why and how.&#xA;Spend some time with Kate Crawford&amp;rsquo;s Calculating Empires to see what I mean (you&amp;rsquo;ll want to open this in a new browser window; try taking the audio tour, too).</description>
     </item>
     <item>
       <title>Learning Outcomes</title>
-      <link>/docs/learning-outcomes/</link>
+      <link>//localhost:1313/docs/learning-outcomes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/learning-outcomes/</guid>
+      <guid>//localhost:1313/docs/learning-outcomes/</guid>
       <description>Questions Here are some theses.&#xA;Meaning depends on context. Nothing exists on its own. In the process of becoming, we respond to the materials we work with, and they respond to us. Therefore, networks (of all kinds) are fundamental to how we live in the world. A network is present whenever there is a relationship between two entities along which information flows. Network shapes and flow give rise to emergent structures.</description>
     </item>
     <item>
       <title>Module 1 Our Present Enshittified Moment</title>
-      <link>/docs/module-1/</link>
+      <link>//localhost:1313/docs/module-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-1/</guid>
+      <guid>//localhost:1313/docs/module-1/</guid>
       <description>Enshittification, or, Why Does The Web Suck Right Now?&#xA;This module will look at the web as it is in September 2025. The web is not a synonym for the internet! But it&amp;rsquo;s the layer that you encounter most often, and it&amp;rsquo;s changing rapidly. We&amp;rsquo;ll work backwards from this current moment of change and destruction (the deployment of AI into search and writing), back to the era of user generated &amp;lsquo;content&amp;rsquo; and why &amp;lsquo;content&amp;rsquo; is a rhetorical move that diminishes human creativity, past the dot-com boom to the first bloom of the web in the 1990s.</description>
     </item>
     <item>
       <title>Module 2 The Internet Before the Web</title>
-      <link>/docs/module-2/</link>
+      <link>//localhost:1313/docs/module-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-2/</guid>
+      <guid>//localhost:1313/docs/module-2/</guid>
       <description>Which comes first, the technology or the need for the technology?&#xA;In this module, we&amp;rsquo;ll look at the emergence of digital computing as a cold-war technology and how various networks first emerged and were inter-networked. ARPAnet was not the only contender! We&amp;rsquo;ll look at how various standards emerged and the political and social contexts of their deployment.&#xA;The time period explored will roughly correspond with that period of time from the 1950s to the 1980s, more or less overlapping with the Cold War.</description>
     </item>
     <item>
       <title>Module 3 The Dawn of the Information Age</title>
-      <link>/docs/module-3/</link>
+      <link>//localhost:1313/docs/module-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-3/</guid>
+      <guid>//localhost:1313/docs/module-3/</guid>
       <description>When Computers Filled The Room&#xA;This module considers how the idea of &amp;lsquo;information&amp;rsquo; as a thing distinct from the message emerged, how information became a measure of entropy and thus something that could be computed. This means we&amp;rsquo;ll have to think about the telephone network(s), business tabulation machines, World War II research into ballistics, codes, and cypers.&#xA;Things to Read and Annotate and By When Read by November 12: Vannevar Bush&amp;rsquo;s As We May Think.</description>
     </item>
     <item>
       <title>Module 4 The Victorian Internet; Some Deeper History</title>
-      <link>/docs/module-4/</link>
+      <link>//localhost:1313/docs/module-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-4/</guid>
+      <guid>//localhost:1313/docs/module-4/</guid>
       <description>Watson come here, I need you&#xA;This final module teases apart the strands of the foundational technologies that underpin the 20th century revolution in digital communication: the 19th century Victorian internet. We&amp;rsquo;ll look at the emergence of telegraphy and the first realization that electricity could represent sound and messages. To understand all that, we have to go further back and consider sempahore and other kinds of signalling technologies. We&amp;rsquo;ll need to consider things like the Jacquard loom and other ways of extending our cognition into physical media&amp;hellip; all the way back to cuneiform and the emergence of writing.</description>
     </item>
     <item>
       <title>The History of the Internet is the History of Today</title>
-      <link>/docs/overview/</link>
+      <link>//localhost:1313/docs/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/overview/</guid>
+      <guid>//localhost:1313/docs/overview/</guid>
       <description>The ‘history of the internet’ is more than the history of a particular package of technologies. It’s a story about power, people, culture, and materials. The ‘internet’ isn’t a thing, it’s a place and since time and space are unified, it’s an age. What is an appropriate frame to study the internet, and once we’ve decided on that, what might we see? I’m not sure where this will take us – but wherever we go, the journey will change how you think about the world.</description>
     </item>
     <item>
       <title>The Syllabus</title>
-      <link>/docs/first-things-first/</link>
+      <link>//localhost:1313/docs/first-things-first/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/first-things-first/</guid>
+      <guid>//localhost:1313/docs/first-things-first/</guid>
       <description>According to section 2 of FASS Undergraduate Teaching Regulations and Procedures, this course outline constitutes a contract between you the student, and me, the professor. However, the word ‘syllabus’ (aka, the course outline), it seems is based on a misreading of a misprint of the Greek word ‘sittybis’, meaning a table of contents. A table of contents is not a contract. Nevertheless, let us have a contract thus:&#xA;I, Professor Graham, agree to undertake to the best of my abilities, the task of challenging, guiding, and fostering in you, a deeper appreciation, awareness, and understanding for the ideas discussed in this class.</description>
     </item>
   </channel>
