@@ -6,7 +6,7 @@
     <description>Recent content in Docs on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 11 Aug 2025 12:27:21 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Aug 2025 12:33:27 -0400</lastBuildDate>
     <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exit Ticket</title>
@@ -16,10 +16,10 @@
       <description>At the end of the course, as a final exam, you will write an &amp;rsquo;exit ticket&amp;rsquo;. The Exit Ticket will consist of a single question that you respond to; you will make explicit reference to the various readings (which you have already created précis notes for) in order to craft your response. I will release that question to you by week 12.&#xA;The second part of the Exit Ticket is where you evaluate your development as a student in this course according to the explicit learning outcomes.</description>
     </item>
     <item>
-      <title>Hypothes.is</title>
-      <link>/docs/hypothes.is</link>
+      <title>Hypothesis</title>
+      <link>/docs/hypothesis/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/hypothes.is</guid>
+      <guid>/docs/hypothesis/</guid>
       <description>Hypothes.is: A Tool for Collaborative Reading &amp;amp; Annotation The first thing I want you to do is to set up an account with the Hypothes.is tool.&#xA;While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST1900a reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation!</description>
     </item>
     <item>
@@ -62,7 +62,7 @@
       <link>/docs/assessment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/assessment/</guid>
-      <description>Entrance Tickets These are ungraded responses to prompts that I will use to kick-off discussions. On days with an &amp;rsquo;entrance ticket&amp;rsquo;, you will have jotted a quick response on a notecard before class (and you&amp;rsquo;ll have printed your name on it too). I will collect these at the start of class. Their completion however will count towards your &amp;lsquo;academic presence&amp;rsquo;.&#xA;In-class exercises Periodically, we will do some in-class writing where you draw on the most recent assigned readings and lectures.</description>
+      <description>Entrance Tickets These are ungraded responses to prompts that I will use to kick-off discussions. On days with an &amp;rsquo;entrance ticket&amp;rsquo;, you will have jotted a quick response on a notecard before class (and you&amp;rsquo;ll have printed your name on it too). I will collect these at the start of class. Their completion however will count towards your &amp;lsquo;academic presence&amp;rsquo;.&#xA;Hypothes.is Hypothesis is a tool to hone your academic reading skills.</description>
     </item>
     <item>
       <title>FAQ</title>
@@ -111,7 +111,7 @@
       <link>/docs/module-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/module-3/</guid>
-      <description>When Computers Were Women&#xA;This module considers how the idea of &amp;lsquo;information&amp;rsquo; as a thing distinct from the message emerged, how information became a measure of entropy and thus something that could be computed. This means we&amp;rsquo;ll have to think about the telephone network(s), business tabulation machines, World War II research into ballistics, codes, and cypers.&#xA;Turing, Shannon, the early digital computers IBM, business machines Tabulating the Census Module 3 November 10 - December 5</description>
+      <description>When Computers Filled The Room&#xA;This module considers how the idea of &amp;lsquo;information&amp;rsquo; as a thing distinct from the message emerged, how information became a measure of entropy and thus something that could be computed. This means we&amp;rsquo;ll have to think about the telephone network(s), business tabulation machines, World War II research into ballistics, codes, and cypers.&#xA;Module 3 For the précis notes in this module, read Vannevar Bush&amp;rsquo;s As We May Think.</description>
     </item>
     <item>
       <title>Module 4 The Victorian Internet; Some Deeper History</title>
@@ -133,90 +133,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/docs/first-things-first/</guid>
       <description>According to section 2 of FASS Undergraduate Teaching Regulations and Procedures, this course outline constitutes a contract between you the student, and me, the professor. However, the word ‘syllabus’ (aka, the course outline), it seems is based on a misreading of a misprint of the Greek word ‘sittybis’, meaning a table of contents. A table of contents is not a contract. Nevertheless, let us have a contract thus:&#xA;I, Professor Graham, agree to undertake to the best of my abilities, the task of challenging, guiding, and fostering in you, a deeper appreciation, awareness, and understanding for the ideas discussed in this class.</description>
-    </item>
-    <item>
-      <title>Week 1 Getting Set Up</title>
-      <link>/docs/module-1/wk1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-1/wk1/</guid>
-      <description>Goals Listen Read Do Reflect Report Back Goals for this week Our overarching goal starting up is to set up your digital archaeology workflow, and to map out some of the broad contours of &amp;lsquo;digital archaeology&amp;rsquo;.&#xA;Getting the workflow set up involves creating a place to lodge your materials (a data repository via Github), a place to make notes and explore code (we&amp;rsquo;re going to use a thing called JupyterLite), and a way of being social with your community of nascent digital archaeologists (a social annotation layer for the web called Hypothes.</description>
-    </item>
-    <item>
-      <title>Week 10 Digital Public Archaeology</title>
-      <link>/docs/module-3/wk10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-3/wk10/</guid>
-      <description>Goals Listen Read Do Reflect Report Back Goals for this week This week is about finding the compelling story, the enchanting story, the heart-centered work of archaeology.&#xA;Listen Your browser does not support the audio element. Right-click and save-as this link to download the audio file&#xA;Read Tringham, Ruth. 2020. Closely Observed Layers: Storytelling and the Heart in Kisha Supernant, Jane Eva Baxter, Natasha Lyons, Sonya Atalay (eds). Archaeologies of the Heart, Springer, Cham, 2020.</description>
-    </item>
-    <item>
-      <title>Week 11 Data Publishing, Replication, Reproducibility</title>
-      <link>/docs/module-3/wk11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-3/wk11/</guid>
-      <description>Goals Listen Read Do Reflect Report Back Goals for this week This week, I want to spend some time thinking about how archaeologists make their data available - or not - for replication of their studies. After all, excavation is destruction.&#xA;Listen You&amp;rsquo;ve did it gang; you&amp;rsquo;ve reached the end. This week&amp;rsquo;s podcast features three amazing digital archaeologists, and one evil villain.&#xA;Your browser does not support the audio element.</description>
-    </item>
-    <item>
-      <title>Week 12 Consolidation III</title>
-      <link>/docs/module-3/wk12/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-3/wk12/</guid>
-      <description>Goals Do Report Back A Choice Goals for this week Pick the most impressive thing you&amp;rsquo;ve done so far in this course (any week) and do it over but explain what&amp;rsquo;s different this time. Reflect on the different between reproducing something and replicating something. How is &amp;lsquo;replication&amp;rsquo; a critical feature of digital archaeology, and how does that tie into the different audiences we write for? How has your thinking evolved since the end of Module 2?</description>
-    </item>
-    <item>
-      <title>Week 2 Field work and ethical data collection</title>
-      <link>/docs/module-1/wk2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-1/wk2/</guid>
-      <description>Goals Listen Read Do Reflect Report Back Goals for this week Find a local historic graveyard (see the alternative if necessary) Begin recording some gravestones Create a rough map of the site Listen Your browser does not support the audio element. Right-click and save-as this link to download the audio file&#xA;DO This week and next you will head out into your local community to map a historical graveyard, and record some gravestones, using a digital recording tool called &amp;lsquo;Kobo Toolbox&amp;rsquo;.</description>
-    </item>
-    <item>
-      <title>Week 3 Field work and ethical data collection II</title>
-      <link>/docs/module-1/wk3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-1/wk3/</guid>
-      <description>Goals Listen Read Do Reflect Report Back Goals for this week Continue the Graveyard Project and reconsider our recording system Obtain data for the eventual creation of 3d models of grave stones Develop a webmap of the site Explore the connections between what you are doing and what you are reading: graveyards are emotional spaces Listen Your browser does not support the audio element. Right-click and save-as this link to download the audio file</description>
-    </item>
-    <item>
-      <title>Week 4 Consolidation I</title>
-      <link>/docs/module-1/wk4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-1/wk4/</guid>
-      <description>Goals Do Report Back Goals for this week Use this time to catch up on anything you didn&amp;rsquo;t read, to try some of the exercises over again, and to consolidate what you&amp;rsquo;ve achieved so far. Do You may make your repository private or public.&#xA;If you make it private, Make sure to &amp;lsquo;invite user shawngraham&amp;rsquo; to your repository so that I may view it.&#xA;Create a short consolidation document that reflects on this first module and your growth (one or two pages is fine).</description>
-    </item>
-    <item>
-      <title>Week 5 What Gets Counted, Counts!</title>
-      <link>/docs/module-2/wk5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-2/wk5/</guid>
-      <description>Goals Listen Read Do Reflect Report Back Goals for this week uncover the ways in which &amp;lsquo;counting&amp;rsquo; hides or highlights the past encounter CSVs, SQL, and R and how to do some basic statistics on archaeological information Listen Your browser does not support the audio element. Right-click and save-as this link to download the audio file&#xA;Read D&amp;rsquo;Ignazio, Catherine and Klein, L. 2020. ‘What gets counted, counts’. From Data Feminism link Labrador, Angela.</description>
-    </item>
-    <item>
-      <title>Week 6 Networks and Simulations</title>
-      <link>/docs/module-2/wk6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-2/wk6/</guid>
-      <description>Goals Listen Read Do Reflect Report Back In the podcast episode, I talk about what it is I find &amp;rsquo;enchanting&amp;rsquo; about digital archaeology. A lot of that concerns the idea of &amp;rsquo;emergence&amp;rsquo;, that if things are connected together like this then interesting unpredictable things might emerge at a higher level of complexity. Therefore, we&amp;rsquo;ll spend time with networks: first to represent archaeological data, and then as a substrate for computing archaeological data.</description>
-    </item>
-    <item>
-      <title>Week 7 Machine Learning (or &#39;AI&#39;, if we must)</title>
-      <link>/docs/module-2/wk7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-2/wk7/</guid>
-      <description>Goals Listen Read Do Reflect Report Back Goals for this week Carrying on from our theme last week, we&amp;rsquo;ll explore two more methods that are predicated on using networks as a tool for computation. These kinds of neural network approaches can lead to what I think constitutes &amp;lsquo;an enchantment of digital archaeology&amp;rsquo;, but there is disquiet out there too&amp;hellip; then in the main reading we take digital archaeology into outer space.</description>
-    </item>
-    <item>
-      <title>Week 8 Consolidation II</title>
-      <link>/docs/module-2/wk8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-2/wk8/</guid>
-      <description>Goals Do Report Back Goals for this week Use this time to catch up on anything you didn&amp;rsquo;t read, to try some of the exercises over again, and to consolidate what you&amp;rsquo;ve achieved so far. Do You may make your repository private or public.&#xA;If you make it private, Make sure to &amp;lsquo;invite user shawngraham&amp;rsquo; to your repository so that I may view it.&#xA;Create a short consolidation document that reflects on this second module and your growth (one or two pages is fine).</description>
-    </item>
-    <item>
-      <title>Week 9 The Contexts of Archaeology</title>
-      <link>/docs/module-3/wk9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-3/wk9/</guid>
-      <description>Goals Listen Read Do Reflect Report Back This week represents a kind of pivot point in the course. So far, we&amp;rsquo;ve largely been focused on the moment when observations in the field become data, and then on the kinds of manipulations of those data we might do. This week, we&amp;rsquo;re going to zoom out a bit and consider how we get from that level of detail to larger scale macroscopic stories about the past.</description>
     </item>
   </channel>
 </rss>

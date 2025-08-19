@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week 7 on HIST1900A</title>
-    <link>/tags/week-7/</link>
+    <link>//localhost:1313/tags/week-7/</link>
     <description>Recent content in Week 7 on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="/tags/week-7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/week-7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 7 Machine Learning (or &#39;AI&#39;, if we must)</title>
-      <link>/docs/module-2/wk7/</link>
+      <link>//localhost:1313/docs/module-2/wk7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-2/wk7/</guid>
+      <guid>//localhost:1313/docs/module-2/wk7/</guid>
       <description>Goals Listen Read Do Reflect Report Back Goals for this week Carrying on from our theme last week, we&amp;rsquo;ll explore two more methods that are predicated on using networks as a tool for computation. These kinds of neural network approaches can lead to what I think constitutes &amp;lsquo;an enchantment of digital archaeology&amp;rsquo;, but there is disquiet out there too&amp;hellip; then in the main reading we take digital archaeology into outer space.</description>
     </item>
   </channel>

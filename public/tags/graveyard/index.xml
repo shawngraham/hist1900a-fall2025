@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graveyard on HIST1900A</title>
-    <link>/tags/graveyard/</link>
+    <link>//localhost:1313/tags/graveyard/</link>
     <description>Recent content in Graveyard on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="/tags/graveyard/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/graveyard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Week 2 Field work and ethical data collection</title>
-      <link>/docs/module-1/wk2/</link>
+      <link>//localhost:1313/docs/module-1/wk2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-1/wk2/</guid>
+      <guid>//localhost:1313/docs/module-1/wk2/</guid>
       <description>Goals Listen Read Do Reflect Report Back Goals for this week Find a local historic graveyard (see the alternative if necessary) Begin recording some gravestones Create a rough map of the site Listen Your browser does not support the audio element. Right-click and save-as this link to download the audio file&#xA;DO This week and next you will head out into your local community to map a historical graveyard, and record some gravestones, using a digital recording tool called &amp;lsquo;Kobo Toolbox&amp;rsquo;.</description>
     </item>
     <item>
       <title>Week 3 Field work and ethical data collection II</title>
-      <link>/docs/module-1/wk3/</link>
+      <link>//localhost:1313/docs/module-1/wk3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/module-1/wk3/</guid>
+      <guid>//localhost:1313/docs/module-1/wk3/</guid>
       <description>Goals Listen Read Do Reflect Report Back Goals for this week Continue the Graveyard Project and reconsider our recording system Obtain data for the eventual creation of 3d models of grave stones Develop a webmap of the site Explore the connections between what you are doing and what you are reading: graveyards are emotional spaces Listen Your browser does not support the audio element. Right-click and save-as this link to download the audio file</description>
     </item>
   </channel>

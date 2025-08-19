@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 11 Aug 2025 12:27:21 -0400</lastBuildDate>
     <atom:link href="/tags/wk1/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hypothes.is</title>
-      <link>/docs/hypothes.is</link>
+      <title>Hypothesis</title>
+      <link>/docs/hypothesis/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/hypothes.is</guid>
+      <guid>/docs/hypothesis/</guid>
       <description>Hypothes.is: A Tool for Collaborative Reading &amp;amp; Annotation The first thing I want you to do is to set up an account with the Hypothes.is tool.&#xA;While watching this video, turn on the closed captions.&#xA;Create an account at hypothes.is:&#xA;Get the Chrome app or the Firefox bookmarklet:&#xA;Make sure you&amp;rsquo;re logged in:&#xA;Then join our HIST1900a reading group. If you happen to be reading something, and see an existing annotation that interests you, hit the &amp;lsquo;reply&amp;rsquo; button on the annotation to start a conversation!</description>
     </item>
   </channel>

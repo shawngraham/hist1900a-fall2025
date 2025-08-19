@@ -1,7 +1,7 @@
 ---
-title: "Hypothes.is"
+title: "Hypothesis"
 date: 2025-05-02
-url: "docs/hypothes.is"
+url: "docs/hypothesis"
 description: "Instructions for getting Hypothesis set up."
 keywords: ["hypothesis", "setup", "wk1"]
 draft: false

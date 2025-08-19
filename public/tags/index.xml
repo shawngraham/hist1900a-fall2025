@@ -6,7 +6,7 @@
     <description>Recent content in Tags on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 11 Aug 2025 12:27:21 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Aug 2025 12:33:27 -0400</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hypothesis</title>
@@ -114,31 +114,10 @@
       <description></description>
     </item>
     <item>
-      <title>Consolidation</title>
-      <link>/tags/consolidation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/consolidation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Counting</title>
-      <link>/tags/counting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/counting/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Data</title>
       <link>/tags/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/data/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Distant Reading</title>
-      <link>/tags/distant-reading/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/distant-reading/</guid>
       <description></description>
     </item>
     <item>
@@ -156,31 +135,10 @@
       <description></description>
     </item>
     <item>
-      <title>Emergence</title>
-      <link>/tags/emergence/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/emergence/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Enchantment</title>
-      <link>/tags/enchantment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/enchantment/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Exit Ticket</title>
       <link>/tags/exit-ticket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/exit-ticket/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Field Work</title>
-      <link>/tags/field-work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/field-work/</guid>
       <description></description>
     </item>
     <item>
@@ -205,20 +163,6 @@
       <description></description>
     </item>
     <item>
-      <title>Graveyard</title>
-      <link>/tags/graveyard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/graveyard/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Historiography</title>
-      <link>/tags/historiography/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/historiography/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>How</title>
       <link>/tags/how/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -230,13 +174,6 @@
       <link>/tags/learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Llm</title>
-      <link>/tags/llm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/llm/</guid>
       <description></description>
     </item>
     <item>
@@ -268,31 +205,10 @@
       <description></description>
     </item>
     <item>
-      <title>Network Analysis</title>
-      <link>/tags/network-analysis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/network-analysis/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Overview</title>
       <link>/tags/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/overview/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Public</title>
-      <link>/tags/public/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/public/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Publishing</title>
-      <link>/tags/publishing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/publishing/</guid>
       <description></description>
     </item>
     <item>
@@ -307,20 +223,6 @@
       <link>/tags/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/research/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Simulation</title>
-      <link>/tags/simulation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/simulation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Statistics</title>
-      <link>/tags/statistics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/statistics/</guid>
       <description></description>
     </item>
     <item>
@@ -342,104 +244,6 @@
       <link>/tags/theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/tags/theory/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webmap</title>
-      <link>/tags/webmap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/webmap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 1</title>
-      <link>/tags/week-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 10</title>
-      <link>/tags/week-10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-10/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 11</title>
-      <link>/tags/week-11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-11/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 12</title>
-      <link>/tags/week-12/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-12/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 2</title>
-      <link>/tags/week-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 3</title>
-      <link>/tags/week-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 4</title>
-      <link>/tags/week-4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 5</title>
-      <link>/tags/week-5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 6</title>
-      <link>/tags/week-6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 7</title>
-      <link>/tags/week-7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-7/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 8</title>
-      <link>/tags/week-8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Week 9</title>
-      <link>/tags/week-9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/week-9/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Weekly Work</title>
-      <link>/tags/weekly-work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/weekly-work/</guid>
       <description></description>
     </item>
   </channel>

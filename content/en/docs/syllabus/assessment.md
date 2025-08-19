@@ -9,17 +9,21 @@ tags: ["grading"]
 
 These are ungraded responses to prompts that I will use to kick-off discussions. On days with an 'entrance ticket', you will have jotted a quick response on a notecard before class (and you'll have printed your name on it too). I will collect these at the start of class. Their _completion_ however will count towards your 'academic presence'. 
 
+### Hypothes.is
+
+Hypothesis is a tool to hone your academic reading skills. Sustained meaningful activity there on the assigned readings counts towards your 'academic presence'. 
+
 ### In-class exercises
 
 Periodically, we will do some in-class writing where you draw on the most recent assigned readings and lectures. The first few of these will ask you to write a précis of one or more of the readings. Then, we will build from that towards deeper engagement with the readings/lecture.
 
-I will provide a notebook for you to use for in-class exercises and assessment. Sometimes, you will share what you've written with your peers as the starting point for in-class discussion.
+**Please bring a [Hillroy-like notebook](https://www.staples.ca/products/15564-en-hilroy-canada-stitched-exercise-book-10-78-x-7-38-assorted-colours-4-pack) to use for in-class exercises and assessment.**. Have your name and student number on it. After an assessment exercise, I will collect these, then return them to you with comments, etc. Sometimes, you will share what you've written with your peers as the starting point for in-class discussion.
 
-I will distribute and collect these notebooks for the relevant class. The completed notebook will be a resource for you to study in order to prepare for the Exit Ticket.
+The completed notebook will be a resource for you to study in order to prepare for the Exit Ticket.
 
 ### Essays?
 
-There will be no essays. 
+There will be no [essays](on-essays). 
 
 ### The Exit Ticket
 
@@ -33,9 +37,9 @@ If I agree with your assessment, then that is the grade you will receive (thus, 
 
 ### Course Assessment Rubric
 
-+ In-class exercises: best 5 of 6. 70%
++ In-class exercises: best 3 out of 4. 60%
 + Exit ticket: 20%
-+ Academic Presence: 10%
++ Academic Presence: 20%
 
 I reserve the right to adjust those percentages to take into account the particular circumstances of the student.
 

@@ -22,7 +22,7 @@ What's more, the instrumentalization of higher education means that for too many
 
 ## But, here's how we'd do an essay if we were
 
-1. I'd have all of my research memos in something like [Obsidian](https://obsidian.md) that allows me to create links between ideas. (If you want to see what that's like, you can try a webapp I build called [PKM WebNotes](pkm-webnotes.netlify.app)).
+1. I'd have all of my research memos in something like [Obsidian](https://obsidian.md) that allows me to create links between ideas. (If you want to see what that's like, you can try a webapp I build called [PKM WebNotes](https://pkm-webnotes.netlify.app)).
 2. I'd read through my notes and search for connections. I would make those connections using Obsidian's wiki-linking ability (we'll actually practice this kind of thing in class).
 3. I'd examine the resulting visualization of connected ideas to see what thoughts might _emerge_ from my research memos
 4. I'd look for pathways in my notes between interesting ideas
