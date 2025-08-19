@@ -2,165 +2,165 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/docs/exit-ticket/</loc>
+    <loc>/docs/exit-ticket/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/</loc>
+    <loc>/docs/</loc>
     <lastmod>2025-08-19T15:31:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2025-08-19T15:31:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/hypothesis/</loc>
+    <loc>/tags/hypothesis/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/hypothesis/</loc>
+    <loc>/docs/hypothesis/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/setup/</loc>
+    <loc>/tags/setup/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2025-08-19T15:31:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/wk1/</loc>
+    <loc>/tags/wk1/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/a-research-memo-pr%C3%A9cis/</loc>
+    <loc>/docs/a-research-memo-pr%C3%A9cis/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/annotation/</loc>
+    <loc>/tags/annotation/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/bibliography/</loc>
+    <loc>/tags/bibliography/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/notetaking/</loc>
+    <loc>/tags/notetaking/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/on-essays/</loc>
+    <loc>/docs/on-essays/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/precis/</loc>
+    <loc>/tags/precis/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/read-like-an-academic/</loc>
+    <loc>/docs/read-like-an-academic/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/reading/</loc>
+    <loc>/tags/reading/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/thomas/</loc>
+    <loc>/docs/thomas/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/writing/</loc>
+    <loc>/tags/writing/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/zotero/</loc>
+    <loc>/docs/zotero/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/ai/</loc>
+    <loc>/tags/ai/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/assessment/</loc>
+    <loc>/tags/assessment/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/assessment/</loc>
+    <loc>/docs/assessment/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/audience/</loc>
+    <loc>/tags/audience/</loc>
     <lastmod>2025-08-19T15:31:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/calculation/</loc>
+    <loc>/tags/calculation/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/capture/</loc>
+    <loc>/tags/capture/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/communication/</loc>
+    <loc>/tags/communication/</loc>
     <lastmod>2025-08-19T15:31:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/data/</loc>
+    <loc>/tags/data/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/due-date/</loc>
+    <loc>/tags/due-date/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/due-dates/</loc>
+    <loc>/tags/due-dates/</loc>
     <lastmod>2025-08-19T15:31:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/exit-ticket/</loc>
+    <loc>/tags/exit-ticket/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/final/</loc>
+    <loc>/tags/final/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/general-regulations/</loc>
+    <loc>/docs/general-regulations/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/general-philosophy/</loc>
+    <loc>/docs/general-philosophy/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/general-regulations/</loc>
+    <loc>/tags/general-regulations/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/grading/</loc>
+    <loc>/tags/grading/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/learning/</loc>
+    <loc>/tags/learning/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/learning-outcomes/</loc>
+    <loc>/docs/learning-outcomes/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/module-1/</loc>
+    <loc>/tags/module-1/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/module-1/</loc>
+    <loc>/docs/module-1/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/module-2/</loc>
+    <loc>/tags/module-2/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/module-2/</loc>
+    <loc>/docs/module-2/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/module-3/</loc>
+    <loc>/tags/module-3/</loc>
     <lastmod>2025-08-19T15:31:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/module-3/</loc>
+    <loc>/docs/module-3/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/module-4/</loc>
+    <loc>/docs/module-4/</loc>
     <lastmod>2025-08-19T15:31:06-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/name/</loc>
+    <loc>/tags/name/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/overview/</loc>
+    <loc>/tags/overview/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/questions/</loc>
+    <loc>/tags/questions/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/research/</loc>
+    <loc>/tags/research/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/submit/</loc>
+    <loc>/tags/submit/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/syllabus/</loc>
+    <loc>/tags/syllabus/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/overview/</loc>
+    <loc>/docs/overview/</loc>
     <lastmod>2025-08-19T15:10:44-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/first-things-first/</loc>
+    <loc>/docs/first-things-first/</loc>
     <lastmod>2025-08-11T12:27:21-04:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/theory/</loc>
+    <loc>/tags/theory/</loc>
     <lastmod>2025-08-19T15:28:20-04:00</lastmod>
   </url>
 </urlset>

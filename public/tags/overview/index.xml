@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on HIST1900A</title>
-    <link>//localhost:1313/tags/overview/</link>
+    <link>/tags/overview/</link>
     <description>Recent content in Overview on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/overview/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/overview/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The History of the Internet is the History of Today</title>
-      <link>//localhost:1313/docs/overview/</link>
+      <link>/docs/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/overview/</guid>
+      <guid>/docs/overview/</guid>
       <description>The ‘history of the internet’ is more than the history of a particular package of technologies. It’s a story about power, people, culture, and materials. The ‘internet’ isn’t a thing, it’s a place and since time and space are unified, it’s an age. What is an appropriate frame to study the internet, and once we’ve decided on that, what might we see? I’m not sure where this will take us – but wherever we go, the journey will change how you think about the world.</description>
     </item>
   </channel>

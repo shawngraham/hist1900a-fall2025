@@ -21,6 +21,8 @@ Periodically, we will do some in-class writing where you draw on the most recent
 
 The completed notebook will be a resource for you to study in order to prepare for the Exit Ticket.
 
+
+
 ### Essays?
 
 There will be no [essays](on-essays). 
@@ -34,6 +36,10 @@ The second part of the Exit Ticket is where you evaluate your development as a s
 If I agree with your assessment, then that is the grade you will receive (thus, you have the opportunity to override the percentage breakdowns below).
 
 **When I have disagreed in previous courses** this has been, 9.5 times out of 10, to _raise_ the grade: y'all are too hard on yourselves. If I have disagreed and felt that you've overstated things - if you were the 0.5 out of 10 - I would explain this to you and grade accordingly.
+
+{{% admonition type=info title="PMC Centre & Accommodations" %}}
+I will of course make appropriate accommodations where necessary. Just talk with me. 
+{{% /admonition %}}
 
 ### Course Assessment Rubric
 

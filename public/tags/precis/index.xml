@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Precis on HIST1900A</title>
-    <link>//localhost:1313/tags/precis/</link>
+    <link>/tags/precis/</link>
     <description>Recent content in Precis on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 11 Aug 2025 12:27:21 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/precis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/precis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Research Memo &amp; Précis</title>
-      <link>//localhost:1313/docs/a-research-memo-pr%C3%A9cis/</link>
+      <link>/docs/a-research-memo-pr%C3%A9cis/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/a-research-memo-pr%C3%A9cis/</guid>
+      <guid>/docs/a-research-memo-pr%C3%A9cis/</guid>
       <description>Some of our in-class work will be devoted to crafting research memos that use the rhetorical précis as formulated by the historian Chad Black.&#xA;courtesy of Chad Black, quoted in full below with a few small friendly amendments&#xA;The Rhetorical Précis is a formula designed to help you move beyond simple summary to a more analytical synopsis of a work. As such, the précis, in a compact form, forces you to think about both the content and method of a piece of scholarship.</description>
     </item>
   </channel>

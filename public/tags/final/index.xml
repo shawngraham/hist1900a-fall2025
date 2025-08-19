@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Final on HIST1900A</title>
-    <link>//localhost:1313/tags/final/</link>
+    <link>/tags/final/</link>
     <description>Recent content in Final on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/final/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/final/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exit Ticket</title>
-      <link>//localhost:1313/docs/exit-ticket/</link>
+      <link>/docs/exit-ticket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/exit-ticket/</guid>
+      <guid>/docs/exit-ticket/</guid>
       <description>At the end of the course, as a final exam, you will write an &amp;rsquo;exit ticket&amp;rsquo;. The Exit Ticket will consist of a single question that you respond to; you will make explicit reference to the various readings (which you have already created précis notes for) in order to craft your response. I will release that question to you by week 12.&#xA;The second part of the Exit Ticket is where you evaluate your development as a student in this course according to the explicit learning outcomes.</description>
     </item>
   </channel>

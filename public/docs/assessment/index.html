@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Grades and such.">
@@ -8,7 +8,7 @@
 
 <title>Assessment · HIST1900A</title>
 
-<link rel="canonical" href="//localhost:1313/docs/assessment/">
+<link rel="canonical" href="/docs/assessment/">
 
 
 
@@ -246,6 +246,226 @@
 <p>The second part of the Exit Ticket is where you evaluate your development as a student in this course according to the explicit learning outcomes. You can then suggest to me an overall grade for the course that you think your work warrants, as a result.</p>
 <p>If I agree with your assessment, then that is the grade you will receive (thus, you have the opportunity to override the percentage breakdowns below).</p>
 <p><strong>When I have disagreed in previous courses</strong> this has been, 9.5 times out of 10, to <em>raise</em> the grade: y&rsquo;all are too hard on yourselves. If I have disagreed and felt that you&rsquo;ve overstated things - if you were the 0.5 out of 10 - I would explain this to you and grade accordingly.</p>
+<div class="admonition admonition-info"><div class="admonition-title">
+    <span class="admonition-icon"></span>
+    PMC Centre &amp; Accommodations
+  </div><div class="admonition-content">
+    I will of course make appropriate accommodations where necessary. Just talk with me.
+  </div>
+</div>
+<style>
+.admonition {
+  margin: 2rem 0;
+  padding: 0;
+  border-left: 4px solid;
+  border-radius: var(--border-radius, 8px);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+  background: var(--background, #fff);
+  border: var(--border-width, 1px) solid var(--border-color, rgba(0, 0, 0, 0.08));
+  transition: all var(--transition-fast, 0.15s cubic-bezier(0.4, 0, 0.2, 1));
+  position: relative;
+}
+
+.admonition:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.admonition-title {
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+  position: relative;
+  background: linear-gradient(135deg, var(--admonition-color) 0%, var(--admonition-color-dark) 100%);
+}
+
+.admonition-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.admonition-icon {
+  font-size: 1.25em;
+  font-weight: bold;
+  min-width: 1.25em;
+}
+
+.admonition-content {
+  padding: 1.5rem;
+  background: var(--background-light, #f8f9fa);
+  line-height: 1.6;
+  position: relative;
+}
+
+.admonition-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color, rgba(0, 0, 0, 0.08)), transparent);
+}
+
+.admonition-content p:last-child {
+  margin-bottom: 0;
+}
+
+.admonition-content p:first-child {
+  margin-top: 0;
+}
+
+.admonition-content h1,
+.admonition-content h2,
+.admonition-content h3,
+.admonition-content h4,
+.admonition-content h5,
+.admonition-content h6 {
+  margin-top: 1rem;
+  color: var(--admonition-color);
+}
+
+.admonition-content code {
+  background: var(--background, #fff);
+  border-color: var(--admonition-color);
+  color: var(--admonition-color);
+}
+
+.admonition-content a {
+  color: var(--admonition-color);
+}
+
+.admonition-content a:hover {
+  color: var(--admonition-color-dark);
+}
+
+ 
+.admonition-note {
+  --admonition-color: #3498db;
+  --admonition-color-dark: #2980b9;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-note .admonition-icon::before {
+  content: 'ℹ';
+}
+
+ 
+.admonition-warning {
+  --admonition-color: #f39c12;
+  --admonition-color-dark: #e67e22;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-warning .admonition-icon::before {
+  content: '⚠';
+}
+
+ 
+.admonition-danger, .admonition-error {
+  --admonition-color: #e74c3c;
+  --admonition-color-dark: #c0392b;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-danger .admonition-icon::before,
+.admonition-error .admonition-icon::before {
+  content: '⚡';
+}
+
+ 
+.admonition-success, .admonition-tip {
+  --admonition-color: #27ae60;
+  --admonition-color-dark: #229954;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-success .admonition-icon::before,
+.admonition-tip .admonition-icon::before {
+  content: '✓';
+}
+
+ 
+.admonition-info {
+  --admonition-color: #17a2b8;
+  --admonition-color-dark: #138496;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-info .admonition-icon::before {
+  content: '💡';
+}
+
+ 
+.admonition-question {
+  --admonition-color: #9b59b6;
+  --admonition-color-dark: #8e44ad;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-question .admonition-icon::before {
+  content: '❓';
+}
+
+ 
+.admonition-quote {
+  --admonition-color: #6c757d;
+  --admonition-color-dark: #5a6268;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-quote .admonition-icon::before {
+  content: '"';
+  font-family: serif;
+  font-size: 1.5em;
+}
+
+ 
+:root[data-color="dark"] .admonition-content,
+:root[data-color="night"] .admonition-content {
+  background: var(--background-secondary, #202020);
+}
+
+:root[data-color="dark"] .admonition-content code,
+:root[data-color="night"] .admonition-content code {
+  background: var(--background, #1a1a1a);
+}
+
+ 
+@media (max-width: 767px) {
+  .admonition {
+    margin: 1.5rem -1rem;
+    border-radius: 0;
+    border-left-width: 6px;
+  }
+  
+  .admonition-title {
+    padding: 1rem;
+  }
+  
+  .admonition-content {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .admonition {
+    margin: 2.5rem 0;
+  }
+}
+</style>
 <h3 id="course-assessment-rubric">Course Assessment Rubric</h3>
 <ul>
 <li>In-class exercises: best 3 out of 4. 60%</li>
