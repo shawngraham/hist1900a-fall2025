@@ -231,25 +231,248 @@
       <div id="article-content">
         
         
-        <blockquote>
-<p>Enshittification, or, Why Does The Web Suck Right Now?</p>
-</blockquote>
+        <p><strong>Enshittification, or, Why Does The Web Suck Right Now?</strong></p>
 <p>This module will look at the web as it is in September 2025. The web is not a synonym for the internet! But it&rsquo;s the layer that you encounter most often, and it&rsquo;s changing rapidly. We&rsquo;ll work backwards from this current moment of change and destruction (the deployment of AI into search and writing), back to the era of user generated &lsquo;content&rsquo; and why &lsquo;content&rsquo; is a rhetorical move that diminishes human creativity, past the dot-com boom to the first bloom of the web in the 1990s.</p>
-<h2 id="module-1">Module 1</h2>
-<ul>
-<li>September 3: Introduction, course overview, why this isn&rsquo;t a conventional overview of the history of the internet</li>
+<div class="admonition admonition-info"><div class="admonition-title">
+    <span class="admonition-icon"></span>
+    Things to Read and Annotate and By When
+  </div><div class="admonition-content">
+    <ul>
+<li>For Sept 8: Page through <a href="https://www.w3.org/2004/Talks/w3c10-HowItAllStarted/?n=0">Tim Berner’s Lee’s own account of the start of the web</a> and think about the contrast with Bory&rsquo;s <a href="https://www-jstor-org.proxy.library.carleton.ca/stable/j.ctv12fw7sn.7?seq=3" target="_blank">The Myth of the World Wide Web</a>.</li>
+<li>For Sept 15: <a href="https://pluralistic.net/2024/01/30/go-nuts-meine-kerle/#ich-bin-ein-bratapfel">Doctorow on Enshittification</a>. (There&rsquo;s also a <a href="https://www.cbc.ca/radio/podcastnews/understood-who-broke-the-internet-episode-1-transcript-1.7612290">four-episode podcast</a> on the CBC by Doctorow on this topic you are welcome to listen to, but are not obliged). Alternatively, you could read Ted Chiang&rsquo;s <a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web" target="_blank">ChatGPT Is a Blurry JPEG of the Web</a>.</li>
+<li>For Oct 1: Frana, Philip, &ldquo;Before the web there was Gopher&rdquo; (2004). Selected Works. 197.
+<a href="https://commons.lib.jmu.edu/selectedworks/197" target="_blank">https://commons.lib.jmu.edu/selectedworks/197</a></li>
 </ul>
-<blockquote>
-<p>Read for Sept 8: Page through <a href="https://www.w3.org/2004/Talks/w3c10-HowItAllStarted/?n=0">Tim Berner’s Lee’s own account of the start of the web</a> and think about the contrast with Bory&rsquo;s [The Myth of the World Wide Web](<a href="https://doi.org/10.2307/j.ctv12fw7sn.7">https://doi.org/10.2307/j.ctv12fw7sn.7</a>  <a href="https://www-jstor-org.proxy.library.carleton.ca/stable/j.ctv12fw7sn.7?seq=3)" target="_blank">https://www-jstor-org.proxy.library.carleton.ca/stable/j.ctv12fw7sn.7?seq=3)</a>. Use Zotero to record the metadata for both articles (use Zotero to <em>always</em> record the metadata of what you read!)</p>
-</blockquote>
-<ul>
-<li>Sept 8: What even is the web? What has AI done to it?</li>
-<li>Sept 10: How does enshittification work? Research note/précis dry-run</li>
-</ul>
-<blockquote>
-<p>Read for Sept 15: <a href="https://pluralistic.net/2024/01/30/go-nuts-meine-kerle/#ich-bin-ein-bratapfel">Doctorow on Enshittification</a>. (There&rsquo;s also a <a href="https://www.cbc.ca/radio/podcastnews/understood-who-broke-the-internet-episode-1-transcript-1.7612290">four-episode podcast</a> on the CBC by Doctorow on this topic you are welcome to listen to, but are not obliged). Alternatively, you could read Ted Chiang&rsquo;s <a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web" target="_blank">ChatGPT Is a Blurry JPEG of the Web</a>.</p>
-</blockquote>
-<ul>
+<p><strong>Use Zotero to record the metadata for both articles (use Zotero to <em>always</em> record the metadata of what you read!)</strong></p>
+  </div>
+</div>
+<style>
+.admonition {
+  margin: 2rem 0;
+  padding: 0;
+  border-left: 4px solid;
+  border-radius: var(--border-radius, 8px);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+  background: var(--background, #fff);
+  border: var(--border-width, 1px) solid var(--border-color, rgba(0, 0, 0, 0.08));
+  transition: all var(--transition-fast, 0.15s cubic-bezier(0.4, 0, 0.2, 1));
+  position: relative;
+}
+
+.admonition:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.admonition-title {
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+  position: relative;
+  background: linear-gradient(135deg, var(--admonition-color) 0%, var(--admonition-color-dark) 100%);
+}
+
+.admonition-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.admonition-icon {
+  font-size: 1.25em;
+  font-weight: bold;
+  min-width: 1.25em;
+}
+
+.admonition-content {
+  padding: 1.5rem;
+  background: var(--background-light, #f8f9fa);
+  line-height: 1.6;
+  position: relative;
+}
+
+.admonition-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color, rgba(0, 0, 0, 0.08)), transparent);
+}
+
+.admonition-content p:last-child {
+  margin-bottom: 0;
+}
+
+.admonition-content p:first-child {
+  margin-top: 0;
+}
+
+.admonition-content h1,
+.admonition-content h2,
+.admonition-content h3,
+.admonition-content h4,
+.admonition-content h5,
+.admonition-content h6 {
+  margin-top: 1rem;
+  color: var(--admonition-color);
+}
+
+.admonition-content code {
+  background: var(--background, #fff);
+  border-color: var(--admonition-color);
+  color: var(--admonition-color);
+}
+
+.admonition-content a {
+  color: var(--admonition-color);
+}
+
+.admonition-content a:hover {
+  color: var(--admonition-color-dark);
+}
+
+ 
+.admonition-note {
+  --admonition-color: #3498db;
+  --admonition-color-dark: #2980b9;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-note .admonition-icon::before {
+  content: 'ℹ';
+}
+
+ 
+.admonition-warning {
+  --admonition-color: #f39c12;
+  --admonition-color-dark: #e67e22;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-warning .admonition-icon::before {
+  content: '⚠';
+}
+
+ 
+.admonition-danger, .admonition-error {
+  --admonition-color: #e74c3c;
+  --admonition-color-dark: #c0392b;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-danger .admonition-icon::before,
+.admonition-error .admonition-icon::before {
+  content: '⚡';
+}
+
+ 
+.admonition-success, .admonition-tip {
+  --admonition-color: #27ae60;
+  --admonition-color-dark: #229954;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-success .admonition-icon::before,
+.admonition-tip .admonition-icon::before {
+  content: '✓';
+}
+
+ 
+.admonition-info {
+  --admonition-color: #17a2b8;
+  --admonition-color-dark: #138496;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-info .admonition-icon::before {
+  content: '💡';
+}
+
+ 
+.admonition-question {
+  --admonition-color: #9b59b6;
+  --admonition-color-dark: #8e44ad;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-question .admonition-icon::before {
+  content: '❓';
+}
+
+ 
+.admonition-quote {
+  --admonition-color: #6c757d;
+  --admonition-color-dark: #5a6268;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-quote .admonition-icon::before {
+  content: '"';
+  font-family: serif;
+  font-size: 1.5em;
+}
+
+ 
+:root[data-color="dark"] .admonition-content,
+:root[data-color="night"] .admonition-content {
+  background: var(--background-secondary, #202020);
+}
+
+:root[data-color="dark"] .admonition-content code,
+:root[data-color="night"] .admonition-content code {
+  background: var(--background, #1a1a1a);
+}
+
+ 
+@media (max-width: 767px) {
+  .admonition {
+    margin: 1.5rem -1rem;
+    border-radius: 0;
+    border-left-width: 6px;
+  }
+  
+  .admonition-title {
+    padding: 1rem;
+  }
+  
+  .admonition-content {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .admonition {
+    margin: 2.5rem 0;
+  }
+}
+</style>
+<div class="admonition admonition-info"><div class="admonition-title">
+    <span class="admonition-icon"></span>
+    Key Dates &amp; Topics
+  </div><div class="admonition-content">
+    <ul>
+<li>
+<p>September 3: Introduction, course overview, why this isn&rsquo;t a conventional overview of the history of the internet</p>
+</li>
+<li>
+<p>Sept 8: What even is the web? What has AI done to it?</p>
+</li>
+<li>
+<p>Sept 10: How does enshittification work? Research note/précis dry-run</p>
+</li>
 <li>
 <p>Sept 15: What was web 2.0 supposed to be?</p>
 </li>
@@ -262,15 +485,228 @@
 <li>
 <p>Sept 24: Web 1.0, GeoCities, and Browser Wars</p>
 </li>
+<li>
+<p>Sept 29: <em>Feedback on your first research note</em></p>
+</li>
+<li>
+<p>Oct 1: Hypertext</p>
+</li>
 </ul>
-<blockquote>
-<p>Read for October 1: Frana, Philip, &ldquo;Before the web there was Gopher&rdquo; (2004). Selected Works. 197.
-<a href="https://commons.lib.jmu.edu/selectedworks/197" target="_blank">https://commons.lib.jmu.edu/selectedworks/197</a></p>
-</blockquote>
-<ul>
-<li>Sept 29: <em>Feedback on your first research note</em></li>
-<li>Oct 1: Hypertext</li>
-</ul>
+  </div>
+</div>
+<style>
+.admonition {
+  margin: 2rem 0;
+  padding: 0;
+  border-left: 4px solid;
+  border-radius: var(--border-radius, 8px);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+  background: var(--background, #fff);
+  border: var(--border-width, 1px) solid var(--border-color, rgba(0, 0, 0, 0.08));
+  transition: all var(--transition-fast, 0.15s cubic-bezier(0.4, 0, 0.2, 1));
+  position: relative;
+}
+
+.admonition:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.admonition-title {
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+  position: relative;
+  background: linear-gradient(135deg, var(--admonition-color) 0%, var(--admonition-color-dark) 100%);
+}
+
+.admonition-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.admonition-icon {
+  font-size: 1.25em;
+  font-weight: bold;
+  min-width: 1.25em;
+}
+
+.admonition-content {
+  padding: 1.5rem;
+  background: var(--background-light, #f8f9fa);
+  line-height: 1.6;
+  position: relative;
+}
+
+.admonition-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color, rgba(0, 0, 0, 0.08)), transparent);
+}
+
+.admonition-content p:last-child {
+  margin-bottom: 0;
+}
+
+.admonition-content p:first-child {
+  margin-top: 0;
+}
+
+.admonition-content h1,
+.admonition-content h2,
+.admonition-content h3,
+.admonition-content h4,
+.admonition-content h5,
+.admonition-content h6 {
+  margin-top: 1rem;
+  color: var(--admonition-color);
+}
+
+.admonition-content code {
+  background: var(--background, #fff);
+  border-color: var(--admonition-color);
+  color: var(--admonition-color);
+}
+
+.admonition-content a {
+  color: var(--admonition-color);
+}
+
+.admonition-content a:hover {
+  color: var(--admonition-color-dark);
+}
+
+ 
+.admonition-note {
+  --admonition-color: #3498db;
+  --admonition-color-dark: #2980b9;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-note .admonition-icon::before {
+  content: 'ℹ';
+}
+
+ 
+.admonition-warning {
+  --admonition-color: #f39c12;
+  --admonition-color-dark: #e67e22;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-warning .admonition-icon::before {
+  content: '⚠';
+}
+
+ 
+.admonition-danger, .admonition-error {
+  --admonition-color: #e74c3c;
+  --admonition-color-dark: #c0392b;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-danger .admonition-icon::before,
+.admonition-error .admonition-icon::before {
+  content: '⚡';
+}
+
+ 
+.admonition-success, .admonition-tip {
+  --admonition-color: #27ae60;
+  --admonition-color-dark: #229954;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-success .admonition-icon::before,
+.admonition-tip .admonition-icon::before {
+  content: '✓';
+}
+
+ 
+.admonition-info {
+  --admonition-color: #17a2b8;
+  --admonition-color-dark: #138496;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-info .admonition-icon::before {
+  content: '💡';
+}
+
+ 
+.admonition-question {
+  --admonition-color: #9b59b6;
+  --admonition-color-dark: #8e44ad;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-question .admonition-icon::before {
+  content: '❓';
+}
+
+ 
+.admonition-quote {
+  --admonition-color: #6c757d;
+  --admonition-color-dark: #5a6268;
+  border-left-color: var(--admonition-color);
+}
+
+.admonition-quote .admonition-icon::before {
+  content: '"';
+  font-family: serif;
+  font-size: 1.5em;
+}
+
+ 
+:root[data-color="dark"] .admonition-content,
+:root[data-color="night"] .admonition-content {
+  background: var(--background-secondary, #202020);
+}
+
+:root[data-color="dark"] .admonition-content code,
+:root[data-color="night"] .admonition-content code {
+  background: var(--background, #1a1a1a);
+}
+
+ 
+@media (max-width: 767px) {
+  .admonition {
+    margin: 1.5rem -1rem;
+    border-radius: 0;
+    border-left-width: 6px;
+  }
+  
+  .admonition-title {
+    padding: 1rem;
+  }
+  
+  .admonition-content {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .admonition {
+    margin: 2.5rem 0;
+  }
+}
+</style>
 
       </div>
       
@@ -333,7 +769,7 @@
 
 
 <footer id="article-footer">
-  <time id="article-last-updated" datetime="2025-08-11"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-08-11</time>
+  <time id="article-last-updated" datetime="2025-08-19"><i class="icon icon-calendar"></i>&nbsp;Last updated: 2025-08-19</time>
 
   
     <a id="article-prev-link" href="/docs/assessment/"><i class="icon icon-prev icon-colored"></i> Prev</a>
@@ -348,11 +784,7 @@
   <span class="btn-close"><i class="icon icon-close"></i></span>
   <div class="sticky">
     <strong><i class="icon icon-toc"></i> On this page</strong>
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#module-1">Module 1</a></li>
-  </ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </aside>
   </main>
