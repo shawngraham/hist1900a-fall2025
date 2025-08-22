@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Due Dates on HIST1900A</title>
-    <link>//localhost:1313/tags/due-dates/</link>
+    <link>/tags/due-dates/</link>
     <description>Recent content in Due Dates on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="//localhost:1313/tags/due-dates/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/due-dates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Module 1 Our Present Enshittified Moment</title>
-      <link>//localhost:1313/docs/module-1/</link>
+      <link>/docs/module-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-1/</guid>
+      <guid>/docs/module-1/</guid>
       <description>Enshittification, or, Why Does The Web Suck Right Now?&#xA;This module will look at the web as it is in September 2025. The web is not a synonym for the internet! But it&amp;rsquo;s the layer that you encounter most often, and it&amp;rsquo;s changing rapidly. We&amp;rsquo;ll work backwards from this current moment of change and destruction (the deployment of AI into search and writing), back to the era of user generated &amp;lsquo;content&amp;rsquo; and why &amp;lsquo;content&amp;rsquo; is a rhetorical move that diminishes human creativity, past the dot-com boom to the first bloom of the web in the 1990s.</description>
     </item>
     <item>
       <title>Module 2 The Internet Before the Web</title>
-      <link>//localhost:1313/docs/module-2/</link>
+      <link>/docs/module-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-2/</guid>
+      <guid>/docs/module-2/</guid>
       <description>Which comes first, the technology or the need for the technology?&#xA;In this module, we&amp;rsquo;ll look at the emergence of digital computing as a cold-war technology and how various networks first emerged and were inter-networked. ARPAnet was not the only contender! We&amp;rsquo;ll look at how various standards emerged and the political and social contexts of their deployment.&#xA;The time period explored will roughly correspond with that period of time from the 1950s to the 1980s, more or less overlapping with the Cold War.</description>
     </item>
     <item>
       <title>Module 3 The Dawn of the Information Age</title>
-      <link>//localhost:1313/docs/module-3/</link>
+      <link>/docs/module-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-3/</guid>
+      <guid>/docs/module-3/</guid>
       <description>When Computers Filled The Room&#xA;This module considers how the idea of &amp;lsquo;information&amp;rsquo; as a thing distinct from the message emerged, how information became a measure of entropy and thus something that could be computed. This means we&amp;rsquo;ll have to think about the telephone network(s), business tabulation machines, World War II research into ballistics, codes, and cypers.&#xA;Things to Read and Annotate and By When Read by November 12: Vannevar Bush&amp;rsquo;s As We May Think.</description>
     </item>
     <item>
       <title>Module 4 The Victorian Internet; Some Deeper History</title>
-      <link>//localhost:1313/docs/module-4/</link>
+      <link>/docs/module-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/module-4/</guid>
+      <guid>/docs/module-4/</guid>
       <description>Watson come here, I need you&#xA;This final module teases apart the strands of the foundational technologies that underpin the 20th century revolution in digital communication: the 19th century Victorian internet. We&amp;rsquo;ll look at the emergence of telegraphy and the first realization that electricity could represent sound and messages. To understand all that, we have to go further back and consider sempahore and other kinds of signalling technologies. We&amp;rsquo;ll need to consider things like the Jacquard loom and other ways of extending our cognition into physical media&amp;hellip; all the way back to cuneiform and the emergence of writing.</description>
     </item>
   </channel>

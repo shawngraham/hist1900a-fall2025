@@ -85,3 +85,8 @@ menu:
       identifier: smg
       pre: "<i class='icon icon-head'></i>"
       weight: 2
+    - url: https://hist1900a.netlify.app/docs/slides/
+      name: Lectures
+      identifier: slides
+      pre: "<i class='icon icon-head'></i>"
+      weight: 3
