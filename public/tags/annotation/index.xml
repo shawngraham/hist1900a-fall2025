@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Annotation on HIST1900A</title>
-    <link>/tags/annotation/</link>
+    <link>//localhost:1313/tags/annotation/</link>
     <description>Recent content in Annotation on HIST1900A</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 22 Aug 2025 11:12:23 -0400</lastBuildDate>
-    <atom:link href="/tags/annotation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/annotation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On Essays</title>
-      <link>/docs/on-essays/</link>
+      <link>//localhost:1313/docs/on-essays/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/on-essays/</guid>
+      <guid>//localhost:1313/docs/on-essays/</guid>
       <description>If you&amp;rsquo;ve been practicing taking research memos, if you&amp;rsquo;ve been looking at our feedback and thinking about what I or the TAs have said, you are already 9/10s of the way to writing an essay that can critically examine some issue, backed up with meaningful scholarly insight.&#xA;Yes! It&amp;rsquo;s true!&#xA;Note Making IS Writing The secret to academic writing is that your notes have already done a lot of the thinking for you.</description>
     </item>
     <item>
       <title>Read Like An Academic</title>
-      <link>/docs/read-like-an-academic/</link>
+      <link>//localhost:1313/docs/read-like-an-academic/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/read-like-an-academic/</guid>
+      <guid>//localhost:1313/docs/read-like-an-academic/</guid>
       <description>Reading an academic article is not like &amp;lsquo;regular&amp;rsquo; reading. You don&amp;rsquo;t start at the beginning and wait for the big reveal at the end. (You don&amp;rsquo;t write like that either.)&#xA;Read Like A Predator Read like a predator. You&amp;rsquo;re after something. Each time your read the paper, you&amp;rsquo;re after something different.&#xA;First time: just the abstract, maybe the intro Second time: intro, conclusion Third time: discussion, conclusion Fourth time: methods What you&amp;rsquo;re doing is a kind of triage.</description>
     </item>
     <item>
       <title>THOMAS</title>
-      <link>/docs/thomas/</link>
+      <link>//localhost:1313/docs/thomas/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/thomas/</guid>
+      <guid>//localhost:1313/docs/thomas/</guid>
       <description>Reading Historical Scholarship¶ Reading historical scholarship is not just about understanding the content, but also figuring out how the thing you&amp;rsquo;re reading is part of a broader dialogue. Allow me to introduce a useful approach to reading such material by Danna Agmon called &amp;lsquo;THOMAS&amp;rsquo;. I quote Agmon directly below:&#xA;THOMAS: A Useful Mnemonic for Reading Historical Scholarship&#xA;When reading works of historical scholarship, the following mnemonic is a helpful tool to keep in mind as you prepare for class.</description>
     </item>
     <item>
       <title>Zotero</title>
-      <link>/docs/zotero/</link>
+      <link>//localhost:1313/docs/zotero/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>/docs/zotero/</guid>
+      <guid>//localhost:1313/docs/zotero/</guid>
       <description>This is a first year class. Most of you are in first year: Zotero will save many hours of grief and frustration.&#xA;Zotero is software for citation management and for making notes on what your read and annotations on pdfs. If all you ever do is use it to keep track of the metadata - author, title, publisher, etc - for what you read in university then you will be further ahead than many of your peers.</description>
     </item>
   </channel>

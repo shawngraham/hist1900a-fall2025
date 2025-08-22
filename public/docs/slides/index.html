@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Presentations</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .chooser-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 2rem 3rem;
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #1c1e21;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #606770;
+            margin-bottom: 2.5rem;
+        }
+        .talk-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        .talk-list li {
+            margin-bottom: 1rem;
+        }
+        .talk-list a {
+            display: block;
+            background-color: #f7f8fa;
+            border: 1px solid #dddfe2;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .talk-list a:hover {
+            border-color: #3578e5;
+            background-color: #eff5ff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        .talk-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #050505;
+            margin: 0 0 0.25rem 0;
+        }
+        .talk-description {
+            font-size: 0.95rem;
+            color: #606770;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="chooser-container">
+        <h1>HIST1900a Fall 2025 Presentation Library</h1>
+        <p>Select a presentation to view. A new tab will open for the presentation.</p>
+        <ul class="talk-list">
+             <li>            
+                <a href="container.html?talk=2025-09-03.md" target="_blank">
+                    <div class="talk-title">Sept 3. Welcome & Getting Started</div>
+                    <div class="talk-description">What this is all about.</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

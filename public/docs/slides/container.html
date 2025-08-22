@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Presentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/monokai.min.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section
+                id="markdown-container"
+                data-separator="^\r?\n---\r?\n$" 
+                data-separator-vertical="^\r?\n--\r?\n$"
+                data-separator-notes="^Note:"
+                data-charset="utf-8">
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+
+    <script>
+        class PresentationLoader {
+            constructor() {
+                this.markdownFile = new URLSearchParams(window.location.search).get('talk');
+                this.container = document.getElementById('markdown-container');
+            }
+
+            async init() {
+                if (!this.markdownFile) {
+                    this.showError('No Presentation Specified', 'Please provide a presentation file in the URL.', 
+                                 'Example: <code>/container.html?talk=example.md</code>');
+                    return;
+                }
+
+                try {
+                    const content = await this.fetchMarkdown();
+                    const { config, markdown } = this.parseYamlFrontMatter(content);
+                    
+                    if (config.theme) this.applyTheme(config.theme);
+                    
+                    // Create a blob URL for the cleaned markdown so Reveal.js can process it
+                    const blob = new Blob([markdown], { type: 'text/markdown' });
+                    const blobUrl = URL.createObjectURL(blob);
+                    this.container.setAttribute('data-markdown', blobUrl);
+                    
+                    await this.initReveal(config);
+                } catch (error) {
+                    console.error('Error loading presentation:', error);
+                    this.showError('Could not load presentation', `Failed to load: ${this.markdownFile}`, error.message);
+                }
+            }
+
+            async fetchMarkdown() {
+                const response = await fetch(this.markdownFile);
+                if (!response.ok) throw new Error(`${response.status}: ${response.statusText}`);
+                return response.text();
+            }
+
+            parseYamlFrontMatter(content) {
+                const yamlMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+                if (!yamlMatch) return { config: {}, markdown: content };
+
+                const config = yamlMatch[1]
+                    .split('\n')
+                    .reduce((acc, line) => {
+                        const [key, ...valueParts] = line.split(':');
+                        if (key && valueParts.length) {
+                            const value = valueParts.join(':').trim().replace(/^['"]|['"]$/g, '');
+                            acc[key.trim()] = value === 'true' ? true : value === 'false' ? false : value;
+                        }
+                        return acc;
+                    }, {});
+
+                return { config, markdown: content.replace(yamlMatch[0], '') };
+            }
+
+            applyTheme(theme) {
+                document.getElementById('theme').href = 
+                    `https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/${theme}.min.css`;
+            }
+
+            async initReveal(config) {
+                // Wait for theme to load
+                await new Promise(resolve => setTimeout(resolve, 100));
+                
+                const revealConfig = {
+                    plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+                    hash: true,
+                    ...Object.fromEntries(
+                        Object.entries(config)
+                            .filter(([key]) => !['theme'].includes(key))
+                    )
+                };
+
+                new Reveal(revealConfig).initialize();
+            }
+
+            showError(title, message, detail = '') {
+                document.body.innerHTML = `
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; 
+                               font-family: sans-serif; text-align: center;">
+                        <div>
+                            <h1>Error: ${title}</h1>
+                            <p>${message}</p>
+                            ${detail ? `<p style="color: #666;">${detail}</p>` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Initialize when DOM is ready
+        new PresentationLoader().init();
+    </script>
+</body>
+</html>
