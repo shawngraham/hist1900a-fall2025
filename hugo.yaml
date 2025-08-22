@@ -88,5 +88,5 @@ menu:
     - url: https://hist1900a.netlify.app/docs/slides/
       name: Lectures
       identifier: slides
-      pre: "<i class='icon icon-head'></i>"
+      pre: "<i class='icon icon-calendar'></i>"
       weight: 3
