@@ -53,4 +53,4 @@ As you mark up the text, use these tags to categorize your observation. You can 
 
 ## Then what?
 
-Periodically, in class, I will ask you to make a précis/research memo based on one of the assigned readings, from memory. Here's how to [make a précis/research memo](../a-research-memo-précis). These will be assessed; your best 5 out of 6 will count towards your grade.
+Periodically, in class, I will ask you to make a précis/research memo based on one of the assigned readings, from memory. Here's how to [make a précis/research memo](../a-research-memo-précis). These will be assessed; your best 3 out of 4 will count towards your grade.
