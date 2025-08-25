@@ -31,3 +31,7 @@ Write the 'citation key' for whatever you're reading across the top, and a short
 
 Then, proceed to fill in the grid. You don't have to use the grid, of course; a series of headings works just as well. Point-form is fine **HOWEVER** you have to provide enough detail so that Future You who returns to these notes a week, a month, a term later has some idea of what you are talking about. Similarly, if/when I ask you to do one of these in class from memory, you've got to provide enough so that I understand what you're talking about.
 
+Then, at bottom, just like with the other approach (the précis), you'd contextualize more broadly:
+
+> ...[you] should highlight what you found significant in the reading. Identify a question or theme raised in class that the reading helps to answer or addresses. Then explain why you think this reading matters? How does it connect to the other readings of the week or previous weeks? How does it connect with work you're reading outside of class assignments, etc?
+
