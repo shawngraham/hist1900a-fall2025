@@ -25,7 +25,7 @@ The completed notebook will be a resource for you to study in order to prepare f
 
 ### Essays?
 
-There will be no [essays](on-essays). 
+There will be no [essays](../on-essays). 
 
 ### The Exit Ticket
 

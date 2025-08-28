@@ -30,7 +30,7 @@ By the end of this class, you ought to be able to
 
 ## Texts
 
-See the [weekly work](../../schedule) section. All readings are open access. Do the reading _before_ the class in question.
+See the **Course Work Overview** section. All readings are open access or available through the MacOdrum Library Website (you might have to be logged into Carleton's systems/website). Do the reading _before_ the class in question.
 
 ## When Life Intervenes
 
