@@ -1,0 +1,21 @@
+{
+  "Name": "Paris",
+  "Version": "1.0.2",
+  "Author": "iA",
+  "ShortDescription": "Il est cinq heures...",
+  "LongDescription": "...Paris s'éveille.\n- Classic and classy\n- Different sizes for headlines\n- Altering color background\n- Default white on black\n- Typeface: Didot",
+  "Css": "paris.css",
+  "TitleFont": "Literata",
+  "BodyFont": "Literata",
+  "CssClasses": "variable-size-headings",
+  "LayoutExamples":[
+   {
+        "Name": "Title (H1) and Background",
+        "Markdown": "/Theme/image2.jpg\nBackground: true\nopacity: 20%\n\n# TITLE\n#### with background",
+   },
+   {
+        "Name": "Title (H2) and Background",
+        "Markdown": "/Theme/image2.jpg\nBackground: true\nopacity: 20%\n\n## SUBTITLE\n#### with background",
+   }
+]
+}
