@@ -1,0 +1,45 @@
+{
+  "Presets": [
+    {
+      "Name": "Default",
+      "TitleFont": "Montserrat",
+      "BodyFont": "Montserrat",
+      "Appearance" : "light",
+      "DarkBodyTextColor": "#000000EE",
+      "LightBodyTextColor": "#ffffffEE",
+      "DarkTitleTextColor": "#000000EE",
+      "LightTitleTextColor": "#ffffffEE",
+      "DarkBackgroundColor": "transparent",
+      "LightBackgroundColor": "transparent",
+      "DarkAccent1": "#A7987C",
+      "LightAccent1": "#A7987C",
+      "Accent1": "#f94144",
+      "Accent2": "#43aa8b",
+      "Accent3": "#f9c74f",
+      "Accent4": "#90be6d",
+      "Accent5": "#f8961e",
+      "Accent6": "#577590",
+      "LightBgGradient":[
+          "#CFCAC7",
+          "#D7C7C4",
+          "#BAC8C1",
+          "#C9D1BF",
+          "#EADFCE",
+          "#E2E2E2"
+      ],
+      "DarkBgGradient":[
+          "#4D4036",
+          "#72483E",
+          "#739382",
+          "#8EA079",
+          "#A6916A",
+          "#848484",
+      ],
+    },
+
+  ]
+}
+
+
+
+

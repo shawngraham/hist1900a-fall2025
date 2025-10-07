@@ -1,0 +1,21 @@
+{
+  "Name": "Vancouver",
+  "Version": "1.0.2",
+  "Author": "iA",
+  "ShortDescription": "Fallen leaves on the ground...",
+  "LongDescription": "...earthy and fresh\n- Different sizes for headlines\n- Dynamic color background\n- Default white on color\n- Default font: Montserrat",
+  "Css": "vancouver.css",
+  "TitleFont": "Montserrat",
+  "BodyFont": "Montserrat",
+  "CssClasses": "variable-size-headings",
+  "LayoutExamples":[
+   {
+        "Name": "Title (H1) and Background",
+        "Markdown": "/Theme/image2.jpg\nBackground: true\nopacity: 40%\n\n# TITLE\n#### with background",
+   },
+   {
+        "Name": "Title (H2) and Background",
+        "Markdown": "/Theme/image2.jpg\nBackground: true\nopacity: 40%\n\n## SUBTITLE\n#### with background",
+   }
+]
+}
