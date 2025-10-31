@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+<style>
+:root{
+--logo: ;
+--logo-size: ;
+--text-scale-intensity: ;
+--darkaccent1color: #FFC400;
+--lightaccent1color: #FFC400;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #FFC400;
+--darktitletextcolor: #000;
+--lightbodytextcolor: #FFF;
+--darkbodytextcolor: #000;
+--lightbackgroundcolor: #ffffff;
+--darkbackgroundcolor: #000000;
+--bodyfont: inter;
+--titlefont: inter;
+--lightframecolor: #FFFFFF;
+--darkframecolor: #000000;
+} 
+
+</style>
+<link rel="stylesheet" href="engine/main.css">
+<link rel="stylesheet" href="theme/newyork.css">
+<link rel="stylesheet" href="engine/katex/katex.min.css">
+</head>
+<body class="responsive ">
+<div class="reveal">
+<div class="slides">
+<section class="variable-size-headings light has-background-image cover-container responsive"  data-background-image="media/enigma-christian-lendl.png" data-state="background-opacity-60"style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="canyoukeepasecret">Can you keep a secret?</h1> 
+  <h4 id="howdoesinformationbecomesomething...else">How Does information become something ... else?</h4>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="part1:whyencodeinformation">Part 1: Why Encode Information?</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <p>Wr wkh vwxghqw doo ri dfdghpld lv d frgh zdlwlqj wr eh fudfnhg.</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <blockquote class="is-single-quote" lang="en"> 
+   <div class="line"></div> 
+   <p>The multiple human needs and desires that demand privacy among two or more people in the midst of social life must inevitably lead to cryptology wherever men thrive and wherever they write. Cultural diffusion seems a less likely explanation for its occurrence in so many areas, many of them distant and isolated" (David Kahn <em>The Codebreakers: The Story of Secret Writing</em> 1967, p. 84).</p> 
+   <div class="line"></div> 
+  </blockquote>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/church-cipher-letter.png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/deciphered-church.png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <p><em>London, 1772.</em></p> 
+  <blockquote lang="en"> 
+   <p>I have been asked by my superiors to give a brief demonstration of the surprising effectiveness of even the simplest techniques of the new-fangled <em>Social Networke Analysis</em> in the pursuit of those who would seek to undermine the liberty enjoyed by His Majesty's subjects. This is in connection with the discussion of the role of "metadata" in <a href="http://www.guardian.co.uk/world/2013/jun/08/nsa-prism-server-collection-facebook-google">certain recent events</a> and the assurances of <a href="https://www.eff.org/deeplinks/2013/06/why-metadata-matters">various respectable parties</a> that the government was merely "sifting through this so-called metadata" and that the "information acquired does not include the content of any communications". I will show how we can use this "metadata" to find key persons involved in terrorist groups operating within the Colonies at the present time. I shall also endeavour to show how these methods work in what might be called a <em>relational</em> manner.</p> 
+  </blockquote>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <pre><code>                           StAndrewsLodge LoyalNine NorthCaucus LongRoomClub TeaParty Bostoncommittee LondonEnemies 
+Adams.John                      0         0           1            1        0               0             0
+Adams.Samuel                    0         0           1            1        0               1             1
+Allen.Dr                        0         0           1            0        0               0             0
+Appleton.Nathaniel              0         0           1            0        0               1             0
+Ash.Gilbert                     1         0           0            0        0               0             0
+Austin.Benjamin                 0         0           0            0        0               0             1
+Austin.Samuel                   0         0           0            0        0               0             1
+Avery.John                      0         1           0            0        0               0             1
+Baldwin.Cyrus                   0         0           0            0        0               0             1
+Ballard.John                    0         0           1            0        0               0             0
+</code></pre>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/revere-group-view.png" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents media-grid"> 
+ <div class="element-group has-media has-media-first">
+  <div class="single-image-wrapper">
+   <figure class="">
+    <img src="media/revere-network-reduced.png" class=" size-contain position-center-center" />
+   </figure>
+  </div> 
+  <p><a href="https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/">Kieran Healy, 2013. Using Metadata to find Paul Revere</a></p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="part2:ancientandmedievalsystems">Part 2: Ancient and Medieval Systems</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light title-and-columns-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title-and-columns slide-contents columns-items-2 "> 
+ <div class="title-part element-group">
+  <h2 id="codesversuscyphers">Codes versus Cyphers</h2>
+ </div> 
+ <div class="column-part element-group">
+  <p>a <strong>code</strong>: 'variable sized elements that have meaning in the plaintext language' - syllables, words, phrases (Dooley, 5); thousands of substitutions</p> 
+  <p>a <strong>cipher</strong>: a transformation from plaintext according to some transformation (Dooley, 5-6); 'small fixed number of substitution elements'</p>
+ </div>
+ <div class="column-part element-group">
+  <p>Dooley, John F. History of Cryptography and Cryptanalysis: Codes, Ciphers, and Their Algorithms. Springer International Publishing AG, 2018. <a href="https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/1ortgfo/cdi_askewsholts_vlebooks_9783319904436">via our library</a></p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/beacon.png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light grid-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-grid {@{HAS_MEDIA_CLASSES}@} slide-contents grid-items-1 has-only-media media-grid"> 
+ <div class="element-group has-media has-media-first">
+  <div class="layout-grid media-grid grid-items-2">
+   <figure class="">
+    <img src="media/Polybius_square.png" class=" size-contain position-center-center" />
+   </figure>
+   <figure class="">
+    <img src="media/Torches.png" class=" size-contain position-center-center" />
+   </figure>
+  </div>  
+  <p><a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Polybius/10*.html#45.6">Polybius book 10</a> (P lived ca 200 - ca 118 BC)</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/Skytale-2.jpg" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/Retrato_de_Julio_César_(26724093101)_(cropped).jpg" class=" position-center-center" />
+ </figure> 
+ <div class="element-group">
+  <h1 id="yhqlylglylfl">YHQL YLGL YLFL</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light has-background-image cover-container responsive"  data-background-image="media/Stamp_IQ_1962_6f.jpg" data-state="background-opacity-40"style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="al-kindi"><a href="https://plato.stanford.edu/entries/al-kindi">Al-Kindi</a></h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light grid-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-grid slide-contents grid-items-3 media-grid"> 
+ <div class="element-group">
+  <p>One way to solve an encrypted message, if we know its language, is to find a different plaintext of the same language long enough to fill one sheet or so, and then we count the occurrences of each letter.</p>
+ </div>
+ <div class="element-group">
+  <p>We call the most frequently occurring letter the "first", the next most occurring letter the "second", the following most occurring letter the "third", and so on, until we account for all the different letters in the plaintext sample. </p>
+ </div>
+ <div class="element-group">
+  <p>Then we look at the cipher text we want to solve and we also classify its symbols. We find the most occurring symbol and change it to the form of the "first" letter of the plaintext sample, the next most common symbol is changed to the form of the "second" letter, and the following most common symbol is changed to the form of the "third" letter, and so on, until we account for all symbols of the cryptogram we want to solve.</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="part3:earlymoderncryptography">Part 3: Early Modern Cryptography</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="earlymoderneurope16thtoabout1800ish">Early Modern Europe (16th to about 1800 ish)</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light has-background-image grid-container responsive"  data-background-image="media/Somer_Francis_Bacon.jpg" data-background-position=" top" data-state="background-opacity-60"style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-grid slide-contents grid-items-3 media-grid"> 
+ <div class="element-group">
+  <h2 id=""></h2>
+ </div>
+ <div class="element-group">
+  <p>##</p>
+ </div>
+ <div class="element-group">
+  <h1 id="francisbaconthebi-literalcipher">Francis Bacon &amp; the Bi-Literal Cipher</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents media-grid"> 
+ <div class="element-group has-media has-media-first">
+  <div class="single-image-wrapper">
+   <figure class="">
+    <img src="media/bacon.png" class=" size-contain position-center-center" />
+   </figure>
+  </div> 
+  <p>No<em>w</em> is <em>t</em>he winter of <em>ou</em>r disc<em>o</em>nt<em>e</em>nt </p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light title-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title slide-contents"> 
+ <div class="element-group">
+  <h2 id="nomenclators">Nomenclators</h2> 
+  <p><a href="https://www.nationalarchives.gov.uk/wp-content/uploads/2016/08/page-of-cyphers-sp-53-22.jpg">Here's one of Mary, Queen of Scots'</a></p> 
+  <p>Fun <a href="https://medium.com/@abdeldayemnour/death-by-cryptanalysis-mary-queen-of-scots-and-the-nomenclator-cipher-19b1e9d5ff00">brief article about the same</a></p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/vignere.png" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="part4:theproblemofdistance">Part 4: The Problem of Distance</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light grid-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-grid has-media-middle has-media-last slide-contents grid-items-3 media-grid"> 
+ <div class="element-group">
+  <p>Ok, what about the <em>media</em> for all these codes?</p>
+ </div>
+ <figure class="">
+  <img src="media/_68209529_france_semaphore_624.jpg" class=" size-contain position-center-center" />
+ </figure>
+ <figure class="">
+  <img src="media/_68185299_semaphore-towers.jpg" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <p>We've talked a lot about messages. Let's talk about mediums</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="part5:discoveringelectricity">Part 5: Discovering Electricity</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light grid-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-grid {@{HAS_MEDIA_CLASSES}@} slide-contents grid-items-1 has-only-media media-grid"> 
+ <div class="element-group has-media has-media-first has-media-last">
+  <div class="layout-grid media-grid grid-items-2">
+   <figure class="">
+    <img src="media/Electric_catfish_in_Mastaba_of_Ti_bas-relief_detail.jpg" class=" position-center-center" />
+   </figure>
+   <figure class="">
+    <img src="media/turkel-78896913.jpg" class=" position-center-top" />
+   </figure>
+  </div> 
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h1 id="heywhatweretheancientgreeksupto">Hey, what were the ancient greeks up to?</h1> 
+  <h1 id="ἤλεκτρονelektronamber">ἤλεκτρον (<em>elektron</em>), 'amber'</h1>
+ </div> 
+ <figure class="">
+  <img src="media/Cat_demonstrating_static_cling_with_styrofoam_peanuts.jpg" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <p>What the hell is this stuff?</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <p>Can we store this stuff?</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light caption-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-caption slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/static-electricity-experiment.png" class=" position-center-center" />
+ </figure> 
+ <div class="element-group">
+  <p>Hey, how fast does this stuff go?</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/drake.png" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <p>Electricity and Magnets</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/henry-magnets.png" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="part6:inventingthetelegraph">Part 6: Inventing the Telegraph</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/C0207354-Early_galvanometer,_1820s.jpg" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="ohwhatifwehavetwotrainsonthelineatonce">'Oh, what if we have two trains on the line at once?'</h1> 
+  <p>1838 Edward Davy</p> 
+  <p>1838 William Cooke and Charles Wheatstone</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/Cooke_and_Wheatstone_electric_telegraph.jpg" class=" position-center-center" />
+ </figure> 
+ <div class="element-group">
+  <h1 id="soverysteampunk">So very steampunk</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h1 id="part7:morseandthecode">Part 7: Morse and the Code</h1>
+ </div> 
+ <figure class="">
+  <img src="media/morse.png" class=" position-center-top" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/Blog-Post-056-Swindle-06-print.jpg" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/Morse_Code_Receiver.jpg" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/morse-code-comparison.png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="variable-size-headings light cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="-----.-......--.-..-.......-....-....-..-.-..-..-.-">-- --- .-. ... . / .- -. -.. / - .... . / ..-. .. .-. ... - / .. -. - . .-. . -. -</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+</div>
+</div>
+<script src="engine/index.js"></script>
+<script src="engine/pptxgen.min.js"></script>
+<script src="engine/pfill.js"></script>
+<script src="engine/published.js"></script>
+<script>
+Reveal.configure({
+progress:true,
+progress:true,
+dependencies: [
+  {
+    src: "engine/highlight.js",
+    sync: true,
+    callback: function () {
+      hljs.initHighlightingOnLoad();
+    },
+  },
+],
+});
+</script>
+</body>
+</html>
