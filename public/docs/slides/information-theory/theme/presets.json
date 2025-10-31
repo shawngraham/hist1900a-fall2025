@@ -1,0 +1,25 @@
+{
+  "Presets": [
+    {
+      "Name": "Default",
+      "TitleFont": "Literata",
+      "BodyFont": "Literata",
+      "Appearance" : "light",
+      "DarkBodyTextColor": "#11100E",
+      "LightBodyTextColor": "#EBE7E7",
+      "DarkTitleTextColor": "#11100E",
+      "LightTitleTextColor": "#EBE7E7",
+      "DarkBackgroundColor": "#11100E",
+      "LightBackgroundColor": "#EBE7E7",
+      "DarkAccent1": "#6A6256",
+      "LightAccent1": "#EBE7E7",
+      "Accent1": "#6A6256",
+      "Accent2": "#43aa8b",
+      "Accent3": "#f9c74f",
+      "Accent4": "#90be6d",
+      "Accent5": "#f8961e",
+      "Accent6": "#577590"
+    },
+
+  ]
+}
