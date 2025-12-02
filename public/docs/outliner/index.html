@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Cards Outliner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d5c4 100%);
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 16px 24px;
+            border-bottom: 1px solid rgba(139, 90, 60, 0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #5a3825;
+            letter-spacing: -0.5px;
+        }
+
+        #canvas-container {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: grab;
+        }
+
+        #instructions {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 16px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            font-size: 13px;
+            color: #5a3825;
+            max-width: 280px;
+            border: 1px solid rgba(139, 90, 60, 0.15);
+        }
+
+        #instructions p {
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        #instructions p:last-child {
+            margin-bottom: 0;
+        }
+
+        #instructions strong {
+            font-weight: 500;
+            color: #3a2415;
+        }
+
+        #reset-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 90, 60, 0.3);
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: #5a3825;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #reset-button:hover {
+            background: rgba(255, 255, 255, 1);
+            border-color: #b8885d;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        #load-button {
+            position: absolute;
+            top: 20px;
+            right: 140px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 90, 60, 0.3);
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: #5a3825;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #load-button:hover {
+            background: rgba(255, 255, 255, 1);
+            border-color: #b8885d;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        #export-button {
+            position: absolute;
+            top: 20px;
+            right: 280px;
+            padding: 8px 16px;
+            background: rgba(184, 136, 93, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 90, 60, 0.5);
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #export-button:hover {
+            background: rgba(166, 122, 82, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        #edit-overlay {
+            position: absolute;
+            background: white;
+            border: 2px solid #b8885d;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 1000;
+            min-width: 300px;
+        }
+
+        #edit-overlay.active {
+            display: block;
+        }
+
+        #edit-overlay label {
+            display: block;
+            font-family: 'Crimson Pro', serif;
+            font-weight: 600;
+            color: #3a2415;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        #edit-overlay input,
+        #edit-overlay textarea {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #d4a574;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            margin-bottom: 12px;
+            color: #3a2415;
+        }
+
+        #edit-overlay input:focus,
+        #edit-overlay textarea:focus {
+            outline: none;
+            border-color: #b8885d;
+            box-shadow: 0 0 0 3px rgba(184, 136, 93, 0.1);
+        }
+
+        #edit-overlay textarea {
+            resize: vertical;
+            min-height: 80px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        #edit-overlay .buttons {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+        }
+
+        #edit-overlay button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        #edit-overlay button.save {
+            background: #b8885d;
+            color: white;
+        }
+
+        #edit-overlay button.save:hover {
+            background: #a67a52;
+        }
+
+        #edit-overlay button.cancel {
+            background: #e8d5c4;
+            color: #5a3825;
+        }
+
+        #edit-overlay button.cancel:hover {
+            background: #d4c2b1;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Note Cards Outliner</h1>
+    </div>
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+        <input type="file" id="file-input" accept=".md,.markdown" multiple style="display: none;">
+        <button id="export-button" title="Export cards as a markdown file">Export to Markdown</button>
+        <button id="load-button" title="Load markdown files from your computer">Load Files</button>
+        <button id="reset-button" title="Clear all data and reset">Reset Canvas</button>
+        <div id="instructions">
+            <p><strong>Load Files button</strong> to import .md files</p>
+            <p><strong>Drag empty space</strong> to pan the canvas</p>
+            <p><strong>Double-click canvas</strong> to create a note</p>
+            <p><strong>Double-click card</strong> to edit it</p>
+            <p><strong>Double-click connection</strong> to delete it</p>
+            <p><strong>Drag cards</strong> to reposition them</p>
+            <p><strong>Click header</strong> to expand/collapse</p>
+            <p><strong>Drag onto another card</strong> to connect</p>
+            <p><strong>Export button</strong> creates ordered outline</p>
+        </div>
+        <div id="edit-overlay">
+            <label>Title:</label>
+            <input type="text" id="edit-title" placeholder="Enter note title">
+            <label>Content:</label>
+            <textarea id="edit-content" placeholder="Enter note content"></textarea>
+            <div class="buttons">
+                <button class="cancel" id="edit-cancel">Cancel</button>
+                <button class="save" id="edit-save">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /*
+         * NOTE CARDS OUTLINER
+         * 
+         * NO CONFIGURATION NEEDED!
+         * 
+         * How to use:
+         * 1. Click "Load Files" button to select your markdown files (.md)
+         * 2. Each file becomes one or more cards on the canvas
+         * 3. Arrange, connect, and edit cards as needed
+         * 4. Click "Export to Markdown" to save your organized outline
+         * 
+         * Your loaded files and work are saved in the browser and persist
+         * between sessions. You can load new files anytime.
+         * 
+         * SUPPORTED FILE FORMATS:
+         * 
+         * Format 1 - One file = One card:
+         * # Card Title (optional - first heading becomes title)
+         * Card content goes here...
+         * Multiple paragraphs supported.
+         * 
+         * Format 2 - One file = Multiple cards (using separators):
+         * # First Card Title
+         * Content for first card...
+         * #-------
+         * # Second Card Title
+         * Content for second card...
+         * #-------
+         * # Third Card Title
+         * Content for third card...
+         * 
+         * The app automatically detects which format you're using!
+         * 
+         * Buttons:
+         * - "Load Files": Select .md files from your computer
+         * - "Export to Markdown": Download ordered outline following connections
+         * - "Reset Canvas": Clear everything and start fresh
+         * 
+         * Export Logic:
+         * Starts with the topmost card (highest on canvas), follows connection
+         * arrows to determine order. ONLY connected cards are exported - unconnected
+         * cards are excluded. This lets you work on multiple outlines and export
+         * only the connected path you want. Titles are formatted as [Title] in 
+         * markdown link format.
+         * 
+         * If no files are loaded, the app shows example placeholder cards.
+         */
+
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Connection lines - declare early
+        const connections = [];
+
+        // Canvas panning
+        let panOffsetX = 0;
+        let panOffsetY = 0;
+        let isPanning = false;
+        let panStartX = 0;
+        let panStartY = 0;
+
+        // LocalStorage persistence
+        const STORAGE_KEY = 'noteCardsOutliner';
+        const STORAGE_KEY_FILES = 'noteCardsOutliner_files';
+        
+        // Store loaded file data
+        let loadedFiles = [];
+
+        function saveFilesToLocalStorage() {
+            localStorage.setItem(STORAGE_KEY_FILES, JSON.stringify(loadedFiles));
+        }
+
+        function loadFilesFromLocalStorage() {
+            const stored = localStorage.getItem(STORAGE_KEY_FILES);
+            if (stored) {
+                try {
+                    loadedFiles = JSON.parse(stored);
+                    return true;
+                } catch (e) {
+                    console.error('Failed to load files from localStorage:', e);
+                    return false;
+                }
+            }
+            return false;
+        }
+
+        async function loadMarkdownFromFile(filename) {
+            try {
+                const response = await fetch(filename);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${filename}`);
+                }
+                const text = await response.text();
+                
+                // Parse the markdown file as a single card
+                const lines = text.trim().split('\n');
+                let title = filename.replace('.md', ''); // Default to filename
+                let content = text;
+                
+                // If first line is a heading, use it as title
+                if (lines[0].startsWith('#')) {
+                    title = lines[0].replace(/^#+\s*/, '').trim();
+                    content = lines.slice(1).join('\n').trim();
+                }
+                
+                return { title, content };
+            } catch (error) {
+                console.warn('Could not load markdown file:', error);
+                return null;
+            }
+        }
+
+        function saveToLocalStorage() {
+            const data = {
+                cards: cards.map(card => ({
+                    x: card.x,
+                    y: card.y,
+                    title: card.title,
+                    content: card.content,
+                    expanded: card.expanded,
+                    index: card.index
+                })),
+                connections: connections.map(conn => ({
+                    fromIndex: cards.indexOf(conn.from),
+                    toIndex: cards.indexOf(conn.to)
+                })),
+                panOffset: {
+                    x: panOffsetX,
+                    y: panOffsetY
+                }
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        }
+
+        function loadFromLocalStorage() {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            if (!stored) return false;
+
+            try {
+                const data = JSON.parse(stored);
+                
+                // Clear existing cards and connections
+                cards.length = 0;
+                connections.length = 0;
+
+                // Restore cards
+                data.cards.forEach(cardData => {
+                    const card = new Card(
+                        cardData.x,
+                        cardData.y,
+                        { title: cardData.title, content: cardData.content },
+                        cardData.index
+                    );
+                    card.expanded = cardData.expanded;
+                    if (card.expanded) {
+                        card.height = card.calculateExpandedHeight();
+                    }
+                    cards.push(card);
+                });
+
+                // Restore connections
+                data.connections.forEach(connData => {
+                    if (connData.fromIndex >= 0 && connData.toIndex >= 0 &&
+                        connData.fromIndex < cards.length && connData.toIndex < cards.length) {
+                        connections.push({
+                            from: cards[connData.fromIndex],
+                            to: cards[connData.toIndex]
+                        });
+                    }
+                });
+
+                // Restore pan offset
+                if (data.panOffset) {
+                    panOffsetX = data.panOffset.x;
+                    panOffsetY = data.panOffset.y;
+                }
+
+                return true;
+            } catch (e) {
+                console.error('Failed to load from localStorage:', e);
+                return false;
+            }
+        }
+
+        // Set canvas size
+        function resizeCanvas() {
+            const container = canvas.parentElement;
+            canvas.width = container.clientWidth;
+            canvas.height = container.clientHeight;
+            if (cards.length > 0) {
+                draw();
+            }
+        }
+
+        // Placeholder markdown data
+        const markdownData = `#Note 1: Rhetorical Précis of "As We May Think"
+Vannevar Bush, in "As We May Think", asserts that science should prioritize the massive task of making the bewildering store of human knowledge more accessible and commanding, rather than continuing primarily to extend man's physical powers. Bush supports this claim by detailing how specialization is causing investigators to become bogged down by an ever-growing mountain of research, highlighting that traditional methods for transmitting and reviewing scholarly work are now totally inadequate, and then proposing the Memex—a future device using advanced techniques like microphotography, dry photography, and eventually associative indexing—as an enlarged, intimate supplement to individual memory. The author’s purpose is to hold up an incentive for scientists to pursue the perfection of pacific instruments following wartime work, in order to mechanize the record more fully and prevent mankind from overtaxing its limited memory, allowing society to reacquire the privilege of forgetting things not immediately needed.
+
+#-------
+#Note 2: Research Memo on "As We May Think" (Bush)
+INITIAL OBSERVATION: WHAT IF... the ultimate goal of information science isn't to create better libraries, but to create a better brain?
+The really cool insight from Bush is that the difficulty we face isn't just that we publish too much, but that our methods of using the record are still stuck in the days of square-rigged ships. He argues that the way we organize information—alphabetically or numerically—is totally "artificial" because it forces you to find information by tracing it down from subclass to subclass, meaning an item can only be in one place unless duplicates are used. The brain doesn't work like that; it uses selection by association. The Memex is brilliant because it's designed specifically to mimic this fluid, associative mental process, allowing a user to build permanent, individualized "trails" through the "maze" of materials, connecting widely separated sources like binding them into a new book. It's essentially an "enlarged intimate supplement" to individual memory.
+
+MY OBSERVATION: It's fascinating how Bush recognized that the biggest bottleneck in knowledge wasn't storage but retrieval, and that traditional systems (like libraries) were the problem, not the solution. The idea of the Memex reminds me that many of the tools we now take for granted (like hypertext, which Berners-Lee eventually picked up) were conceived as ways to literally replicate or enhance human cognition. This suggests that the early digital pioneers weren't just building machines, they were engaging in philosophical engineering, seeking "relief... from laborious detailed manipulation" to free the brain for "something more than repetitive detailed transformations". If the modern Web is struggling with its "bewildering store of knowledge", maybe it’s because we ended up adopting the decentralized nature of the Web (hypertext/trails) without fully committing to the individualized and private archival vision of the Memex.
+
+#-------
+#Note 3: Rhetorical Précis of "A Prehistory of Social Media"
+Kevin Driscoll, in "A Prehistory of Social Media" (Summer 2022
+), argues that the popular, narrow histories of the internet—which focus overwhelmingly on the US government, military origins (like ARPANET), and Silicon Valley "geniuses"—fail to account for the crucial, grassroots development of early online communities. Driscoll supports this argument by exploring the parallel "modem world" that developed primarily in the 1980s, emphasizing how community-oriented amateurs and entrepreneurs utilized Bulletin Board Systems (BBSs), hosted on personal computers (PCs) and accessible via dial-up modems, to provide low-cost, idiosyncratic infrastructures for online social life. The author’s purpose is to recover the history of the modem world, which foreshadowed later intensely personal and interactive platforms, in order to provide a fuller history of the internet and offer insights that might help build healthier online communities that are more just, equitable, and inclusive.
+
+#-------
+#Note 4: Research Memo on "A Prehistory of Social Media" (Driscoll)
+INITIAL OBSERVATION: WHAT IF... the 'Information Superhighway' was never meant to be governed by the military or Silicon Valley, but by local hobbyists and their quirky, handmade Bulletin Board Systems?
+This article blew my mind because I always heard the internet story was all about ARPANET and the Cold War, but Driscoll shows that's a narrow, 25-year-old "founding mythology". The real key here is the "modem world," which developed entirely in parallel to ARPANET, driven by amateurs and entrepreneurs who built their own low-cost online communities (BBSs) using microcomputers. Unlike the military-funded networks, these BBSs reflected the "local culture and personality of its owners". The origins of the internet are therefore not just militaristic and centralized (the standard story) but also community-oriented and grassroots, giving a glimpse into a potential future beyond commercial social media and platform monopolies.
+
+MY OBSERVATION: Reading this alongside the stories of the ARPANET (see Note 11 and Note 19), it’s clear that the popular narrative of the internet's military foundation, while not totally false, is deliberately incomplete. Driscoll suggests that forgetting this history—that of local, modifiable, idiosyncratic dreams of cyberspace—has high stakes, especially now that the internet is "compulsory infrastructure". It reminds me that the centralization we see today (the commercialized Web, as discussed in Note 9) wasn't inevitable; rather, it was the result of the grassroots, "modem world" alternative being overshadowed or forgotten by the later "information superhighway" hype. The idea that BBSs foreshadowed modern social media means we missed a chance to build digital spaces based on local, community-driven ideals instead of commercial profit.
+
+#-------
+#Note 5: Rhetorical Précis of "Before the Web There Was Gopher"
+Philip L. Frana, in "Before the Web There Was Gopher" (undated
+), explains that Internet Gopher, an efficient, widely-used software tool preceding the World Wide Web (Web), faded into obscurity for two main reasons: the ascendance of hypertext and the issue of commerce. Frana develops this explanation by contrasting Gopher’s core design—a systematic, library-like hierarchical menu interface that championed textual browsing and low bandwidth—with the Web’s decentralized hypertext linking model (nicknamed "pretty text") which facilitated a visually rich, non-linear, and ultimately commercial environment, and by detailing how the University of Minnesota's 1993 licensing fee structure alienated the Gopher development community. The author's purpose is to trace the ideological and technical failure of Gopher in the early 1990s, in order to demonstrate that the choice between hierarchical organization and fluid hypertext was as "emotional as it was rational," determining the early trajectory of the public internet.
+
+#-------
+#Note 6: Research Memo on "Before the Web There Was Gopher" (Frana)
+INITIAL OBSERVATION: WHAT IF... the World Wide Web was actually a technological step backwards in terms of logic and efficiency, and won purely because it was "pretty text" and could sell things?
+Gopher was a massive hit in the early 90s because it solved a real problem: the internet was a sprawling mass of poorly classified data accessible only via nonintuitive software. Gopher, named after the University of Minnesota mascot and the idea of a "go-fer" who fetches things, was sleek, fast (favoring lowest common denominators like plain text), and relied on a straightforward hierarchical file menu system inspired by libraries. Frana argues that Gopher lost not because of technical deficiencies (like graphics handling, which it could do) but because of ideology and interface. The Web’s hypertext—"pretty text"—mesmerized users and aligned with a fluid, multidirectional mindset, whereas Gopher was stuck in the classical-modernist aesthetic of systematic, orderly hierarchy. Plus, the University of Minnesota tried to license the Gopher protocol, which immediately scared off developers who preferred the freeware/open model of WAIS and FTP.
+
+MY OBSERVATION: This is huge! The downfall of Gopher was a victory for association over hierarchy, showing that the successful digital infrastructure wasn't just technically superior (it wasn't initially, often being slower) but culturally superior. It totally validates Vannevar Bush's idea (Note 1) that the future of knowledge relied on associative trails (hypertext) rather than clumsy indexing (Gopher's menus). The moment the open, academic Gopher team tried to enforce commercial restrictions, they lost. This links directly to the "open world" hacker ethos Rosenzweig discusses (Note 19) and shows that, unlike the community-based BBSs (Note 3), even university-driven systems could be killed by bad business choices right when the Web was ready to commercialize (Note 9).
+
+#-------
+#Note 7: Rhetorical Précis of "Networks before the Internet"
+Grant Bollmer, in "Networks before the Internet" (Fall 2019
+), argues that the current internet infrastructure is a material manifestation of a long-standing, contradictory cultural construct called the "network imaginary," which significantly predates digital technology and determines our beliefs about social connection. Bollmer sketches this network imaginary through a genealogy rooted in disparate historical precedents, tracing how the term "network" evolved from physically woven objects (textiles) into a set of contradictory beliefs: the network as a constraining trap, and the network as a fluid pathway necessary for biological, social, and economic "health" (as seen in anatomy, branch banking, and transport/communication industries). The author’s purpose is to demonstrate that ARPANET and the subsequent internet merely unified these pre-existing, centuries-old metaphors and flows of information, in order to challenge the perceived necessity and inevitability of the internet’s current structure and the social relations it perpetuates.
+
+#-------
+#Note 8: Research Memo on "Networks before the Internet" (Bollmer)
+INITIAL OBSERVATION: WHAT IF... the reason we accept things like surveillance and corporate flows on the internet is because the very idea of a "network" has been subconsciously coded in our culture for centuries as either a trap or a circulation system that requires management?
+Bollmer's critique is super deep: he claims the internet isn't just a technical system, but a "material instantiation of a particular network imaginary" that existed long before ARPANET. This imaginary is fundamentally contradictory. On one hand, the network is a trap, like a woven net or the conspiracies Webster wrote about. On the other, it’s a flow, drawing heavily on the biological metaphor of blood circulation (developed by William Harvey), where regulated flow is necessary for "health" in bodies, cities, and economies. ARPANET succeeded by combining these historical streams and making "information" the substance that flows.
+
+MY OBSERVATION: This genealogy completely reframes the history of technology (like Tully's telegraph story, Note 17). It shows that the political struggles Denning predicted over the ARPANET (Note 11) and the centralization Bory critiques (Note 9) are just the latest rounds in a centuries-old fight. For instance, Bollmer mentions how populist fears about branch banking networks were anxieties that capital flow would be directed away from local communities towards Wall Street. This sounds exactly like the anxiety that the grassroots BBS communities (Note 3) had about being overshadowed by large, commercial systems! The battle over the "open" versus "closed" world (Note 19) isn't about new technology; it’s about which historical metaphor—the constrained trap or the healthy, managed flow—is dominating the digital space right now.
+
+#-------
+#Note 9: Rhetorical Précis of "The Myth of the World Wide Web"
+Paolo Bory, in "The Myth of the World Wide Web" (2020), claims that the history surrounding the Web’s birth, particularly the focus on Tim Berners-Lee as the altruistic hero who gave his invention for free, has become a self-fulfilling, simplifying myth that masks the complex, contradictory development of the medium. Bory develops this claim by analyzing Berners-Lee’s biography using the archetypal hero’s journey narrative structure (departure, initiation, return), demonstrating that this hagiography reinforces the Web's supposed neutral, egalitarian, and decentralized character, even though the Web's reliance on a client-server model and subsequent commercialization have led to the dominance of centralized corporate hubs like Google and Facebook, contradicting its founding ideals. The author’s purpose is to look past the Web’s revolutionary aura by integrating its history with that of its non-revolutionary precursors (like hypertext, telephony, and transportation networks), in order to challenge the linearity of the dominant internet narrative and expose the centralizing forces that utilize the myth of openness to legitimize their control.
+
+#-------
+#Note 10: Research Memo on "The Myth of the World Wide Web" (Bory)
+INITIAL OBSERVATION: WHAT IF... the 'gift' of the World Wide Web wasn't altruistic at all, but a deliberate construction that paved the way for centralization and corporate dominance?
+Bory is calling out the Web's hero story, comparing Tim Berners-Lee to a mythological hero whose biography is structured to be familiar, simple, and self-closing. The "apotheosis" moment is the sacrifice of intellectual property, which transferred values like democracy and generosity onto the Web itself, making it seem like a neutral space free from economic interests. But here's the kicker: the Web, despite its decentralized rhetoric, is fundamentally built on a client-server model, which naturally redirects information to specific centralized hubs (servers). This structure, combined with commercialization (which Bory calls Berners-Lee's "act of hubris"), allowed Google and Facebook to become super-hubs, concentrating content access and platform interaction, thus betraying the decentralized ideal.
+
+MY OBSERVATION: It's ironic that the Web "won" partly because it embraced hypertext—the non-hierarchical, associative structure Bush championed (Note 1) and Gopher (Note 5) failed to implement fully—but then immediately fell into the trap of centralization that hypertext was meant to prevent. Bory argues that this centralization is not just economic; it’s narrative. The myth of the open Web prevents critical opposition to centralized control. This completely echoes Doctorow’s argument (Note 15) that platforms degrade due to a lack of constraints, suggesting that maybe the founding myth itself was the first constraint to be eroded, making it harder for users to realize they were being centralized.
+
+#-------
+#Note 11: Rhetorical Précis of "The Science of Computing: The ARPANET after Twenty Years"
+Peter J. Denning, in "The Science of Computing: The ARPANET after Twenty Years" (November-December 1989), asserts that the true significance of the ARPANET and its derivatives lies not in the networking technology itself, like packet switching, but rather in the profound alterations it produced in human practices, which established a new technological discourse. Denning supports this assertion by detailing the ARPANET’s origin in Cold War durability concerns (Paul Baran's distributed network) and resource-sharing goals (J. C. R. Licklider's vision), and then demonstrating that the discourse's direction was altered by unexpected user practices, citing electronic mail—which quickly became the major source of traffic—and the subsequent emergence of specialized industries and widespread practices that were not part of the original goals. The author’s purpose is to interpret the ARPANET’s twenty-year progress through the lens of a technological discourse comprising five major stages—declarations, prototypes, tools, industries, and widespread practices—in order to guide future network designers toward reconciling the conflicts that arise when the distinct discourses of science, business, higher education, and government mix within the networking environment.
+
+#-------
+#Note 12: Research Memo on "The Science of Computing: The ARPANET after Twenty Years" (Denning)
+INITIAL OBSERVATION: WHAT IF... the greatest innovation of the ARPANET wasn't packet switching, but the accidental discovery that scientists mostly just wanted to gossip?
+Denning emphasizes that technology's influence comes from the "fundamental shifts in human practices" it causes. The ARPANET was founded on heavy, serious ideas: surviving a nuclear strike (Baran's distributed, non-centralized architecture) and sharing expensive computer resources (Licklider's vision). But the major surprise was that within two years, the network was dominated by electronic mail, an application not even listed in the original goals. This shows the power of the "drift" of technological discourse: user needs redefined the network almost immediately. Denning points out that network designers must grapple with conflicts when different discourses collide, like the business world's preference for fax-inspired mail (rooted in telephone use and paper sharing) versus the ARPANET's text-file email.
+
+MY OBSERVATION: This is a fantastic example of the "open world" hacking ethos (Note 19) triumphing over the "closed world" vision, even if only accidentally. The military designed a network for survival and resource sharing, and the users turned it into a massive, cooperative communication medium for their "community". However, Denning’s predictions about future conflicts—like the tension between government/business concern for security versus academic/hacker distrust of complicated access controls
+—show that this flexibility wasn't a peaceful resolution; it just set the stage for later conflicts, like the current fight over "enshittification" (Note 15), where centralized systems are abusing the very communication channels the users created.
+
+#-------
+#Note 13: Rhetorical Précis of "When Computers Were Women"
+Jennifer S. Light, in "When Computers Were Women" (July 1999
+), argues that the pervasive historical omission of women from early computing perpetuates the misconception that they were uninterested or incapable in the field, despite programming having originated as low-status, feminized clerical labor requiring high-level mathematical expertise. Light supports this argument by detailing the complex, unacknowledged technical work performed by the ENIAC operators (such as solving nonlinear differential equations and physically locating burnt-out vacuum tubes inside the machine), and by contrasting this expertise with the War Department’s selective press releases which intentionally omitted the women while hailing the male engineers as "fathers" of the machine. The author’s purpose is to retell the ENIAC story by focusing on the female technicians’ contributions, in order to demonstrate that their low-status job classification clashed with the highly innovative nature of their work and expose the deep-rooted ambivalences about women occupying professional roles in the labor force.
+
+#-------
+#Note 14: Research Memo on "When Computers Were Women" (Light)
+INITIAL OBSERVATION: WHAT IF... the earliest "hackers" (those who understood machine logic and bypassed intended uses) were actually women who were deliberately rendered invisible by the War Department?
+Light’s argument confirms that the history of technology isn't just about successful inventions; it's also about who gets credited and who gets erased (the "Matilda effect"). The ENIAC programmers were highly skilled, tackling nonlinear differential equations and intimately understanding the machine’s circuitry—a job requiring ingenuity and tacit knowledge usually associated with high-status technical work. Yet, because this work was categorized as feminized clerical labor before the war, the women were given low status and pay. The moment the ENIAC was prepared for public unveiling, the War Department deliberately omitted the women from press releases to protect the masculine image of "science in action".
+
+MY OBSERVATION: This strongly aligns with Mar Hicks’s thesis (Note 23) that early computing systems were intentionally designed to maintain existing power structures, meaning the "computer revolution" wasn't socially revolutionary at all. The ENIAC story shows that sexism served as a structural design parameter: keeping programming status low ensured men maintained control of the "hard" hardware, while the "soft" software work (programming) was performed by easily replaceable women. The irony is that the low status of the job category actually allowed women to engage in unprecedented, innovative work because the job was perceived as not important enough to be policed by men. This is crucial to understanding why the subsequent upskilling and masculinization of computing later in the century was a deliberate choice, not a natural evolution of the field.
+
+#-------
+#Note 15: Rhetorical Précis of "My McLuhan lecture on enshittification"
+Cory Doctorow, in "My McLuhan lecture on enshittification" (January 30, 2024), asserts that the pervasive decay of digital platforms, which he defines as "enshittification," is an intentional, predictable, three-stage process driven by the erosion of constraints rather than mysterious historical forces. Doctorow explains this process by detailing its progression—first platforms benefit users, then they abuse users to benefit business customers, and finally they abuse business customers to maximize value for themselves—and identifies the underlying mechanism as the removal of four constraints that previously checked corporate impulse: competition, regulation, self-help, and worker power. The author’s purpose is to name and explain the process of platform decay in the current era ("the enshittocene"), in order to propose solutions centered on strengthening these four constraints and building a better, "enshittification-resistant digital nervous system".
+
+#-------
+#Note 16: Research Memo on "My McLuhan lecture on enshittification" (Doctorow)
+INITIAL OBSERVATION: WHAT IF... "enshittification" isn't a bug in the capitalist internet, but the inevitable final stage of the centralized platform model (which Bory critiques in Note 9)?
+Doctorow’s description of enshittification is darkly humorous but devastatingly accurate. It provides the economic history that explains why the ideals of the open internet (Note 19) and the hopes of the decentralized modem world (Note 3) failed. The core mechanism is the three-stage process where value is systematically clawed back from users and customers by the platform to benefit shareholders. The ability of executives to carry out their "worst impulses" was enabled by the erosion of competition, regulation, self-help (user countermeasures), and worker power. These systems are designed to be centrally controlled (as Bory noted about the client-server model), which means when the controls (constraints) are removed, terminal degradation is the result.
+
+MY OBSERVATION: This connects directly to Denning's prediction (Note 11) that conflicts would arise when the discourse of "business" mixed into networking, specifically criticizing the lack of regulation and control over misuse. The key insight here is the role of self-help, where technical flexibility allows users to undo anti-features (like ad blockers), acting as a constraint on corporate power. This is the modern, digital version of the "hackers" of the 1960s who valued decentralization and free flow of information (Note 19), using technical means to resist the "closed world" of control. The challenge now is whether we can reverse the process by strengthening these constraints, or if the current systems are already too far gone, doomed to be remembered as the blurry, degraded relics of the "enshittocene".
+
+#-------
+#Note 17: Rhetorical Précis of "A Victorian Ecological Disaster: Imperialism, the Telegraph, and Gutta-Percha"
+John Tully, in "A Victorian Ecological Disaster: Imperialism, the Telegraph, and Gutta-Percha" (December 2009
+), claims that the success of the electric telegraph—the technology that broke the nexus between communication and physical transport and consolidated the sprawling European empires—was critically dependent on gutta-percha, a natural plastic extracted through profligate, unsustainable colonial practices. Tully supports this claim by detailing how gutta-percha, used to insulate submarine telegraph cables, required the felling of the Isonandra trees (yielding very little latex per tree), which resulted in the extermination of millions of trees in Southeast Asia and an ecological crisis by the late nineteenth century, driven by the huge demand and the colonial powers' relentless priority of imperial expansion over resource conservation. The author’s purpose is to examine the material and environmental history of early global communications, in order to demonstrate that this "high-tech" Victorian industry was built upon a violent, primitive extractive system that serves as a clear premonition of the later, larger assault on tropical rainforests.
+
+#-------
+#Note 18: Research Memo on "A Victorian Ecological Disaster: Imperialism, the Telegraph, and Gutta-Percha" (Tully)
+INITIAL OBSERVATION: WHAT IF... the "Internet of the 19th Century" (the telegraph) wasn't just a revolution in speed and connectivity, but a catastrophic hidden cost on colonial environments and indigenous labor?
+Tully's focus on the material element—gutta-percha—is essential because it links the abstract concept of global connectivity directly to colonial violence and ecological destruction. The telegraph network, which acted as the "nerves" connected to the "brain" of the British Empire, was utterly dependent on this tropical gum for insulating submarine cables. The extraction process was highly primitive and required cutting down the trees, leading to the slaughter of potentially millions of Isonandra trees in places like Singapore, Malacca, and Borneo.
+
+MY OBSERVATION: This changes how I think about the entire "network imaginary" that Bollmer (Note 7) discusses. Bollmer noted that networks are imagined as either a trap or a liberating flow. Tully proves that in the colonial context, the "flow" (of imperial communication and trade) was made possible by the literal trap (of an unsustainable extractive industry in the colonies), linking the health of the metropolitan economy to the total destruction of the colonized environment. The Victorian era’s ability to communicate almost instantly relied on a deeply uneven system. This is the historical baseline for modern digital infrastructure: the "miracle" of connectivity often masks a destructive, invisible material cost, whether it’s rubber in the 19th century or rare earth minerals today.
+
+#-------
+#Note 19: Rhetorical Précis of "Wizards, Bureaucrats, Warriors & Hackers: Writing the History of the Internet"
+Roy Rosenzweig, in "Wizards, Bureaucrats, Warriors & Hackers: Writing the History of the Internet" (December 1998), argues that a complete history of the Internet must integrate accounts of ingenious engineers and government bureaucrats with a fully contextualized social and cultural history rooted in the dual, conflicting heritage of the Cold War’s "closed world" and the counterculture’s "open and decentralized world". Rosenzweig develops this argument by contrasting the standard, narrow narratives—which focus either on biographical "wizards" and resource sharing or on bureaucratic/ideological accounts stressing military command and control systems—with the necessary social history that highlights the populist, bottom-up contribution of "Netizens" who created Usenet and drove the unexpected popularity of e-mail using a non-hierarchical "hacker ethic". The author’s purpose is to survey and synthesize these conflicting historiographical approaches, in order to better understand how the core contradictions inherent since the 1960s—whether the Net will foster democratic dialogue or centralized hierarchy—continue to shape the internet's current reality and future possibilities.
+
+#-------
+#Note 20: Research Memo on "Wizards, Bureaucrats, Warriors & Hackers" (Rosenzweig)
+INITIAL OBSERVATION: WHAT IF... the Internet wasn't designed by "wizards" in labs, but was accidentally created by the tension between the Pentagon's need for control and the 1960s counterculture's need for community and freedom?
+Rosenzweig brilliantly maps out how the Internet's history is essentially a struggle between two conflicting ideologies that existed side-by-side in the 1960s: the "closed world" discourse of the Cold War, rooted in centralized military command and control systems, and the "open world" discourse of the counterculture, focused on sharing, anti-hierarchy, and decentralization. The ARPANET, designed by the military, fostered the closed-world fantasy, but the unexpected popularity of e-mail and the rise of autonomous grassroots networks like Usenet, created by students who felt excluded by the ARPANET's security, showed the power of the "open" vision. This hacker ethic, reflected in the open, community-driven creation of standards ("Request for Comments" or RFCs), was a direct challenge to military control.
+
+MY OBSERVATION: This synthesis is the key to understanding all the other historical conflicts we've read about. The failure of Gopher (Note 5) and the rise of the Web's hero myth (Note 9) are ideological moments in this ongoing struggle. The reason the internet looks the way it does now—an oligopoly controlled by a few companies, facing "enshittification" (Note 15)—is because the corporate capitalism (the "closed world" of money) has largely eclipsed the anti-monopoly, decentralized hacker ethic (the "open world"). However, the continued existence of things like Linux and freeware proves that the "open" impulse, rooted in the political and cultural movements of the 1960s, is still fighting back.
+
+#-------
+#Note 21: Rhetorical Précis of "ChatGPT Is a Blurry JPEG of the Web"
+Ted Chiang, in "ChatGPT Is a Blurry JPEG of the Web" (February 9, 2023
+), asserts that large language models (LLMs) like ChatGPT can be best understood as algorithms performing lossy compression on the immense collection of text found on the Web, functionally analogous to a blurry JPEG image. Chiang supports this assertion by explaining that because the model achieves extreme compression by identifying and storing statistical regularities, its output is merely an approximation that retains the "gist" but produces "hallucinations"—plausible but incorrect compression artifacts—when generating text. The author’s purpose is to offer the lossy compression metaphor as a helpful corrective to the tendency to anthropomorphize LLMs, in order to evaluate their actual utility, arguing that starting with a "blurry copy of unoriginal work" is counterproductive for creating original, truthful knowledge.
+
+#-------
+#Note 22: Research Memo on "ChatGPT Is a Blurry JPEG of the Web" (Chiang)
+INITIAL OBSERVATION: WHAT IF... the future of machine "thinking" isn't a brilliant new intelligence, but a highly compressed, slightly inaccurate photocopy of everything we've already written?
+Chiang's metaphor of ChatGPT as a "blurry jpeg of all the text on the Web" is perfect. He argues that LLMs work by identifying statistical regularities and performing lossy compression, meaning they intentionally discard information to save space. This explains why they are so good at interpolation (generating plausible text that fills the gap between two ideas) and why they constantly hallucinate—the factual errors are just "compression artifacts". Critically, he notes that LLMs sound smart precisely because they use lossy compression: they rephrase material, making them seem like a student expressing ideas in her own words, unlike lossless compression which would just quote verbatim.
+
+MY OBSERVATION: This throws fascinating shade on the early dreams of computing. Vannevar Bush (Note 1) wanted machines to help us manage and master the massive store of knowledge, but Chiang suggests the next generation of knowledge technology might just degrade it structurally. Furthermore, Chiang directly engages with Turing's challenge (Note 25) that intelligence should be judged by linguistic performance. Chiang implies that modern LLMs are successful in the Imitation Game not because they genuinely "understand" (they fail at basic arithmetic), but because lossy compression looks smarter than lossless compression. The ultimate danger is that if we use LLMs to generate Web content, the Web becomes a "blurrier version of itself," creating a vicious feedback loop of degraded knowledge.
+
+#-------
+#Note 23: Rhetorical Précis of "When Winning Is Losing: Why the Nation that Invented the Computer Lost Its Lead"
+Mar Hicks, in "When Winning Is Losing: Why the Nation that Invented the Computer Lost Its Lead", asserts that Britain lost its lead in computing because it intentionally implemented structural sexism to discard its most plentiful supply of trained technologists, who were women. Hicks supports this assertion by describing the British case as a "technological failure" that resulted from leaders and industry officials intentionally working to standardize a gendered underclass of tech workers, detailing that women were deliberately excluded from positions of authority, even when they had the required skills (like the team who operated Colossus), and noting that this discriminatory pattern was later worsened by technological amplification in the US. The author’s purpose is to highlight the important historical lessons of technological failure, in order to argue that technology's design decisions are not neutral but are meant to preserve existing hierarchies, ensuring that pre-digital power structures remain intact after the computer revolution.
+
+#-------
+#Note 24: Research Memo on "When Winning Is Losing" (Hicks)
+INITIAL OBSERVATION: WHAT IF... the computer revolution was designed not to be a revolution in society, but a successful mechanism for social conservation, ensuring men kept power even while the technology changed?
+Hicks provides the political and economic explanation for the invisibility that Light documented (Note 13). Britain's story is framed as a failure narrative that reveals how the downfall of an industry can be caused by programmed-in structural inequality, not technical mistakes. The key takeaway is that the association of technical work with low-status workers (women) and powerful work with high-status workers (men) was a deliberate "blueprint for the postindustrial West". Women who ran Colossus were skilled, but were pushed out, often using marriage as a "turnover mechanism". This process ensured that those who held power in pre-digital society continued to hold it after the computer revolution.
+
+MY OBSERVATION: This is a crucial counter-argument to the "wizards" and "geniuses" narratives discussed by Rosenzweig (Note 19) and Driscoll (Note 3). It shows that even in the face of immense technical needs (like code-breaking or ballistics in WWII), social conservatism dictated who was allowed to wield technological power. The implication is chilling: technology is rarely socially liberating; instead, it is often designed to amplify discriminatory practices. The civil rights of workers were violated simply to preserve male managerial power. This intentional "programmed inequality" is the true cost of prioritizing power and profit over social justice, regardless of technical advancement.
+
+#-------
+#Note 25: Rhetorical Précis of "Computing Machinery and Intelligence"
+A. M. Turing, in "Computing Machinery and Intelligence" (1950), asserts that the profound yet ambiguous philosophical question "Can machines think?" should be replaced by the more concrete and definable operational question, "Are there imaginable digital computers which would do well in the imitation game?". Turing supports this assertion by describing the imitation game—a test where a human interrogator communicates textually with both a human and a machine via teleprinter and attempts to distinguish between them—and then systematically refutes nine common objections to the possibility of machine intelligence, ranging from theological arguments to Lady Lovelace’s claim that machines cannot originate anything. The author’s purpose is to establish a non-physical, observable criterion for intelligence and to dismiss popular prejudice against the idea of thinking machines, in order to suggest that intelligence will be achieved by programming a "child machine" and subjecting it to education, predicting that within fifty years, computers will be able to play the game satisfactorily.
+
+#-------
+#Note 26: Research Memo on "Computing Machinery and Intelligence" (Turing)
+INITIAL OBSERVATION: WHAT IF... we are all currently failing the "imitation game" test because modern machines generate text so plausibly that we confuse lossy compression artifacts with genuine human thought?
+Turing’s paper is the ultimate founding document of AI research, establishing that intelligence should be measured by linguistic performance—the ability to provide appropriate answers and maintain a conversation—not internal "feelings" or physical form. He wisely chose the teleprinter medium to remove physical bias. He even predicted that a machine programmed to play the game might deliberately introduce mistakes in arithmetic to confuse the interrogator and simulate "human fallibility". His proposal to build a "child machine" and educate it is a radical alternative to trying to program the "adult mind" directly.
+
+MY OBSERVATION: The challenge Turing laid down in 1950—that a machine with a storage capacity of about 109 could fool an average interrogator within fifty years—has been technically met, but the philosophical debate hasn't ended. When Ted Chiang says (Note 21) that ChatGPT's factual errors are just "compression artifacts", he is essentially critiquing the current machine's performance in the Imitation Game: the machine is only giving an approximation based on statistical regularities, rather than true arithmetic principles. However, Turing himself accepted that machines would take us by surprise and that the internal process of the machine would be largely opaque to the teacher. So, while Chiang worries that the "blurry jpeg" isn't true thought, Turing might just say the machine is successfully demonstrating that its learning process (based on massive data/education) is complex enough to defy immediate understanding, and that its ability to generate plausible text is all the proof we need.`;
+
+        // Parse markdown into cards
+        function parseMarkdown(text) {
+            const sections = text.split('#-------').map(s => s.trim());
+            return sections.map(section => {
+                const lines = section.split('\n');
+                const title = lines[0].replace(/^#+\s*/, '').trim();
+                const content = lines.slice(1).join('\n').trim();
+                return { title, content };
+            });
+        }
+
+        // Card class
+        class Card {
+            constructor(x, y, data, index) {
+                this.x = x;
+                this.y = y;
+                this.width = 280;
+                this.collapsedHeight = 60;
+                this.height = this.collapsedHeight;
+                this.title = data.title || 'New Note';
+                this.content = data.content || '';
+                this.expanded = false;
+                this.index = index;
+                this.connections = [];
+                this.isDragging = false;
+                this.dragOffsetX = 0;
+                this.dragOffsetY = 0;
+                this.isEditing = false;
+                
+                // Color palette - warm, muted tones
+                const colors = [
+                    { bg: '#fff9f0', border: '#d4a574', accent: '#b8885d' },
+                    { bg: '#fef5e7', border: '#c9a67a', accent: '#a68a5f' },
+                    { bg: '#f9f3ea', border: '#d0a87e', accent: '#b39268' },
+                    { bg: '#fdf8f0', border: '#c8a178', accent: '#ab8c62' },
+                    { bg: '#fefaf2', border: '#cca67b', accent: '#af9065' },
+                    { bg: '#f8f2e8', border: '#d2a980', accent: '#b59469' }
+                ];
+                this.color = colors[index % colors.length];
+            }
+
+            draw() {
+                // Shadow
+                ctx.save();
+                ctx.shadowColor = 'rgba(90, 56, 37, 0.15)';
+                ctx.shadowBlur = 12;
+                ctx.shadowOffsetX = 0;
+                ctx.shadowOffsetY = 4;
+
+                // Card background
+                ctx.fillStyle = this.color.bg;
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+                
+                ctx.restore();
+
+                // Border
+                ctx.strokeStyle = this.color.border;
+                ctx.lineWidth = 1.5;
+                ctx.strokeRect(this.x, this.y, this.width, this.height);
+
+                // Top accent bar
+                ctx.fillStyle = this.color.accent;
+                ctx.fillRect(this.x, this.y, this.width, 4);
+
+                // Title area
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+                ctx.fillRect(this.x, this.y + 4, this.width, this.collapsedHeight - 4);
+
+                // Title text
+                ctx.fillStyle = '#3a2415';
+                ctx.font = '600 16px "Crimson Pro", serif';
+                ctx.textAlign = 'left';
+                ctx.textBaseline = 'middle';
+                
+                const titleText = this.truncateText(this.title, this.width - 50);
+                ctx.fillText(titleText, this.x + 16, this.y + 32);
+
+                // Expand/collapse indicator
+                ctx.font = '14px Inter';
+                ctx.fillStyle = this.color.accent;
+                ctx.textAlign = 'right';
+                ctx.fillText(this.expanded ? '−' : '+', this.x + this.width - 16, this.y + 32);
+
+                // Content (if expanded)
+                if (this.expanded) {
+                    ctx.fillStyle = '#5a3825';
+                    ctx.font = '13px Inter';
+                    ctx.textAlign = 'left';
+                    ctx.textBaseline = 'top';
+
+                    const lines = this.wrapText(this.content, this.width - 32);
+                    const lineHeight = 18;
+                    
+                    // Draw all lines
+                    for (let i = 0; i < lines.length; i++) {
+                        ctx.fillText(lines[i], this.x + 16, this.y + this.collapsedHeight + 12 + (i * lineHeight));
+                    }
+                }
+            }
+
+            truncateText(text, maxWidth) {
+                const metrics = ctx.measureText(text);
+                if (metrics.width <= maxWidth) return text;
+                
+                let truncated = text;
+                while (ctx.measureText(truncated + '...').width > maxWidth && truncated.length > 0) {
+                    truncated = truncated.slice(0, -1);
+                }
+                return truncated + '...';
+            }
+
+            wrapText(text, maxWidth) {
+                const words = text.split(' ');
+                const lines = [];
+                let currentLine = '';
+
+                for (const word of words) {
+                    const testLine = currentLine + (currentLine ? ' ' : '') + word;
+                    const metrics = ctx.measureText(testLine);
+                    
+                    if (metrics.width > maxWidth && currentLine) {
+                        lines.push(currentLine);
+                        currentLine = word;
+                    } else {
+                        currentLine = testLine;
+                    }
+                }
+                
+                if (currentLine) {
+                    lines.push(currentLine);
+                }
+                
+                return lines;
+            }
+
+            containsPoint(x, y) {
+                return x >= this.x && x <= this.x + this.width &&
+                       y >= this.y && y <= this.y + this.height;
+            }
+
+            containsHeaderPoint(x, y) {
+                return x >= this.x && x <= this.x + this.width &&
+                       y >= this.y && y <= this.y + this.collapsedHeight;
+            }
+
+            calculateExpandedHeight() {
+                if (!this.content) {
+                    return this.collapsedHeight + 40; // Minimum expanded height
+                }
+                
+                // Calculate how many lines the content needs
+                const lines = this.wrapText(this.content, this.width - 32);
+                const lineHeight = 18;
+                const topPadding = 12;
+                const bottomPadding = 16;
+                
+                // Calculate total height needed
+                const contentHeight = lines.length * lineHeight;
+                return this.collapsedHeight + topPadding + contentHeight + bottomPadding;
+            }
+
+            toggleExpanded() {
+                this.expanded = !this.expanded;
+                this.height = this.expanded ? this.calculateExpandedHeight() : this.collapsedHeight;
+            }
+
+            getCenter() {
+                return {
+                    x: this.x + this.width / 2,
+                    y: this.y + this.height / 2
+                };
+            }
+        }
+
+        // Initialize cards
+        const cards = [];
+        const stackX = 40;
+        const stackY = 80;
+        const stackOffset = 12;
+
+        async function initializeCards() {
+            // Try to load from localStorage first
+            const loaded = loadFromLocalStorage();
+
+            if (!loaded) {
+                // Try to load files that were previously loaded by user
+                const hasStoredFiles = loadFilesFromLocalStorage();
+                
+                if (hasStoredFiles && loadedFiles.length > 0) {
+                    // Create cards from stored file data
+                    loadedFiles.forEach((fileData, index) => {
+                        const card = new Card(
+                            stackX,
+                            stackY + (index * stackOffset),
+                            { title: fileData.title, content: fileData.content },
+                            index
+                        );
+                        cards.push(card);
+                    });
+                } else {
+                    // No files loaded yet - create default cards from hardcoded markdown
+                    const cardData = parseMarkdown(markdownData);
+                    cardData.forEach((data, index) => {
+                        const card = new Card(
+                            stackX,
+                            stackY + (index * stackOffset),
+                            data,
+                            index
+                        );
+                        cards.push(card);
+                    });
+                }
+            }
+
+            // Draw the canvas
+            draw();
+        }
+
+        // Drawing function
+        function drawConnection(from, to) {
+            const fromCenter = from.getCenter();
+            const toCenter = to.getCenter();
+
+            ctx.save();
+            
+            // Draw curved line
+            ctx.strokeStyle = '#b8885d';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([5, 5]);
+            
+            ctx.beginPath();
+            ctx.moveTo(fromCenter.x, fromCenter.y);
+            
+            // Control points for bezier curve
+            const dx = toCenter.x - fromCenter.x;
+            const dy = toCenter.y - fromCenter.y;
+            const cp1x = fromCenter.x + dx * 0.5;
+            const cp1y = fromCenter.y;
+            const cp2x = toCenter.x - dx * 0.5;
+            const cp2y = toCenter.y;
+            
+            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, toCenter.x, toCenter.y);
+            ctx.stroke();
+
+            // Arrow head
+            ctx.setLineDash([]);
+            const angle = Math.atan2(dy, dx);
+            const arrowLength = 10;
+            
+            ctx.beginPath();
+            ctx.moveTo(toCenter.x, toCenter.y);
+            ctx.lineTo(
+                toCenter.x - arrowLength * Math.cos(angle - Math.PI / 6),
+                toCenter.y - arrowLength * Math.sin(angle - Math.PI / 6)
+            );
+            ctx.moveTo(toCenter.x, toCenter.y);
+            ctx.lineTo(
+                toCenter.x - arrowLength * Math.cos(angle + Math.PI / 6),
+                toCenter.y - arrowLength * Math.sin(angle + Math.PI / 6)
+            );
+            ctx.stroke();
+            
+            ctx.restore();
+        }
+
+        function draw() {
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Apply panning transformation
+            ctx.save();
+            ctx.translate(panOffsetX, panOffsetY);
+
+            // Draw connections first (behind cards)
+            connections.forEach(conn => {
+                drawConnection(conn.from, conn.to);
+            });
+
+            // Draw cards
+            cards.forEach(card => card.draw());
+
+            // Draw temporary connection line if dragging
+            if (draggedCard && isDraggingForConnection) {
+                const fromCenter = draggedCard.getCenter();
+                ctx.save();
+                ctx.strokeStyle = 'rgba(184, 136, 93, 0.5)';
+                ctx.lineWidth = 2;
+                ctx.setLineDash([5, 5]);
+                ctx.beginPath();
+                ctx.moveTo(fromCenter.x, fromCenter.y);
+                ctx.lineTo(mouseX - panOffsetX, mouseY - panOffsetY);
+                ctx.stroke();
+                ctx.restore();
+            }
+
+            ctx.restore(); // Restore transformation
+        }
+
+        // Mouse interaction
+        let draggedCard = null;
+        let isDraggingForConnection = false;
+        let mouseX = 0;
+        let mouseY = 0;
+        let clickStartTime = 0;
+        let clickStartX = 0;
+        let clickStartY = 0;
+
+        // Helper function to convert screen coordinates to canvas coordinates
+        function screenToCanvas(screenX, screenY) {
+            return {
+                x: screenX - panOffsetX,
+                y: screenY - panOffsetY
+            };
+        }
+
+        // Helper function to calculate distance from point to line segment
+        function distanceToLineSegment(px, py, x1, y1, x2, y2) {
+            const A = px - x1;
+            const B = py - y1;
+            const C = x2 - x1;
+            const D = y2 - y1;
+
+            const dot = A * C + B * D;
+            const lenSq = C * C + D * D;
+            let param = -1;
+            
+            if (lenSq !== 0) {
+                param = dot / lenSq;
+            }
+
+            let xx, yy;
+
+            if (param < 0) {
+                xx = x1;
+                yy = y1;
+            } else if (param > 1) {
+                xx = x2;
+                yy = y2;
+            } else {
+                xx = x1 + param * C;
+                yy = y1 + param * D;
+            }
+
+            const dx = px - xx;
+            const dy = py - yy;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        // Function to find connection at point
+        function findConnectionAtPoint(canvasX, canvasY) {
+            const threshold = 10; // pixels
+            
+            for (let i = 0; i < connections.length; i++) {
+                const conn = connections[i];
+                const from = conn.from.getCenter();
+                const to = conn.to.getCenter();
+                
+                const distance = distanceToLineSegment(canvasX, canvasY, from.x, from.y, to.x, to.y);
+                
+                if (distance < threshold) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        canvas.addEventListener('mousedown', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const screenX = e.clientX - rect.left;
+            const screenY = e.clientY - rect.top;
+            const canvasCoords = screenToCanvas(screenX, screenY);
+            
+            clickStartTime = Date.now();
+            clickStartX = screenX;
+            clickStartY = screenY;
+
+            // Check cards from top to bottom (reverse order)
+            let foundCard = false;
+            for (let i = cards.length - 1; i >= 0; i--) {
+                if (cards[i].containsPoint(canvasCoords.x, canvasCoords.y)) {
+                    draggedCard = cards[i];
+                    draggedCard.dragOffsetX = canvasCoords.x - draggedCard.x;
+                    draggedCard.dragOffsetY = canvasCoords.y - draggedCard.y;
+                    
+                    // Move to top of stack
+                    cards.splice(i, 1);
+                    cards.push(draggedCard);
+                    foundCard = true;
+                    break;
+                }
+            }
+
+            // If no card found, start panning
+            if (!foundCard) {
+                isPanning = true;
+                panStartX = screenX - panOffsetX;
+                panStartY = screenY - panOffsetY;
+                canvas.style.cursor = 'grabbing';
+            }
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            mouseX = e.clientX - rect.left;
+            mouseY = e.clientY - rect.top;
+
+            if (isPanning) {
+                // Pan the canvas
+                panOffsetX = mouseX - panStartX;
+                panOffsetY = mouseY - panStartY;
+                draw();
+            } else if (draggedCard) {
+                const canvasCoords = screenToCanvas(mouseX, mouseY);
+                const dx = Math.abs(mouseX - clickStartX);
+                const dy = Math.abs(mouseY - clickStartY);
+                
+                if (dx > 5 || dy > 5) {
+                    isDraggingForConnection = true;
+                    draggedCard.x = canvasCoords.x - draggedCard.dragOffsetX;
+                    draggedCard.y = canvasCoords.y - draggedCard.dragOffsetY;
+                    draw();
+                }
+            }
+        });
+
+        canvas.addEventListener('mouseup', (e) => {
+            if (isPanning) {
+                isPanning = false;
+                canvas.style.cursor = 'grab';
+                saveToLocalStorage(); // Save pan position
+            } else if (draggedCard) {
+                const clickDuration = Date.now() - clickStartTime;
+                const rect = canvas.getBoundingClientRect();
+                const screenX = e.clientX - rect.left;
+                const screenY = e.clientY - rect.top;
+                const canvasCoords = screenToCanvas(screenX, screenY);
+
+                if (isDraggingForConnection) {
+                    // Check if dropped on another card
+                    for (let card of cards) {
+                        if (card !== draggedCard && card.containsPoint(canvasCoords.x, canvasCoords.y)) {
+                            // Check if connection already exists
+                            const exists = connections.some(
+                                conn => conn.from === draggedCard && conn.to === card
+                            );
+                            if (!exists) {
+                                connections.push({ from: draggedCard, to: card });
+                                saveToLocalStorage(); // Save new connection
+                            }
+                            break;
+                        }
+                    }
+                    saveToLocalStorage(); // Save card position after drag
+                } else if (clickDuration < 200) {
+                    // Quick click - toggle expand/collapse
+                    if (draggedCard.containsHeaderPoint(canvasCoords.x, canvasCoords.y)) {
+                        draggedCard.toggleExpanded();
+                        saveToLocalStorage(); // Save expanded state
+                    }
+                }
+
+                draggedCard = null;
+                isDraggingForConnection = false;
+                draw();
+            }
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            draggedCard = null;
+            isDraggingForConnection = false;
+            isPanning = false;
+            canvas.style.cursor = 'grab';
+            draw();
+        });
+
+        // Edit overlay functionality
+        const editOverlay = document.getElementById('edit-overlay');
+        const editTitle = document.getElementById('edit-title');
+        const editContent = document.getElementById('edit-content');
+        const editSave = document.getElementById('edit-save');
+        const editCancel = document.getElementById('edit-cancel');
+        let editingCard = null;
+
+        function showEditOverlay(card, x, y) {
+            editingCard = card;
+            editTitle.value = card.title;
+            editContent.value = card.content;
+            
+            // Position the overlay near the click but ensure it's visible
+            const overlayX = Math.min(x, canvas.width - 350);
+            const overlayY = Math.min(y, canvas.height - 250);
+            
+            editOverlay.style.left = overlayX + 'px';
+            editOverlay.style.top = overlayY + 'px';
+            editOverlay.classList.add('active');
+            
+            editTitle.focus();
+            editTitle.select();
+        }
+
+        function hideEditOverlay() {
+            editOverlay.classList.remove('active');
+            editingCard = null;
+        }
+
+        editSave.addEventListener('click', () => {
+            if (editingCard) {
+                editingCard.title = editTitle.value || 'Untitled';
+                editingCard.content = editContent.value;
+                
+                // Recalculate height if card is expanded
+                if (editingCard.expanded) {
+                    editingCard.height = editingCard.calculateExpandedHeight();
+                }
+                
+                saveToLocalStorage(); // Save edited card
+                draw();
+            }
+            hideEditOverlay();
+        });
+
+        editCancel.addEventListener('click', () => {
+            hideEditOverlay();
+        });
+
+        // Keyboard shortcuts for editing
+        editTitle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                editSave.click();
+            } else if (e.key === 'Escape') {
+                editCancel.click();
+            }
+        });
+
+        editContent.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                editCancel.click();
+            }
+            // Allow Enter for new lines in textarea
+        });
+
+        // Double-click to create new card or edit existing or delete connection
+        let lastClickTime = 0;
+        let lastClickX = 0;
+        let lastClickY = 0;
+
+        canvas.addEventListener('click', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const screenX = e.clientX - rect.left;
+            const screenY = e.clientY - rect.top;
+            const canvasCoords = screenToCanvas(screenX, screenY);
+            const now = Date.now();
+
+            if (now - lastClickTime < 300 && 
+                Math.abs(screenX - lastClickX) < 10 && 
+                Math.abs(screenY - lastClickY) < 10) {
+                
+                // Check if clicking on a connection
+                const connectionIndex = findConnectionAtPoint(canvasCoords.x, canvasCoords.y);
+                if (connectionIndex !== -1) {
+                    // Delete the connection
+                    connections.splice(connectionIndex, 1);
+                    saveToLocalStorage(); // Save after deletion
+                    draw();
+                    lastClickTime = 0; // Reset to prevent triple-click issues
+                    return;
+                }
+
+                // Check if clicking on an existing card
+                let clickedCard = null;
+                for (let i = cards.length - 1; i >= 0; i--) {
+                    if (cards[i].containsPoint(canvasCoords.x, canvasCoords.y)) {
+                        clickedCard = cards[i];
+                        break;
+                    }
+                }
+
+                if (clickedCard) {
+                    // Edit existing card
+                    showEditOverlay(clickedCard, screenX, screenY);
+                } else {
+                    // Create new card at double-click position
+                    const newCard = new Card(
+                        canvasCoords.x - 140, // Center card on click
+                        canvasCoords.y - 30,
+                        { title: 'New Note', content: '' },
+                        cards.length
+                    );
+                    cards.push(newCard);
+                    saveToLocalStorage(); // Save new card
+                    draw();
+                    
+                    // Show edit overlay for new card
+                    showEditOverlay(newCard, screenX, screenY);
+                }
+            }
+
+            lastClickTime = now;
+            lastClickX = screenX;
+            lastClickY = screenY;
+        });
+
+        // Close overlay when clicking outside
+        document.addEventListener('click', (e) => {
+            if (editOverlay.classList.contains('active') && 
+                !editOverlay.contains(e.target) && 
+                e.target !== canvas) {
+                hideEditOverlay();
+            }
+        });
+
+        // Reset button functionality
+        const resetButton = document.getElementById('reset-button');
+        resetButton.addEventListener('click', () => {
+            if (confirm('Are you sure you want to reset the canvas? This will delete all your cards, connections, and loaded files.')) {
+                localStorage.removeItem(STORAGE_KEY);
+                localStorage.removeItem(STORAGE_KEY_FILES);
+                location.reload();
+            }
+        });
+
+        // Load files button functionality
+        const loadButton = document.getElementById('load-button');
+        const fileInput = document.getElementById('file-input');
+        
+        loadButton.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', async (e) => {
+            const files = Array.from(e.target.files);
+            
+            if (files.length === 0) return;
+
+            // Confirm if there's existing work
+            if (cards.length > 0) {
+                const confirmed = confirm(`Load ${files.length} new file(s)? Your current work will be replaced.`);
+                if (!confirmed) {
+                    fileInput.value = ''; // Reset file input
+                    return;
+                }
+            }
+
+            // Clear existing state
+            cards.length = 0;
+            connections.length = 0;
+            loadedFiles = [];
+            panOffsetX = 0;
+            panOffsetY = 0;
+
+            let cardIndex = 0;
+
+            // Read all files
+            for (let file of files) {
+                try {
+                    const text = await file.text();
+                    
+                    // Check if file contains card separators
+                    if (text.includes('#-------')) {
+                        // Parse as multiple cards
+                        const cardData = parseMarkdown(text);
+                        
+                        for (let data of cardData) {
+                            // Store file data
+                            loadedFiles.push({ title: data.title, content: data.content });
+                            
+                            // Create card
+                            const card = new Card(
+                                stackX,
+                                stackY + (cardIndex * stackOffset),
+                                data,
+                                cardIndex
+                            );
+                            cards.push(card);
+                            cardIndex++;
+                        }
+                    } else {
+                        // Parse as single card
+                        const lines = text.trim().split('\n');
+                        
+                        let title = file.name.replace(/\.md$|\.markdown$/i, '');
+                        let content = text;
+                        
+                        // If first line is a heading, use it as title
+                        if (lines[0].startsWith('#')) {
+                            title = lines[0].replace(/^#+\s*/, '').trim();
+                            content = lines.slice(1).join('\n').trim();
+                        }
+                        
+                        // Store file data
+                        loadedFiles.push({ title, content });
+                        
+                        // Create card
+                        const card = new Card(
+                            stackX,
+                            stackY + (cardIndex * stackOffset),
+                            { title, content },
+                            cardIndex
+                        );
+                        cards.push(card);
+                        cardIndex++;
+                    }
+                } catch (error) {
+                    console.error(`Failed to read file ${file.name}:`, error);
+                    alert(`Could not read ${file.name}`);
+                }
+            }
+
+            // Save files and canvas state
+    
+
+            saveFilesToLocalStorage();
+            saveToLocalStorage();
+            draw();
+
+            // Reset file input for next use
+            fileInput.value = '';
+        });
+
+        // Export to markdown functionality
+
+  
+
+
+// Export to markdown functionality
+        const exportButton = document.getElementById('export-button');
+        exportButton.addEventListener('click', () => {
+            // 1. Build Adjacency List (Undirected: A-B is the same as B-A)
+            // This allows us to find "groups" regardless of which way you drew the arrow
+            const adjacency = new Map();
+            cards.forEach(c => adjacency.set(c, []));
+            connections.forEach(conn => {
+                adjacency.get(conn.from).push(conn.to);
+                adjacency.get(conn.to).push(conn.from);
+            });
+
+            // 2. Identify Connected Components (Clusters)
+            const visited = new Set();
+            const clusters = [];
+
+            cards.forEach(card => {
+                if (visited.has(card)) return;
+
+                // Check if this card actually has any connections
+                // (We want to ignore isolates)
+                const hasConnections = (adjacency.get(card) || []).length > 0;
+                if (!hasConnections) return;
+
+                // Perform BFS to find all cards in this connected group
+                const cluster = [];
+                const queue = [card];
+                visited.add(card);
+
+                while (queue.length > 0) {
+                    const current = queue.shift();
+                    cluster.push(current);
+
+                    const neighbors = adjacency.get(current) || [];
+                    neighbors.forEach(neighbor => {
+                        if (!visited.has(neighbor)) {
+                            visited.add(neighbor);
+                            queue.push(neighbor);
+                        }
+                    });
+                }
+
+                clusters.push(cluster);
+            });
+
+            if (clusters.length === 0) {
+                alert('No connected cards to export! Connect cards by dragging one onto another.');
+                return;
+            }
+
+            // 3. Process Clusters for Output
+            // A. Sort cards INSIDE each cluster by Y-position (Visual Top-Down)
+            clusters.forEach(cluster => {
+                cluster.sort((a, b) => a.y - b.y);
+            });
+
+            // B. Sort the CLUSTERS themselves by the Y-position of their top-most card
+            // This ensures "Chapter 1" (Top) comes before "Chapter 2" (Bottom)
+            clusters.sort((a, b) => a[0].y - b[0].y);
+
+            // C. Flatten into one list
+            const orderedCards = clusters.flat();
+
+            // 4. Generate Markdown
+            let markdown = '';
+            for (let i = 0; i < orderedCards.length; i++) {
+                const card = orderedCards[i];
+                
+                // Using Markdown Heading for title
+                markdown += `# ${card.title}\n`;
+                
+                // Add card content
+                if (card.content) {
+                    markdown += card.content + '\n';
+                }
+                
+                // Add separator (unless it's the very last card)
+                if (i < orderedCards.length - 1) {
+                    markdown += '\n#-------\n';
+                }
+            }
+
+            // Create and download the file
+            const blob = new Blob([markdown], { type: 'text/markdown' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'outline-export.md';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+        // Initialize canvas size and start the app
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+        initializeCards(); // Load and draw cards
+    </script>
+</body>
+</html>
